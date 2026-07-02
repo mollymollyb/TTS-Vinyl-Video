@@ -13,6 +13,13 @@ Schema (releases/{slug}/edits/vN.edl.json):
       "segments": [{"start": 12.4, "end": 19.1, "why": "vinyl 1 pull"}]
     }
 
+Segments may optionally carry the motion toolkit (see
+knowledge/editing-rules.md "Motion & pacing grammar" for WHEN, and
+library/motion_filters.py for HOW):
+      {"start": 1.5, "end": 5.0, "why": "cover hold",
+       "motion": {"type": "punch_in", "amount": 1.10},
+       "speed": 1.25}
+
 Segment validation is adapted from auto-edit/score.py. One deliberate
 divergence: auto-edit forced output duration to within +/-20% of the
 source (a re-arrangement experiment); vinyl edits COMPRESS 2-3 min of
@@ -25,6 +32,14 @@ seeing ("it cuts in the middle of the vinyl pull").
 
 import json
 from pathlib import Path
+
+from library.motion_filters import (
+    MOTION_AMOUNT_MAX,
+    MOTION_AMOUNT_MIN,
+    MOTION_TYPES,
+    SPEED_MAX,
+    SPEED_MIN,
+)
 
 MIN_SEGMENT_SECONDS = 0.5
 BOUNDARY_TOLERANCE = 0.25  # seconds of slack when comparing to sequence edges
@@ -43,8 +58,42 @@ def save_edl(edl: dict, edl_path: Path) -> None:
     edl_path.write_text(json.dumps(edl, indent=2) + "\n")
 
 
+def _validate_segment_motion(index: int, segment: dict) -> float:
+    """Check optional motion/speed fields; return the segment's speed."""
+    motion = segment.get("motion")
+    if motion is not None:
+        if motion.get("type") not in MOTION_TYPES:
+            raise EdlValidationError(
+                f"segment {index}: motion type must be one of {MOTION_TYPES}"
+            )
+        try:
+            amount = float(motion["amount"])
+        except (KeyError, TypeError, ValueError) as err:
+            raise EdlValidationError(f"segment {index}: bad motion amount ({err})")
+        if not MOTION_AMOUNT_MIN <= amount <= MOTION_AMOUNT_MAX:
+            raise EdlValidationError(
+                f"segment {index}: motion amount {amount} outside "
+                f"[{MOTION_AMOUNT_MIN}, {MOTION_AMOUNT_MAX}] — subtle or nothing"
+            )
+    try:
+        speed = float(segment.get("speed", 1.0))
+    except (TypeError, ValueError) as err:
+        raise EdlValidationError(f"segment {index}: bad speed ({err})")
+    if not SPEED_MIN <= speed <= SPEED_MAX:
+        raise EdlValidationError(
+            f"segment {index}: speed {speed} outside [{SPEED_MIN}, {SPEED_MAX}]"
+        )
+    return speed
+
+
+def segment_output_seconds(segment: dict) -> float:
+    """A segment's on-screen duration (source slice divided by speed)."""
+    span = float(segment["end"]) - float(segment["start"])
+    return span / float(segment.get("speed", 1.0))
+
+
 def validate_edl(edl: dict, source_duration: float) -> float:
-    """Hard-fail on any malformed segment. Returns output duration."""
+    """Hard-fail on any malformed segment. Returns OUTPUT duration."""
     segments = edl.get("segments")
     if not isinstance(segments, list) or not segments:
         raise EdlValidationError("EDL 'segments' must be a non-empty list")
@@ -64,7 +113,8 @@ def validate_edl(edl: dict, source_duration: float) -> float:
             raise EdlValidationError(
                 f"segment {index}: [{start}, {end}] outside source [0, {source_duration:.2f}]"
             )
-        total += end - start
+        _validate_segment_motion(index, segment)
+        total += segment_output_seconds(segment)
     if total > source_duration:
         raise EdlValidationError(
             f"output {total:.1f}s exceeds source {source_duration:.1f}s"
@@ -73,11 +123,15 @@ def validate_edl(edl: dict, source_duration: float) -> float:
 
 
 def internal_cut_timestamps(edl: dict) -> list[float]:
-    """Output-timeline positions of every internal cut (for review)."""
+    """Output-timeline positions of every internal cut (for review).
+
+    Speed-aware: a 1.25x segment occupies less of the output timeline
+    than its source slice, and review frames must land on real cuts.
+    """
     cuts: list[float] = []
     elapsed = 0.0
     for segment in edl["segments"][:-1]:
-        elapsed += float(segment["end"]) - float(segment["start"])
+        elapsed += segment_output_seconds(segment)
         cuts.append(round(elapsed, 3))
     return cuts
 

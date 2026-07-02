@@ -29,12 +29,21 @@ def probe_duration_seconds(video_path: Path) -> float:
 
 
 def probe_video_metadata(video_path: Path) -> dict:
-    """Duration, fps, resolution, and size for release records."""
+    """Duration, fps, DISPLAY resolution, and size for release records.
+
+    iPhone MOVs store landscape frames plus a rotation=±90 flag; ffmpeg
+    auto-rotates whenever it filters/re-encodes. Reporting the stored
+    dimensions therefore lies to every consumer (zoompan sizing, release
+    records), so width/height are swapped here when the flag says
+    portrait. (Caught 2026-07-02: motion demo rendered stretched
+    landscape segments.)
+    """
     output = subprocess.check_output(
         [
             "ffprobe", "-v", "error",
             "-select_streams", "v:0",
             "-show_entries", "stream=width,height,r_frame_rate",
+            "-show_entries", "stream_side_data=rotation",
             "-show_entries", "format=duration,size",
             "-of", "json",
             str(video_path),
@@ -48,10 +57,18 @@ def probe_video_metadata(video_path: Path) -> dict:
     numerator, _, denominator = str(stream.get("r_frame_rate", "0/1")).partition("/")
     fps = float(numerator) / float(denominator or 1) if float(denominator or 1) else 0.0
 
+    rotation = 0
+    for side_data in stream.get("side_data_list", []):
+        if "rotation" in side_data:
+            rotation = int(side_data["rotation"])
+    width, height = stream.get("width"), stream.get("height")
+    if rotation % 180 != 0:
+        width, height = height, width
+
     return {
         "duration_seconds": round(float(fmt.get("duration", 0.0)), 3),
         "fps": round(fps, 2),
-        "width": stream.get("width"),
-        "height": stream.get("height"),
+        "width": width,
+        "height": height,
         "size_mb": round(int(fmt.get("size", 0)) / (1024 * 1024), 1),
     }

@@ -42,6 +42,43 @@ fold the durable rule in here.
 - **Front-load the strongest visual** in the first ~1.5s (thumb-stop),
   as long as doing so breaks no hard rule.
 
+## Motion & pacing grammar (Sidney, 2026-07-02: "feels static, a little slow")
+
+How an editor adds energy, in priority order. Reach for tool 1 before 2,
+2 before 3. Renderer support: optional per-segment `motion` and `speed`
+in the EDL (`library/motion_filters.py`); caps are enforced in
+validation so taste violations fail loudly.
+
+1. **Rhythm first.** Energy comes from VARIED shot lengths, not effects.
+   Open with the longest hold you'll ever show (the hook can breathe),
+   then shorten: a cut that follows a 4s shot with a 1.5s shot feels
+   fast without a single filter. If the back half of the cut isn't
+   faster than the front half, fix that before touching motion.
+2. **Digital motion (punch_in / pull_back), motivated or not at all.**
+   - Motion follows meaning: punch IN toward a detail worth leaning at
+     (artwork, tracklist, label on the variant); pull BACK to establish
+     or to breathe before a close.
+   - Only on shots where the CAMERA is basically still. Physical camera
+     moves (pulls, pans, slide-outs) already have motion — digital zoom
+     on top reads as drunk footage.
+   - Subtle band only: 1.05–1.12 typical, 1.20 absolute cap. Eased, never
+     linear (the module does this).
+   - **Never every shot.** 2–3 moves per ~20s cut, alternating direction
+     when two moved shots are adjacent. If every shot zooms, zoom means
+     nothing — that IS the "AI edit" look.
+3. **Speed (`speed`), for mechanics — never for money shots.**
+   - 1.15–1.5x on procedural stretches: sliding a record back in,
+     lowering/raising between showcases, long walks of a pan.
+   - Money shots run 1.0x: the variant reveal, the gatefold open, any
+     frame Molly would screenshot. Slowing below 1.0x is allowed for a
+     peak moment but is rarely needed.
+   - Never speed a shot with text the viewer is supposed to read.
+4. **What we deliberately do NOT do digitally:** transition effects
+   (wipes/whips/crossfades — hard cuts are the grammar of this format),
+   filters/LUTs, stabilization crops. Music, captions, and stickers are
+   Molly's layer, added in TikTok. Our job is a cut so strong it works
+   silent.
+
 ## Working agreements
 
 - Every EDL segment carries a `why` (which sequence it shows, why it's in).

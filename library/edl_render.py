@@ -17,31 +17,55 @@ import tempfile
 from pathlib import Path
 
 from library.edl import load_edl, validate_edl
-from library.ffprobe import probe_duration_seconds
+from library.ffprobe import probe_duration_seconds, probe_video_metadata
 from library.media_paths import find_raw_file, work_dir
+from library.motion_filters import build_segment_filters
+
+
+def _probe_fps_rational(source_path: Path) -> str:
+    """Exact r_frame_rate (e.g. '30000/1001') — zoompan segments must
+    emit the same rate as untouched ones or concat drifts."""
+    return subprocess.check_output(
+        [
+            "ffprobe", "-v", "error", "-select_streams", "v:0",
+            "-show_entries", "stream=r_frame_rate",
+            "-of", "default=noprint_wrappers=1:nokey=1",
+            str(source_path),
+        ],
+        text=True,
+    ).strip()
 
 
 def render_edl(source_path: Path, edl: dict, out_path: Path) -> Path:
     """Cut edl['segments'] from source_path, concat in order -> out_path."""
     validate_edl(edl, probe_duration_seconds(source_path))
+    meta = probe_video_metadata(source_path)
+    fps_rational = _probe_fps_rational(source_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="vinyl_render_") as tmp:
         tmp_dir = Path(tmp)
         segment_paths: list[Path] = []
         for index, segment in enumerate(edl["segments"]):
             segment_path = tmp_dir / f"seg_{index:03d}.mp4"
-            subprocess.run(
-                [
-                    "ffmpeg", "-y", "-loglevel", "error",
-                    "-ss", str(segment["start"]),
-                    "-to", str(segment["end"]),
-                    "-i", str(source_path),
-                    "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
-                    "-c:a", "aac", "-b:a", "160k",
-                    str(segment_path),
-                ],
-                check=True,
+            video_filter, audio_filter = build_segment_filters(
+                segment, meta["fps"], fps_rational, meta["width"], meta["height"]
             )
+            command = [
+                "ffmpeg", "-y", "-loglevel", "error",
+                "-ss", str(segment["start"]),
+                "-to", str(segment["end"]),
+                "-i", str(source_path),
+            ]
+            if video_filter:
+                command += ["-vf", video_filter]
+            if audio_filter:
+                command += ["-af", audio_filter]
+            command += [
+                "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+                "-c:a", "aac", "-b:a", "160k",
+                str(segment_path),
+            ]
+            subprocess.run(command, check=True)
             segment_paths.append(segment_path)
 
         concat_list = tmp_dir / "concat.txt"

@@ -26,6 +26,7 @@
 | v1 | 25.2s | chronological: cover → tracklists → FAN 1 → CF2+CF3 swap run → red pull finale |
 | v2 | 22.1s | variant-first: red pull → cover → FAN 2 → red+fan showcase → slide-out closer |
 | v3 | 17.0s | fastest: cover flash → back flip → FAN 1 hold → CF3 claw swap → red pull |
+| v2-motion | 21.2s | DEMO of the motion toolkit on v2: 1.15x opener, punch-in cover, pull-back fan reveal, punch-in red showcase — awaiting Sidney's verdict |
 
 Renders: media `work/wiz-khalifa-cabin-fever-trilogy/2026-07-02/`.
 

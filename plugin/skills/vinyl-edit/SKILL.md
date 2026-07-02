@@ -29,6 +29,14 @@ Constraints (the hard rules, mechanically checkable):
   e.g. v1 chronological, v2 variant-reveal-first, v3 fastest-paced.
 - Every segment has a `why` naming its sequence id.
 
+Energy (the "Motion & pacing grammar" in editing-rules.md, in order):
+1. Shape rhythm with shot lengths — back half faster than front half.
+2. Optionally add `"motion": {"type": "punch_in"|"pull_back", "amount": 1.05-1.12}`
+   to CAMERA-STILL holds only (2-3 per cut, max), motivated by a detail.
+   Never on segments whose `why` names a pull/pan/slide sequence.
+3. Optionally add `"speed": 1.15-1.5` to procedural stretches; money
+   shots stay 1.0. Validation caps both fields and fails loudly.
+
 ## 2. Validate + render
 
 For each variant:

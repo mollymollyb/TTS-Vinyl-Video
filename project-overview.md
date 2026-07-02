@@ -21,6 +21,9 @@ verifies this stays current.
 - `frame_sample.py` — midpoint/cut-context JPEG extraction for labeling and review.
 - `edl.py` — EDL schema, validation, `check_sequence_integrity` (the never-cut law).
 - `edl_render.py` — EDL → mp4 (per-segment re-encode + concat). CLI.
+- `motion_filters.py` — ffmpeg filter builders for optional per-segment
+  `motion` (eased zoompan punch-in/pull-back) and `speed` (setpts/atempo).
+  Taste caps shared with `edl.py` validation.
 - `twelvelabs_client.py` — the ONLY Twelve Labs import; `is_available()` gates Tier 2.
 - `ingest.py` — raw files → `releases/{slug}/release.json`. CLI.
 - `analyze.py` — orchestrator: proxy → scenes → frames → labels → `analysis.json`. CLI.

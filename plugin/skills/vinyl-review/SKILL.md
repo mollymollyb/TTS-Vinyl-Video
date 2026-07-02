@@ -35,7 +35,27 @@ derived `review/` folder), then Read each pair and judge:
 - Extract the final 3 frames of the render: does it END on a held
   product or completed motion (hard rule 5)?
 
-## 3. Verdict + close out
+## 3. Energy pass — "can I make this better?" (after integrity passes)
+
+Correct is the floor; this cut also has to feel alive on a feed. Compute
+per-segment OUTPUT durations (`library.edl.segment_output_seconds`) and
+interrogate the cut against the Motion & pacing grammar
+(`knowledge/editing-rules.md`):
+
+- Rhythm: is the back half of the cut faster than the front half? Any
+  two adjacent segments nearly equal length (flat rhythm)?
+- Static holds: any camera-still segment >2.5s with no digital motion?
+  Candidate for a `motion` field — or for trimming.
+- Drag: any procedural stretch that would survive `speed: 1.25` without
+  losing meaning?
+- Restraint: more than 3 motion/speed touches per ~20s? Remove the
+  least-motivated one. Motion on a physical camera move? Remove it.
+
+Each finding = a concrete EDL tweak (field-level, not new cuts), then
+re-render and re-check the tweaked boundaries visually. Energy tweaks
+must never violate a hard rule — sequences still win over beats.
+
+## 4. Verdict + close out
 
 - **Pass:** note it in the release README (variant, date, checks passed).
 - **Fail:** write WHY (which cut, which rule), fix the EDL, re-render,
