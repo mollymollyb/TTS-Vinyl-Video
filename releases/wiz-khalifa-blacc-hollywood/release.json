@@ -1,0 +1,29 @@
+{
+  "slug": "wiz-khalifa-blacc-hollywood",
+  "artist": "Wiz Khalifa",
+  "title": "Blacc Hollywood",
+  "release_type": "unknown",
+  "release_type_confirmed": false,
+  "status": "raw",
+  "created": "2026-07-02",
+  "raw_files": [
+    {
+      "file": "Wiz Khalifa - Blacc Hollywood 1.MOV",
+      "take": 1,
+      "duration_seconds": 78.098,
+      "fps": 29.97,
+      "width": 3840,
+      "height": 2160,
+      "size_mb": 425.3
+    },
+    {
+      "file": "Wiz Khalifa - Blacc Hollywod 2.MOV",
+      "take": 2,
+      "duration_seconds": 40.717,
+      "fps": 29.97,
+      "width": 3840,
+      "height": 2160,
+      "size_mb": 223.0
+    }
+  ]
+}

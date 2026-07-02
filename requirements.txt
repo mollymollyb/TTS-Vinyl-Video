@@ -1,0 +1,7 @@
+# Python dependencies for the vinyl video editor library (library/).
+# ffmpeg + ffprobe are system dependencies: `brew install ffmpeg`.
+#
+# twelvelabs is only exercised at Tier 2 (TWELVE_LABS_API_KEY set);
+# everything else runs without it. See CLAUDE.md "Capability tiers".
+twelvelabs>=1.0
+httpx>=0.27

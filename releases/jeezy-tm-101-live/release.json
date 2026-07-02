@@ -1,0 +1,20 @@
+{
+  "slug": "jeezy-tm-101-live",
+  "artist": "Jeezy",
+  "title": "Tm 101 Live",
+  "release_type": "2xLP",
+  "release_type_confirmed": false,
+  "status": "raw",
+  "created": "2026-07-02",
+  "raw_files": [
+    {
+      "file": "Jeezy - TM 101 Live.MOV",
+      "take": 1,
+      "duration_seconds": 76.297,
+      "fps": 29.97,
+      "width": 3840,
+      "height": 2160,
+      "size_mb": 416.2
+    }
+  ]
+}

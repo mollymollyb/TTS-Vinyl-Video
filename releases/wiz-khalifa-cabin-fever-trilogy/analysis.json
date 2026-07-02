@@ -1,0 +1,363 @@
+{
+  "release": "wiz-khalifa-cabin-fever-trilogy",
+  "take": 1,
+  "source": "Wiz Khalifa - Cabin Fever Trilogy.MOV",
+  "duration_seconds": 81.648,
+  "analyzed": "2026-07-02T14:22:55",
+  "tier": "2",
+  "shots_labeled": true,
+  "shots": [
+    {
+      "shot": 0,
+      "start": 0.0,
+      "end": 5.832,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/wiz-khalifa-cabin-fever-trilogy/frames-take1/shot000_t2.92.jpg",
+      "visual": "A person holds a vinyl record cover with 'WIZ KHALIFA CABIN FEVER TRILOGY' printed on it, with a street scene in the background.",
+      "key_action": "holds vinyl cover",
+      "sequence_type": "unboxing",
+      "motion_state": "static"
+    },
+    {
+      "shot": 1,
+      "start": 5.832,
+      "end": 11.664,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/wiz-khalifa-cabin-fever-trilogy/frames-take1/shot001_t8.75.jpg",
+      "visual": "The back of the vinyl record cover is shown, displaying the tracklist and album art for each side.",
+      "key_action": "shows tracklist",
+      "sequence_type": "pan-tracklist",
+      "motion_state": "mid-motion"
+    },
+    {
+      "shot": 2,
+      "start": 11.664,
+      "end": 17.496,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/wiz-khalifa-cabin-fever-trilogy/frames-take1/shot002_t14.58.jpg",
+      "visual": "The camera focuses on the back of the vinyl record cover, displaying the tracklist for each side.",
+      "key_action": "pan-tracklist",
+      "sequence_type": "pan-tracklist",
+      "motion_state": "mid-motion"
+    },
+    {
+      "shot": 3,
+      "start": 17.496,
+      "end": 23.328,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/wiz-khalifa-cabin-fever-trilogy/frames-take1/shot003_t20.41.jpg",
+      "visual": "The camera pans to the right, revealing a street scene with parked cars and a pedestrian walking by.",
+      "key_action": "panning",
+      "sequence_type": "dead-space",
+      "motion_state": "mid-motion"
+    },
+    {
+      "shot": 4,
+      "start": 23.328,
+      "end": 29.16,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/wiz-khalifa-cabin-fever-trilogy/frames-take1/shot004_t26.24.jpg",
+      "visual": "The camera focuses on a man walking down the street, with parked cars and buildings in the background.",
+      "key_action": "walking",
+      "sequence_type": "dead-space",
+      "motion_state": "static"
+    },
+    {
+      "shot": 5,
+      "start": 29.16,
+      "end": 34.992,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/wiz-khalifa-cabin-fever-trilogy/frames-take1/shot005_t32.08.jpg",
+      "visual": "The person holds the vinyl record with 'Wiz Khalifa Cabin Fever 2' on the front cover.",
+      "key_action": "holds vinyl 2",
+      "sequence_type": "sleeve-detail",
+      "motion_state": "static"
+    },
+    {
+      "shot": 6,
+      "start": 34.992,
+      "end": 40.824,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/wiz-khalifa-cabin-fever-trilogy/frames-take1/shot006_t37.91.jpg",
+      "visual": "The person holds three vinyl records, with the top one displaying 'WIZ KHALIFA CABIN FEVER 2'",
+      "key_action": "holds three vinyl records",
+      "sequence_type": "unboxing",
+      "motion_state": "static"
+    },
+    {
+      "shot": 7,
+      "start": 40.824,
+      "end": 46.656,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/wiz-khalifa-cabin-fever-trilogy/frames-take1/shot007_t43.74.jpg",
+      "visual": "The person holds the vinyl record sleeve with the front cover visible, showing the title 'Wiz Khalifa Cabin Fever 2'",
+      "key_action": "holds vinyl 2 sleeve",
+      "sequence_type": "sleeve-detail",
+      "motion_state": "static"
+    },
+    {
+      "shot": 8,
+      "start": 46.656,
+      "end": 52.488,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/wiz-khalifa-cabin-fever-trilogy/frames-take1/shot008_t49.57.jpg",
+      "visual": "The person holds the 'Cabin Fever 2' vinyl record sleeve, partially revealing the red vinyl inside.",
+      "key_action": "partially reveals vinyl",
+      "sequence_type": "vinyl-pull",
+      "motion_state": "mid-motion"
+    },
+    {
+      "shot": 9,
+      "start": 52.488,
+      "end": 58.32,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/wiz-khalifa-cabin-fever-trilogy/frames-take1/shot009_t55.40.jpg",
+      "visual": "The person holds a vinyl record sleeve with a red vinyl record partially pulled out.",
+      "key_action": "pulls vinyl 2 from sleeve",
+      "sequence_type": "vinyl-pull",
+      "motion_state": "mid-motion"
+    },
+    {
+      "shot": 10,
+      "start": 58.32,
+      "end": 64.152,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/wiz-khalifa-cabin-fever-trilogy/frames-take1/shot010_t61.24.jpg",
+      "visual": "The hand holds the 'Wiz Khalifa Cabin Fever 2' vinyl record sleeve, partially open, revealing the red vinyl inside.",
+      "key_action": "holds vinyl 2 sleeve",
+      "sequence_type": "variant-reveal",
+      "motion_state": "static"
+    },
+    {
+      "shot": 11,
+      "start": 64.152,
+      "end": 69.984,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/wiz-khalifa-cabin-fever-trilogy/frames-take1/shot011_t67.07.jpg",
+      "visual": "The person holds the vinyl record sleeve with the front cover facing the camera, displaying the text 'WIZ KHALIFA CABIN FEVER 2'",
+      "key_action": "holds vinyl sleeve",
+      "sequence_type": "sleeve-detail",
+      "motion_state": "static"
+    },
+    {
+      "shot": 12,
+      "start": 69.984,
+      "end": 75.816,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/wiz-khalifa-cabin-fever-trilogy/frames-take1/shot012_t72.90.jpg",
+      "visual": "The back cover of the vinyl record is shown, displaying tracklist information for all three albums.",
+      "key_action": "pan-tracklist",
+      "sequence_type": "pan-tracklist",
+      "motion_state": "mid-motion"
+    },
+    {
+      "shot": 13,
+      "start": 75.816,
+      "end": 81.648,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/wiz-khalifa-cabin-fever-trilogy/frames-take1/shot013_t78.73.jpg",
+      "visual": "The back of the vinyl record cover with tracklist details is shown.",
+      "key_action": "pan-tracklist",
+      "sequence_type": "pan-tracklist",
+      "motion_state": "mid-motion"
+    }
+  ],
+  "sequences": [
+    {
+      "id": "seq-00",
+      "type": "sleeve-detail",
+      "start": 0.0,
+      "end": 11.5,
+      "atomic": false,
+      "shots": [
+        0,
+        1
+      ],
+      "note": "box front cover held up (red on black) - trimmable hold, strong hook material"
+    },
+    {
+      "id": "seq-01",
+      "type": "pan-tracklist",
+      "start": 11.5,
+      "end": 14.2,
+      "atomic": true,
+      "shots": [
+        2
+      ],
+      "note": "flip/pan to back cover - motion must complete"
+    },
+    {
+      "id": "seq-02",
+      "type": "pan-tracklist",
+      "start": 14.2,
+      "end": 17.5,
+      "atomic": false,
+      "shots": [
+        2,
+        3
+      ],
+      "note": "back cover hold: all three tracklists legible"
+    },
+    {
+      "id": "seq-03",
+      "type": "dead-space",
+      "start": 17.5,
+      "end": 31.0,
+      "atomic": false,
+      "shots": [
+        3,
+        4,
+        5
+      ],
+      "note": "tilting away, repositioning, box half out of frame - CUT ALL OF THIS"
+    },
+    {
+      "id": "seq-04",
+      "type": "sleeve-detail",
+      "start": 31.0,
+      "end": 34.2,
+      "atomic": false,
+      "shots": [
+        5
+      ],
+      "note": "CF1 sleeve vertical hold"
+    },
+    {
+      "id": "seq-05",
+      "type": "unboxing",
+      "start": 34.2,
+      "end": 38.8,
+      "atomic": true,
+      "shots": [
+        6
+      ],
+      "note": "THE TRILOGY BEAT: fans out all three sleeves - must complete"
+    },
+    {
+      "id": "seq-06",
+      "type": "sleeve-detail",
+      "start": 38.8,
+      "end": 43.5,
+      "atomic": false,
+      "shots": [
+        6,
+        7
+      ],
+      "note": "CF1 front of fan, near-static hold"
+    },
+    {
+      "id": "seq-07",
+      "type": "sleeve-detail",
+      "start": 43.5,
+      "end": 46.2,
+      "atomic": true,
+      "shots": [
+        7
+      ],
+      "note": "CF2 white sleeve comes to front - reveal motion"
+    },
+    {
+      "id": "seq-08",
+      "type": "sleeve-detail",
+      "start": 46.2,
+      "end": 50.6,
+      "atomic": false,
+      "shots": [
+        8
+      ],
+      "note": "CF3 claw-mark sleeve hold (slight tilt)"
+    },
+    {
+      "id": "seq-09",
+      "type": "dead-space",
+      "start": 50.6,
+      "end": 53.2,
+      "atomic": false,
+      "shots": [
+        8
+      ],
+      "note": "sleeve drops out of frame - street only at t51.5"
+    },
+    {
+      "id": "seq-10",
+      "type": "vinyl-pull",
+      "start": 53.2,
+      "end": 59.8,
+      "atomic": true,
+      "shots": [
+        9,
+        10
+      ],
+      "note": "THE VARIANT BEAT: red translucent vinyl pulled from CF3 sleeve, start to full reveal"
+    },
+    {
+      "id": "seq-11",
+      "type": "variant-reveal",
+      "start": 59.8,
+      "end": 62.4,
+      "atomic": false,
+      "shots": [
+        10
+      ],
+      "note": "red vinyl held with sleeve fan - trimmable, valid ending frame"
+    },
+    {
+      "id": "seq-12",
+      "type": "dead-space",
+      "start": 62.4,
+      "end": 64.5,
+      "atomic": false,
+      "shots": [
+        10,
+        11
+      ],
+      "note": "hand shuffles sleeves mid-motion"
+    },
+    {
+      "id": "seq-13",
+      "type": "variant-reveal",
+      "start": 64.5,
+      "end": 70.3,
+      "atomic": false,
+      "shots": [
+        11
+      ],
+      "note": "red vinyl nested in fanned sleeves / half in black sleeve"
+    },
+    {
+      "id": "seq-14",
+      "type": "dead-space",
+      "start": 70.3,
+      "end": 72.3,
+      "atomic": false,
+      "shots": [
+        12
+      ],
+      "note": "arm only, street behind"
+    },
+    {
+      "id": "seq-15",
+      "type": "dead-space",
+      "start": 72.3,
+      "end": 75.2,
+      "atomic": false,
+      "shots": [
+        12
+      ],
+      "note": "mid-fan transition into final composition"
+    },
+    {
+      "id": "seq-16",
+      "type": "variant-reveal",
+      "start": 75.2,
+      "end": 81.0,
+      "atomic": true,
+      "shots": [
+        12,
+        13
+      ],
+      "note": "CLOSER: CF2 sleeve with red vinyl sliding out right - completes, then street"
+    },
+    {
+      "id": "seq-17",
+      "type": "dead-space",
+      "start": 81.0,
+      "end": 81.65,
+      "atomic": false,
+      "shots": [
+        13
+      ],
+      "note": "street only - the raw take's dead ending, never include"
+    }
+  ],
+  "sequence_pass": {
+    "by": "agent frame review (14 midpoints + 22 boundary probes)",
+    "confirms_release_type": "3xLP box (three sleeves CF1/CF2/CF3) with red translucent variant vinyl"
+  }
+}

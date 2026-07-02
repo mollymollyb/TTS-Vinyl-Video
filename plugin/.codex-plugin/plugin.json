@@ -1,0 +1,6 @@
+{
+  "name": "vinyl-os",
+  "version": "0.1.0",
+  "description": "Agent video editor for Rostrum vinyl TikTok Shop content: ingest raw vinyl footage, analyze it into never-cut sequences, generate and render coherent short-form edits, review them, and write captions.",
+  "skills": "./skills/"
+}

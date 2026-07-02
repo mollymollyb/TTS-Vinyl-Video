@@ -1,0 +1,21 @@
+{
+  "slug": "wiz-khalifa-cabin-fever-trilogy",
+  "artist": "Wiz Khalifa",
+  "title": "Cabin Fever Trilogy",
+  "release_type": "3xLP",
+  "release_type_confirmed": false,
+  "status": "review",
+  "created": "2026-07-02",
+  "raw_files": [
+    {
+      "file": "Wiz Khalifa - Cabin Fever Trilogy.MOV",
+      "take": 1,
+      "duration_seconds": 81.6,
+      "fps": 29.97,
+      "width": 3840,
+      "height": 2160,
+      "size_mb": 444.2
+    }
+  ],
+  "release_type_evidence": "frame review: box + CF1/CF2/CF3 sleeves + red translucent variant vinyl"
+}

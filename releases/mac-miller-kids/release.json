@@ -1,0 +1,20 @@
+{
+  "slug": "mac-miller-kids",
+  "artist": "Mac Miller",
+  "title": "Kids",
+  "release_type": "unknown",
+  "release_type_confirmed": false,
+  "status": "raw",
+  "created": "2026-07-02",
+  "raw_files": [
+    {
+      "file": "Mac Miller - KIDS.MOV",
+      "take": 1,
+      "duration_seconds": 89.737,
+      "fps": 29.97,
+      "width": 3840,
+      "height": 2160,
+      "size_mb": 488.9
+    }
+  ]
+}

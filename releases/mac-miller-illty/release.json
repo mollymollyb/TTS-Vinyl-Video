@@ -1,0 +1,29 @@
+{
+  "slug": "mac-miller-illty",
+  "artist": "Mac Miller",
+  "title": "Illty",
+  "release_type": "unknown",
+  "release_type_confirmed": false,
+  "status": "raw",
+  "created": "2026-07-02",
+  "raw_files": [
+    {
+      "file": "Mac Miller - ILLTY 1.MOV",
+      "take": 1,
+      "duration_seconds": 72.463,
+      "fps": 29.97,
+      "width": 3840,
+      "height": 2160,
+      "size_mb": 393.8
+    },
+    {
+      "file": "Mac Miller - ILLTY 2.MOV",
+      "take": 2,
+      "duration_seconds": 53.288,
+      "fps": 29.97,
+      "width": 3840,
+      "height": 2160,
+      "size_mb": 290.4
+    }
+  ]
+}

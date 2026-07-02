@@ -1,0 +1,20 @@
+{
+  "slug": "el-michels-affair-24hr",
+  "artist": "El Michels Affair",
+  "title": "24Hr",
+  "release_type": "unknown",
+  "release_type_confirmed": false,
+  "status": "raw",
+  "created": "2026-07-02",
+  "raw_files": [
+    {
+      "file": "El Michels Affair - 24HR.MOV",
+      "take": 1,
+      "duration_seconds": 84.068,
+      "fps": 29.97,
+      "width": 3840,
+      "height": 2160,
+      "size_mb": 458.1
+    }
+  ]
+}

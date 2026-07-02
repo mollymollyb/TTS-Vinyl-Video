@@ -1,0 +1,4 @@
+{
+  "_comment": "Copy this file to media.config.json and set mediaRoot to YOUR machine's absolute path. media.config.json is gitignored because the path differs per person. The media root holds all video bytes in four lifecycle folders: raw/ (originals, never modified), derived/ (regenerable: proxies, frames, shots), work/ (throwaway draft renders), finals/ (approved deliverables).",
+  "mediaRoot": "/absolute/path/to/your/Google Drive/Molly Media"
+}

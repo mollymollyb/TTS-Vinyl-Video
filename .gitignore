@@ -1,0 +1,31 @@
+# ============================================================
+# MEDIA NEVER ENTERS GIT.
+# Raw footage is 100MB-500MB per file; GitHub rejects >100MB.
+# All video bytes live in the media root (see media.config.json),
+# which may sit inside this folder locally or on Google Drive.
+# ============================================================
+media/
+raw-footage/
+*.mov
+*.MOV
+*.mp4
+*.MP4
+
+# Per-machine configuration (copy the .example files to create yours)
+media.config.json
+.env
+
+# Twelve Labs indexing cache (video-hash -> video_id; machine-local)
+.tl_cache.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# macOS junk
+.DS_Store
+
+# Node (if any tooling ever needs it)
+node_modules/

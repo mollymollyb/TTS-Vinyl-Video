@@ -1,0 +1,38 @@
+{
+  "slug": "jean-dawson-glimmer-of-god",
+  "artist": "Jean Dawson",
+  "title": "Glimmer Of God",
+  "release_type": "unknown",
+  "release_type_confirmed": false,
+  "status": "raw",
+  "created": "2026-07-02",
+  "raw_files": [
+    {
+      "file": "Jean Dawson - Glimmer of God 1.MOV",
+      "take": 1,
+      "duration_seconds": 66.293,
+      "fps": 29.97,
+      "width": 3840,
+      "height": 2160,
+      "size_mb": 360.9
+    },
+    {
+      "file": "Jean Dawson - Glimmer of God 2.MOV",
+      "take": 2,
+      "duration_seconds": 23.142,
+      "fps": 29.97,
+      "width": 3840,
+      "height": 2160,
+      "size_mb": 126.2
+    },
+    {
+      "file": "Jean Dawson - Glimmer of God 3.MOV",
+      "take": 3,
+      "duration_seconds": 20.107,
+      "fps": 29.97,
+      "width": 3840,
+      "height": 2160,
+      "size_mb": 110.0
+    }
+  ]
+}

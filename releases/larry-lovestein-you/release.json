@@ -1,0 +1,20 @@
+{
+  "slug": "larry-lovestein-you",
+  "artist": "Larry Lovestein",
+  "title": "You",
+  "release_type": "unknown",
+  "release_type_confirmed": false,
+  "status": "raw",
+  "created": "2026-07-02",
+  "raw_files": [
+    {
+      "file": "Larry Lovestein - You.MOV",
+      "take": 1,
+      "duration_seconds": 73.497,
+      "fps": 29.97,
+      "width": 3840,
+      "height": 2160,
+      "size_mb": 400.5
+    }
+  ]
+}
