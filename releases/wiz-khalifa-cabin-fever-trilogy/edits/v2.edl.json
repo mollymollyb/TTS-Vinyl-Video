@@ -2,12 +2,12 @@
   "release": "wiz-khalifa-cabin-fever-trilogy",
   "source": "Wiz Khalifa - Cabin Fever Trilogy.MOV",
   "version": 2,
-  "notes": "Variant-first: open on the red translucent vinyl pull (the seller), then cover, trilogy fan, and the completing slide-out closer. ~22.9s. | review r1: cover seg 1.5-4.5s - incoming frame after the red-pull opener is now the fully framed cover",
+  "notes": "Variant-first, rev3 map: red pull opener, cover beat, FAN 2 (the re-presented fan, not the dip), red-plus-fan showcase (new material found in dense probe), completing slide-out closer. ~22.4s. | review r4: closer trimmed to 80.6 (motion-complete frame, before lower-away)",
   "segments": [
     {
       "start": 53.2,
-      "end": 60.5,
-      "why": "seq-10 red vinyl pull (atomic, full) as the opener - variant is the hook"
+      "end": 60.6,
+      "why": "seq-10 red vinyl pull (atomic, full) as opener - the variant is the hook"
     },
     {
       "start": 1.5,
@@ -15,14 +15,19 @@
       "why": "seq-00 front cover hold - title card beat"
     },
     {
-      "start": 34.2,
-      "end": 40.5,
-      "why": "seq-05 trilogy fan-out (atomic, full) + seq-06 trim - all three sleeves"
+      "start": 39.4,
+      "end": 42.4,
+      "why": "seq-05d FAN 2 + seq-06r CF1 hold - clean fan, starts after the dip"
     },
     {
-      "start": 75.2,
-      "end": 81.0,
-      "why": "seq-16 closer (atomic, full): red vinyl slides from CF2 sleeve, motion completes"
+      "start": 65.2,
+      "end": 68.8,
+      "why": "seq-13s red vinyl + sleeve fan showcase - label readable"
+    },
+    {
+      "start": 75.6,
+      "end": 80.6,
+      "why": "seq-16r closer (atomic, full): red slides from CF2, motion completes"
     }
   ]
 }

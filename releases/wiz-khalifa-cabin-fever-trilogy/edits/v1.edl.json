@@ -2,32 +2,12 @@
   "release": "wiz-khalifa-cabin-fever-trilogy",
   "source": "Wiz Khalifa - Cabin Fever Trilogy.MOV",
   "version": 1,
-  "notes": "Chronological story arc: cover hook, back tracklists, trilogy fan-out, CF2 reveal, red-vinyl pull finale. ~29.6s for a 3xLP box per release-types targets. | review r1: cover seg starts 1.5s (fully framed); finale ends 61.3s while red vinyl still held high | review r2: finale trimmed to 60.3s - red vinyl at full reveal",
+  "notes": "Chronological arc, rev3 map: cover hook, tracklists, FAN 1 only (organizing dip 37.2-39.4 excised), continuous CF2-to-CF3 sleeve swaps as one uncut run, red-pull finale ending at peak hold. ~25.2s.",
   "segments": [
-    {
-      "start": 1.5,
-      "end": 5.0,
-      "why": "seq-00 front cover hold - thumb-stop hook"
-    },
-    {
-      "start": 11.5,
-      "end": 16.5,
-      "why": "seq-01 flip to back (atomic, full) + seq-02 tracklist hold trim"
-    },
-    {
-      "start": 34.2,
-      "end": 41.0,
-      "why": "seq-05 trilogy fan-out (atomic, full) + seq-06 hold trim - the 3xLP beat"
-    },
-    {
-      "start": 43.5,
-      "end": 48.5,
-      "why": "seq-07 CF2 white sleeve reveal (atomic, full) + seq-08 CF3 hold trim"
-    },
-    {
-      "start": 53.2,
-      "end": 60.3,
-      "why": "seq-10 red vinyl pull (atomic, full) + seq-11 variant hold - ends on held product"
-    }
+    {"start": 1.5, "end": 5.0, "why": "seq-00 front cover hold - thumb-stop hook"},
+    {"start": 11.5, "end": 16.5, "why": "seq-01 flip to back (atomic, full) + seq-02 tracklist hold"},
+    {"start": 34.0, "end": 37.2, "why": "seq-05a fan arrange + seq-05b FAN 1 clean hold - ends before the organizing dip"},
+    {"start": 42.4, "end": 48.5, "why": "one continuous run: seq-07r CF2 swap + hold + seq-08r CF3 swap + hold - no internal cut"},
+    {"start": 53.2, "end": 60.6, "why": "seq-10 red vinyl pull (atomic, full) + seq-11r peak hold - ends held high"}
   ]
 }

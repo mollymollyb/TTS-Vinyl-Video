@@ -18,6 +18,10 @@ fold the durable rule in here.
    truncates a reveal is why edits "looked AI-edited".
 3. **Drop dead space entirely.** Frames with no product being showcased
    (empty table, hands repositioning, walking) never belong in the cut.
+   This includes **organizing hands inside a showcase**: re-arranging
+   sleeves, tilting the product away, product half out of frame. A
+   "fan-out" that dips into re-organizing mid-way is TWO showcases with
+   dead space between them, not one (Cabin Fever, 2026-07-02).
 4. **Respect the release's structure.** A 3xLP showing vinyls 1 → 2 → 3
    must show all three — cutting after two reads as broken (the Whiz
    Cabin Fever failure). Gatefolds must OPEN on screen, not tease and

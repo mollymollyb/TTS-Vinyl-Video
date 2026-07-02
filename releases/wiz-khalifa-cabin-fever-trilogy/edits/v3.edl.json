@@ -1,28 +1,13 @@
 {
   "release": "wiz-khalifa-cabin-fever-trilogy",
-  "source": "Wiz Khalifa - Cabin Fever Trilogy.MOV",
   "version": 3,
-  "notes": "Fastest cut: four beats only - cover flash, back flip, trilogy fan, red pull with breathing-room hold. ~18.1s, densest pacing. | review r1: cover seg 1.5-4.0s; ends 60.8s on the strong red-vinyl hold | review r2: ending trimmed to 60.3s - red vinyl at full reveal",
+  "source": "Wiz Khalifa - Cabin Fever Trilogy.MOV",
+  "notes": "Fastest cut, rev3 map: cover flash, back flip, FAN 1 hold only, CF3 claw swap, red pull ending at peak. ~17.0s.",
   "segments": [
-    {
-      "start": 1.5,
-      "end": 4.0,
-      "why": "seq-00 cover flash - shortest viable hook"
-    },
-    {
-      "start": 11.5,
-      "end": 14.2,
-      "why": "seq-01 flip to back (atomic, exact)"
-    },
-    {
-      "start": 34.2,
-      "end": 38.8,
-      "why": "seq-05 trilogy fan-out (atomic, exact)"
-    },
-    {
-      "start": 53.2,
-      "end": 60.3,
-      "why": "seq-10 red vinyl pull (atomic, full) + seq-11 hold - ends held"
-    }
+    {"start": 1.5, "end": 4.0, "why": "seq-00 cover flash - shortest viable hook"},
+    {"start": 11.5, "end": 14.2, "why": "seq-01 flip to back (atomic, exact)"},
+    {"start": 35.0, "end": 37.2, "why": "seq-05b FAN 1 hold - dip excised"},
+    {"start": 45.3, "end": 47.8, "why": "seq-08r CF3 claw-sleeve swap (atomic, full) + brief hold"},
+    {"start": 53.2, "end": 60.3, "why": "seq-10 red vinyl pull (atomic, full) - ends at peak reveal"}
   ]
 }

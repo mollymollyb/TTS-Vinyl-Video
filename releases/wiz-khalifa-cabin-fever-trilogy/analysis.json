@@ -209,60 +209,117 @@
       "note": "CF1 sleeve vertical hold"
     },
     {
-      "id": "seq-05",
+      "id": "seq-05a",
       "type": "unboxing",
-      "start": 34.2,
-      "end": 38.8,
+      "start": 34.0,
+      "end": 35.0,
       "atomic": true,
       "shots": [
         6
       ],
-      "note": "THE TRILOGY BEAT: fans out all three sleeves - must complete"
+      "note": "arranging sleeves into the fan - motion"
     },
     {
-      "id": "seq-06",
-      "type": "sleeve-detail",
-      "start": 38.8,
-      "end": 43.5,
+      "id": "seq-05b",
+      "type": "unboxing",
+      "start": 35.0,
+      "end": 37.2,
+      "atomic": false,
+      "shots": [
+        6
+      ],
+      "note": "FAN 1: all three sleeves held fanned - clean showcase"
+    },
+    {
+      "id": "seq-05c",
+      "type": "dead-space",
+      "start": 37.2,
+      "end": 39.4,
+      "atomic": false,
+      "shots": [
+        6
+      ],
+      "note": "THE DIP: tilts away, re-organizes, box half out of frame at 38s - never include"
+    },
+    {
+      "id": "seq-05d",
+      "type": "unboxing",
+      "start": 39.4,
+      "end": 40.8,
       "atomic": false,
       "shots": [
         6,
         7
       ],
-      "note": "CF1 front of fan, near-static hold"
+      "note": "FAN 2: re-presented three-sleeve fan"
     },
     {
-      "id": "seq-07",
+      "id": "seq-06r",
       "type": "sleeve-detail",
-      "start": 43.5,
-      "end": 46.2,
+      "start": 40.8,
+      "end": 42.4,
+      "atomic": false,
+      "shots": [
+        7
+      ],
+      "note": "CF1 front-and-center hold"
+    },
+    {
+      "id": "seq-07r",
+      "type": "sleeve-detail",
+      "start": 42.4,
+      "end": 43.9,
       "atomic": true,
       "shots": [
         7
       ],
-      "note": "CF2 white sleeve comes to front - reveal motion"
+      "note": "swap: CF2 white slides to front - motion must complete"
     },
     {
-      "id": "seq-08",
+      "id": "seq-07h",
       "type": "sleeve-detail",
-      "start": 46.2,
-      "end": 50.6,
+      "start": 43.9,
+      "end": 45.3,
+      "atomic": false,
+      "shots": [
+        7,
+        8
+      ],
+      "note": "CF2 hold, centered"
+    },
+    {
+      "id": "seq-08r",
+      "type": "sleeve-detail",
+      "start": 45.3,
+      "end": 46.6,
+      "atomic": true,
+      "shots": [
+        8
+      ],
+      "note": "swap: CF3 claw sleeve to front - motion must complete"
+    },
+    {
+      "id": "seq-08h",
+      "type": "sleeve-detail",
+      "start": 46.6,
+      "end": 49.0,
       "atomic": false,
       "shots": [
         8
       ],
-      "note": "CF3 claw-mark sleeve hold (slight tilt)"
+      "note": "CF3 hold, two hands"
     },
     {
-      "id": "seq-09",
+      "id": "seq-09r",
       "type": "dead-space",
-      "start": 50.6,
+      "start": 49.0,
       "end": 53.2,
       "atomic": false,
       "shots": [
-        8
+        8,
+        9
       ],
-      "note": "sleeve drops out of frame - street only at t51.5"
+      "note": "CF3 tilts away 49.5, exits frame by 50 - dead until pull"
     },
     {
       "id": "seq-10",
@@ -277,87 +334,89 @@
       "note": "THE VARIANT BEAT: red translucent vinyl pulled from CF3 sleeve, start to full reveal"
     },
     {
-      "id": "seq-11",
+      "id": "seq-11r",
       "type": "variant-reveal",
       "start": 59.8,
-      "end": 62.4,
+      "end": 60.9,
       "atomic": false,
       "shots": [
         10
       ],
-      "note": "red vinyl held with sleeve fan - trimmable, valid ending frame"
+      "note": "red vinyl held at peak reveal - valid ending window"
     },
     {
-      "id": "seq-12",
+      "id": "seq-12r",
       "type": "dead-space",
-      "start": 62.4,
-      "end": 64.5,
+      "start": 60.9,
+      "end": 62.6,
       "atomic": false,
       "shots": [
         10,
         11
       ],
-      "note": "hand shuffles sleeves mid-motion"
+      "note": "flips sleeve down, shuffle"
     },
     {
-      "id": "seq-13",
-      "type": "variant-reveal",
-      "start": 64.5,
-      "end": 70.3,
+      "id": "seq-13r",
+      "type": "other",
+      "start": 62.6,
+      "end": 65.2,
       "atomic": false,
       "shots": [
         11
       ],
-      "note": "red vinyl nested in fanned sleeves / half in black sleeve"
+      "note": "loose sleeve fan, red not visible - weak, avoid"
     },
     {
-      "id": "seq-14",
-      "type": "dead-space",
-      "start": 70.3,
-      "end": 72.3,
-      "atomic": false,
-      "shots": [
-        12
-      ],
-      "note": "arm only, street behind"
-    },
-    {
-      "id": "seq-15",
-      "type": "dead-space",
-      "start": 72.3,
-      "end": 75.2,
-      "atomic": false,
-      "shots": [
-        12
-      ],
-      "note": "mid-fan transition into final composition"
-    },
-    {
-      "id": "seq-16",
+      "id": "seq-13s",
       "type": "variant-reveal",
-      "start": 75.2,
-      "end": 81.0,
+      "start": 65.2,
+      "end": 69.3,
+      "atomic": false,
+      "shots": [
+        11
+      ],
+      "note": "STRONG: red vinyl large + sleeve fan, label readable at 67-69"
+    },
+    {
+      "id": "seq-14r",
+      "type": "dead-space",
+      "start": 69.3,
+      "end": 75.6,
+      "atomic": false,
+      "shots": [
+        12
+      ],
+      "note": "pushes red back in, shuffles into final composition"
+    },
+    {
+      "id": "seq-16r",
+      "type": "variant-reveal",
+      "start": 75.6,
+      "end": 80.6,
       "atomic": true,
       "shots": [
         12,
         13
       ],
-      "note": "CLOSER: CF2 sleeve with red vinyl sliding out right - completes, then street"
+      "note": "CLOSER: CF2 white + red vinyl slide-out, motion completes by 80.6"
     },
     {
-      "id": "seq-17",
+      "id": "seq-17r",
       "type": "dead-space",
-      "start": 81.0,
+      "start": 80.6,
       "end": 81.65,
       "atomic": false,
       "shots": [
         13
       ],
-      "note": "street only - the raw take's dead ending, never include"
+      "note": "lowers product away, then street only"
     }
   ],
   "sequence_pass": {
     "by": "agent frame review (14 midpoints + 22 boundary probes)",
-    "confirms_release_type": "3xLP box (three sleeves CF1/CF2/CF3) with red translucent variant vinyl"
+    "confirms_release_type": "3xLP box (three sleeves CF1/CF2/CF3) with red translucent variant vinyl",
+    "revision": 2,
+    "rev2_method": "dense probe 0.5-1.0s over 34-50s and 59.5-77s after Sidney flagged organizing-hands mid-fan"
   }
 }

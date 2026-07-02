@@ -35,7 +35,16 @@ Rules:
   non-showcase stretches `dead-space` (those ARE cuttable).
 - Boundaries sit where motion completes, not where the scene detector
   fired — trust `motion_state`: a `mid-motion` shot NEVER ends a sequence.
-- Spot-check 2-3 boundary frames with `extract_frame_at` before saving.
+- **Dense-probe before you trust a showcase.** Scene detection
+  under-segments continuous handheld footage, and coarse labels hide
+  organizing dips: hands re-arranging sleeves, product tilting away,
+  half-out-of-frame moments INSIDE a shot labeled "showcase". For every
+  sequence you intend to be usable in an edit, extract frames at ~1s
+  spacing across its full span with `extract_frame_at` and Read them.
+  Mark any arranging/tilting/exit stretch as its own `dead-space`
+  sequence — organizing hands are dead space even mid-showcase.
+  (Learned 2026-07-02: the Cabin Fever "fan-out" hid a 2.2s organizing
+  dip that TL's 6s-granularity labels called `unboxing`.)
 - Count the vinyl-pull sequences; if it contradicts `release_type`
   (e.g. 3 pulls but type says 1xLP), flag it in your report and in the
   release README.
