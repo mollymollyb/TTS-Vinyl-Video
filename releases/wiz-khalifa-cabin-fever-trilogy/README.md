@@ -31,6 +31,14 @@ Renders: media `work/wiz-khalifa-cabin-fever-trilogy/2026-07-02/`. The
 `v2-motion` demo file was folded into v2 after Sidney approved the
 toolkit (see `knowledge/decisions/2026-07-02-motion-toolkit-approved.md`).
 
+## Generative experiments (2026-07-03)
+
+24 AI-generated artifacts (hooks, restyled covers, b-roll, composites)
+via genmedia/fal — full reproducible ledger with per-experiment models,
+prompts, and verdict slots in `genmedia-experiments.md`. Outputs in
+media `work/wiz-khalifa-cabin-fever-trilogy/genmedia/`. Awaiting
+Sidney's cool/meh/kill pass; winners graduate to skills.
+
 ## Review log
 
 | Date | Variant | Verdict | Notes |
