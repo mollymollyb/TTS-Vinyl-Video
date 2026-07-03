@@ -19,16 +19,17 @@
 - Rev 2 exists because Sidney caught organizing-hands stretches inside
   the rev-1 "fan-out" — see `knowledge/decisions/2026-07-02-...md`.
 
-## Edit variants (rev 3 EDLs on the rev-2 map)
+## Edit variants (rev 3 EDLs on the rev-2 map + approved motion pass)
 
 | Variant | Length | Structure |
 |---|---|---|
-| v1 | 25.2s | chronological: cover → tracklists → FAN 1 → CF2+CF3 swap run → red pull finale |
-| v2 | 22.1s | variant-first: red pull → cover → FAN 2 → red+fan showcase → slide-out closer |
-| v3 | 17.0s | fastest: cover flash → back flip → FAN 1 hold → CF3 claw swap → red pull |
-| v2-motion | 21.2s | DEMO of the motion toolkit on v2: 1.15x opener, punch-in cover, pull-back fan reveal, punch-in red showcase — awaiting Sidney's verdict |
+| v1 | 24.5s | chronological: cover (punch-in) → tracklists → FAN 1 → swap run (1.15x) → red pull finale (1.0x) |
+| v2 | 21.2s | variant-first: red pull opener (1.15x) → cover (punch-in) → FAN 2 (pull-back) → red+fan showcase (punch-in) → slide-out closer |
+| v3 | 16.2s | fastest: cover flash (punch-in) → back flip → FAN 1 hold → CF3 claw swap → red pull (1.15x) |
 
-Renders: media `work/wiz-khalifa-cabin-fever-trilogy/2026-07-02/`.
+Renders: media `work/wiz-khalifa-cabin-fever-trilogy/2026-07-02/`. The
+`v2-motion` demo file was folded into v2 after Sidney approved the
+toolkit (see `knowledge/decisions/2026-07-02-motion-toolkit-approved.md`).
 
 ## Review log
 
@@ -38,7 +39,9 @@ Renders: media `work/wiz-khalifa-cabin-fever-trilogy/2026-07-02/`.
 | 2026-07-02 | v1–v3 r2 | starts fixed, endings still weak | endings landed on sleeve shuffle |
 | 2026-07-02 | v1–v3 r3 | visual PASS on rev-1 map | Sidney then flagged organizing-hands inside the fan-out |
 | 2026-07-02 | map rev 2 + EDL rev 3 | re-analyzed + recut | dip 37.2–39.4 excised; red+fan showcase added to v2 |
-| 2026-07-02 | v1–v3 r4 | **PASS** | all cuts land on motion-complete frames; v2 closer trimmed to 80.6; 0 violations |
+| 2026-07-02 | v1–v3 r4 | PASS | all cuts land on motion-complete frames; v2 closer trimmed to 80.6; 0 violations |
+| 2026-07-02 | v2-motion demo | approved | Sidney: "the effect was cool" — toolkit graduates to grammar |
+| 2026-07-02 | v1–v3 r5 (motion pass) | **PASS** | punch/pull framings clean, sped cuts land per speed-aware math, portrait verified, 0 violations |
 
 ## Decisions
 

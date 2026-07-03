@@ -2,32 +2,20 @@
   "release": "wiz-khalifa-cabin-fever-trilogy",
   "source": "Wiz Khalifa - Cabin Fever Trilogy.MOV",
   "version": 2,
-  "notes": "Variant-first, rev3 map: red pull opener, cover beat, FAN 2 (the re-presented fan, not the dip), red-plus-fan showcase (new material found in dense probe), completing slide-out closer. ~22.4s. | review r4: closer trimmed to 80.6 (motion-complete frame, before lower-away)",
+  "notes": "Variant-first, rev3 map + motion pass (approved by Sidney 2026-07-02): red pull opener at 1.15x (stated break of money-shot-1.0x: it is the hook, speed tightens it), punch-in on cover, pull-back fan reveal, lean into red showcase, untouched physical-motion closer. ~21.0s.",
   "segments": [
-    {
-      "start": 53.2,
-      "end": 60.6,
-      "why": "seq-10 red vinyl pull (atomic, full) as opener - the variant is the hook"
-    },
-    {
-      "start": 1.5,
-      "end": 4.5,
-      "why": "seq-00 front cover hold - title card beat"
-    },
-    {
-      "start": 39.4,
-      "end": 42.4,
-      "why": "seq-05d FAN 2 + seq-06r CF1 hold - clean fan, starts after the dip"
-    },
-    {
-      "start": 65.2,
-      "end": 68.8,
-      "why": "seq-13s red vinyl + sleeve fan showcase - label readable"
-    },
-    {
-      "start": 75.6,
-      "end": 80.6,
-      "why": "seq-16r closer (atomic, full): red slides from CF2, motion completes"
-    }
+    {"start": 53.2, "end": 60.6, "speed": 1.15,
+     "why": "seq-10 red vinyl pull opener - the variant is the hook, 1.15x keeps it snappy"},
+    {"start": 1.5, "end": 4.5,
+     "motion": {"type": "punch_in", "amount": 1.10},
+     "why": "seq-00 cover hold - camera-still, lean into the title art"},
+    {"start": 39.4, "end": 42.4,
+     "motion": {"type": "pull_back", "amount": 1.08},
+     "why": "seq-05d/06r - start tight on CF1, ease out to reveal all three fanned"},
+    {"start": 65.2, "end": 68.8,
+     "motion": {"type": "punch_in", "amount": 1.06},
+     "why": "seq-13s red + fan showcase - slow lean toward the red label before the close"},
+    {"start": 75.6, "end": 80.6,
+     "why": "seq-16r closer (atomic): red slides from CF2 - physical motion, no digital touch"}
   ]
 }

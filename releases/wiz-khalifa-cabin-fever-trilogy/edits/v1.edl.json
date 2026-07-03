@@ -2,12 +2,15 @@
   "release": "wiz-khalifa-cabin-fever-trilogy",
   "source": "Wiz Khalifa - Cabin Fever Trilogy.MOV",
   "version": 1,
-  "notes": "Chronological arc, rev3 map: cover hook, tracklists, FAN 1 only (organizing dip 37.2-39.4 excised), continuous CF2-to-CF3 sleeve swaps as one uncut run, red-pull finale ending at peak hold. ~25.2s.",
+  "notes": "Chronological arc, rev3 map + motion pass (grammar approved 2026-07-02): punch-in on the cover hook, 1.15x on the sleeve-swap run (procedural stretch, tightens the back half), red pull finale untouched at 1.0x (money shot). ~24.4s.",
   "segments": [
-    {"start": 1.5, "end": 5.0, "why": "seq-00 front cover hold - thumb-stop hook"},
-    {"start": 11.5, "end": 16.5, "why": "seq-01 flip to back (atomic, full) + seq-02 tracklist hold"},
+    {"start": 1.5, "end": 5.0,
+     "motion": {"type": "punch_in", "amount": 1.10},
+     "why": "seq-00 front cover hold - thumb-stop hook, camera-still lean-in"},
+    {"start": 11.5, "end": 16.5, "why": "seq-01 flip to back (atomic, full) + seq-02 tracklist hold - readable text, no speed"},
     {"start": 34.0, "end": 37.2, "why": "seq-05a fan arrange + seq-05b FAN 1 clean hold - ends before the organizing dip"},
-    {"start": 42.4, "end": 48.5, "why": "one continuous run: seq-07r CF2 swap + hold + seq-08r CF3 swap + hold - no internal cut"},
-    {"start": 53.2, "end": 60.6, "why": "seq-10 red vinyl pull (atomic, full) + seq-11r peak hold - ends held high"}
+    {"start": 42.4, "end": 48.5, "speed": 1.15,
+     "why": "one continuous run: seq-07r CF2 swap + hold + seq-08r CF3 swap + hold - procedural, 1.15x paces the back half"},
+    {"start": 53.2, "end": 60.6, "why": "seq-10 red vinyl pull (atomic, full) + seq-11r peak hold - money shot at 1.0x, ends held high"}
   ]
 }

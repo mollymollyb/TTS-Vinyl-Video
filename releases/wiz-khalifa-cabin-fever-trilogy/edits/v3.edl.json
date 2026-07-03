@@ -2,12 +2,15 @@
   "release": "wiz-khalifa-cabin-fever-trilogy",
   "version": 3,
   "source": "Wiz Khalifa - Cabin Fever Trilogy.MOV",
-  "notes": "Fastest cut, rev3 map: cover flash, back flip, FAN 1 hold only, CF3 claw swap, red pull ending at peak. ~17.0s.",
+  "notes": "Fastest cut, rev3 map + motion pass (grammar approved 2026-07-02): quick punch on the cover flash, red pull finale at 1.15x (stated break of money-shot-1.0x: speed IS this variant's identity, and the same treatment was approved in the v2 demo). ~16.1s.",
   "segments": [
-    {"start": 1.5, "end": 4.0, "why": "seq-00 cover flash - shortest viable hook"},
-    {"start": 11.5, "end": 14.2, "why": "seq-01 flip to back (atomic, exact)"},
+    {"start": 1.5, "end": 4.0,
+     "motion": {"type": "punch_in", "amount": 1.08},
+     "why": "seq-00 cover flash - shortest viable hook, quick lean-in"},
+    {"start": 11.5, "end": 14.2, "why": "seq-01 flip to back (atomic, exact) - physical motion, no touch"},
     {"start": 35.0, "end": 37.2, "why": "seq-05b FAN 1 hold - dip excised"},
-    {"start": 45.3, "end": 47.8, "why": "seq-08r CF3 claw-sleeve swap (atomic, full) + brief hold"},
-    {"start": 53.2, "end": 60.3, "why": "seq-10 red vinyl pull (atomic, full) - ends at peak reveal"}
+    {"start": 45.3, "end": 47.8, "why": "seq-08r CF3 claw-sleeve swap (atomic, full) + brief hold - physical motion, no touch"},
+    {"start": 53.2, "end": 60.3, "speed": 1.15,
+     "why": "seq-10 red vinyl pull (atomic, full) - 1.15x, ends at peak reveal"}
   ]
 }
