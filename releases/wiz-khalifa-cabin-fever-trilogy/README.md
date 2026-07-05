@@ -31,15 +31,19 @@ Renders: media `work/wiz-khalifa-cabin-fever-trilogy/2026-07-02/`. The
 `v2-motion` demo file was folded into v2 after Sidney approved the
 toolkit (see `knowledge/decisions/2026-07-02-motion-toolkit-approved.md`).
 
-## Generative experiments (2026-07-03 → 07-05, three rounds)
+## Generative experiments (2026-07-03 → 07-05, four rounds)
 
-33 AI artifacts via genmedia/fal: round 1 shots/restyles/composites,
+36 AI artifacts via genmedia/fal: round 1 shots/restyles/composites,
 round 2 full 4K/15s scripted videos + the X4 supercut, round 3
-context-loaded videos driven by `knowledge/artists/wiz-khalifa.md`.
-Ledger with prompts + verdict slots: `genmedia-experiments.md`; spend
-records: `genmedia.json`; outputs in media
+context-loaded videos driven by `knowledge/artists/wiz-khalifa.md`,
+round 4 the favorites finished — V1B continuation chain, X5 (V1+V1B
+24.5s two-parter), X6 (V3 11.9s select cut). Ledger with prompts +
+verdict slots: `genmedia-experiments.md`; spend records:
+`genmedia.json`; outputs in media
 `work/wiz-khalifa-cabin-fever-trilogy/genmedia/`. Sidney so far:
-**V1 and V3 are the favorites.**
+**V1 and V3 are the favorites** → both now have finished cuts.
+The whole playbook is promoted to reusable skills: `vinyl-genmedia`,
+`vinyl-gen-video`, `vinyl-gen-composite`, `vinyl-artist-context`.
 
 ## Review log
 

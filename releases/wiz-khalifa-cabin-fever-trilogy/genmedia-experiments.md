@@ -137,6 +137,44 @@ pull exactly one context thread:
 | V6 | seedance-2.0 ref2v, 4K 15s | blog-era nostalgia (2026 "blog era boyz" w/ mgk = same Sledgren/ID Labs producers as Cabin Fever; mixtape-download era) | time machine: street 2026 → VHS rewind → 2011 dorm, download bar hits 100% → pixels shatter into the red vinyl → back to 2026, end cards YOU USED TO DOWNLOAD THIS / NOW ITS ON WAX / FIRST TIME EVER ON VINYL | concept exists only because of research; end cards flawless; flashback sleeves drifted off-model | |
 | V7 | seedance-2.0 ref2v, 4K 15s | real tracklist + box facts (34 tracks; Taylor Gang / M.I.A. / GangBang / No Worries; red-foil treatment) | kinetic typography: track titles peel off the real back cover as red-foil 3D letters, tornado around the spinning disc, slam back down; end cards 34 TRACKS / ONE BOX / ALL RED WAX | peel/tornado spectacular; short cards clean, long floating titles typo (BIIG) | |
 
+## Round 4 — 2026-07-05: chain + cut the favorites (V1, V3)
+
+Sidney: "do it" on the two proposals — continuation chaining for
+longer arcs, and X4-style trim/caption passes so 15s generations
+become finished posts.
+
+### Batch V-chain — continuation chaining
+
+| ID | Model | Technique | Concept | My read | Verdict |
+|---|---|---|---|---|---|
+| V1B | seedance-2.0 ref2v, 4K 15s | V1's LAST frame extracted (`-sseof -0.15`) → uploaded → sole @Image1 ref; prompt opens "This is PART 2 of a video that ended on this exact frame" | end card burns to embers → dive INTO the groove canyon → POV flight → red glass shatter → slow-mo reassembly at golden hour → 3 CLASSICS / ONE BOX / LINK IN BIO | seam lands — the burn reads as a beat, not a stall; end cards clean. Two blemishes: the "12.2" timestamp cue leaked as tiny literal text, and fanned sleeves drift off-model (the chain's only ref is the last frame — product refs don't survive into part 2) | |
+
+### Batch X round 4 — select cuts + the two-parter
+
+| ID | Recipe | My read | Verdict |
+|---|---|---|---|
+| X5 | V1 (trimmed: dropped the 5.2–7.6s empty-street wander) + V1B (trimmed at the burn seam) = 24.5s two-part arc; captions only on beats without generated text ("the red took OVER", "POV. you fell in.") | the 30s-arc format works — part 1 hook + payoff, part 2 escalation + CTA | |
+| X6 | V3 15s → 11.9s select cut: dropped the slow pull intro + mid-wander, captioned every beat (dont stare at the wax too long / told you. / gravity just LEFT / OH NO / INSIDE THE GROOVE RN), kept the generated IT GOES THAT DEEP end card | tighter than V3 raw; the stare-warning caption reframes the whole video as a dare | |
+
+### Round 4 technique notes
+
+15. **Continuation chaining works** (V1→V1B): extract the final frame
+    (`ffmpeg -sseof -0.15 -i part1.mp4 -frames:v 1`), upload, make it
+    @Image1, open the prompt "This is PART 2 of a video that ended on
+    this exact frame, so start exactly there and continue", and script
+    part 2 to immediately TRANSFORM the inherited frame (burn/dive) so
+    the seam is a beat. Stitch + trim to 22–28s, not the raw 30.
+16. **Chain limitation**: part 2's only product ref is the inherited
+    frame — anything else it shows (sleeves) drifts off-model. Either
+    keep part 2 abstract (canyon/shatter) or re-attach product seeds
+    as extra refs.
+17. **Never write timestamps as bare numbers in text-adjacent beats**
+    ("at 12.2s 'CARD'" leaked "12.2" on screen next to the card).
+    Phrase end-card timing as "in three quick beats" instead.
+18. **Select-cut discipline**: a 15s generation keeps its best 10–12s.
+    Probe frames every ~1.5s, drop the slowest stretch (usually the
+    intro or a mid-video wander), never caption over generated cards.
+
 ### Round 3 technique notes
 
 12. **Context threads work at two levels**: concept (V6's whole

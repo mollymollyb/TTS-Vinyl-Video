@@ -68,6 +68,9 @@ statuses in `release.json`: `raw → analyzed → editing → review → final`.
   `plugin/skills/`.
 - System friction (routing, checks, templates) → `vinyl-reflect` →
   `operations/improvements.md`.
+- Generative AI work on a release → the gen wing: `vinyl-genmedia`
+  (mechanics, always first) → `vinyl-gen-video` (make the generations) →
+  `vinyl-gen-composite` (cut them into finished posts).
 - Ran anything through fal (the `genmedia` CLI) → log it in
   `releases/{slug}/genmedia.json` (model, settings, cost) via
   `library.genmedia_ledger add-generation`, and when a composite ships,
@@ -76,8 +79,8 @@ statuses in `release.json`: `raw → analyzed → editing → review → final`.
 - Writing generation prompts or captions for an artist → skim
   `knowledge/artists/{artist}.md` first (verified product facts, recent
   arc, iconography, moderation guardrails). Pull at most 1–2 details
-  and note which in the ledger. File missing? Research (recent, not
-  career-wiki) and create it from the template in that folder's files.
+  and note which in the ledger. File missing? Create it via
+  `vinyl-artist-context` (recent, not career-wiki).
 
 ## Never-stale contract
 

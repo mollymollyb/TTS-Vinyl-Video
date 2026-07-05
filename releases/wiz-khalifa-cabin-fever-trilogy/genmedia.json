@@ -610,6 +610,30 @@
       "verdict": null,
       "output_path": "genmedia/V7.mp4",
       "notes": "peel-off-the-cardboard concept made literal (torn holes in the box); short end cards clean; long floating titles have typos (BIIG) \u2014 keep AI-rendered text <= 3 words, put long titles in ffmpeg overlays"
+    },
+    {
+      "id": "V1B",
+      "batch": "V-chain",
+      "date": "2026-07-05",
+      "model": "seedance-2.0",
+      "operation": "reference-to-video",
+      "settings": {
+        "resolution": "4k",
+        "duration_seconds": 15,
+        "aspect_ratio": "9:16",
+        "audio": true,
+        "technique": "continuation chaining: V1 last frame as @Image1, prompt declares PART 2 + transforms the inherited end card",
+        "prompt_gist": "end card burns to embers -> dive INTO the groove canyon -> POV flight -> red glass shatter -> reassembly at golden hour -> 3 CLASSICS / ONE BOX / LINK IN BIO"
+      },
+      "inputs": [
+        "seed_v1_lastframe"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/V1B.mp4",
+      "notes": "seam works (burn reads as a beat, not a stall). Blemishes: prompt timestamp cue leaked as literal 12.2 text above end card; fanned sleeves off-model (only ref was the last frame - chain loses product refs). Pricing API gave 0.014/unit (unit ambiguous) - check fal dashboard to itemize."
     }
   ],
   "finals": [
@@ -716,6 +740,32 @@
         }
       ],
       "notes": "17.3s gen-z supercut: 15 beats ~1.1s each alternating AI/real, caption per beat, one 0.85x slow-mo."
+    },
+    {
+      "id": "X6",
+      "output_path": "genmedia/X6_v3_tightcut.mp4",
+      "components": [
+        {
+          "type": "generated",
+          "generation_id": "V3"
+        }
+      ],
+      "notes": "select cut: V3 15s trimmed to 11.9s (dropped slow pull intro + mid-wander), Impact caption per beat, kept generated IT GOES THAT DEEP end card. Beat map: stare-warning hook / told you / gravity just LEFT / OH NO dive / INSIDE THE GROOVE / end card."
+    },
+    {
+      "id": "X5",
+      "output_path": "genmedia/X5_red_takeover_2part.mp4",
+      "components": [
+        {
+          "type": "generated",
+          "generation_id": "V1"
+        },
+        {
+          "type": "generated",
+          "generation_id": "V1B"
+        }
+      ],
+      "notes": "24.5s two-parter: V1 trimmed (dropped 5.2-7.6s street wander) + V1B trimmed at the burn seam. Captions only where no generated text: the red took OVER / POV. you fell in. Generated end cards close both parts."
     }
   ]
 }

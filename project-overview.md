@@ -42,6 +42,10 @@ verifies this stays current.
 - `knowledge/editing-rules.md` — the editing law. `release-types.md` — format playbook. `decisions/` — Molly's feedback ledger.
 - `knowledge/artists/wiz-khalifa.md` — verified artist+product context for generation prompts/captions (recent arc, iconography, moderation guardrails). One file per artist; pull 1–2 details max per prompt.
 - `plugin/` — vinyl-os plugin; skills in `plugin/skills/` (intake, ingest, analyze, edit, review, caption, doctor, janitor, learn, reflect, skillify).
+- `plugin/skills/vinyl-genmedia/` — core fal.ai genmedia mechanics: seeds, uploads, async runs, cost checks, mandatory dual-ledger logging.
+- `plugin/skills/vinyl-gen-video/` — full scripted AI videos (prompt = timestamped edit script), operation chooser, context threads, 30s continuation chaining.
+- `plugin/skills/vinyl-gen-composite/` — ffmpeg edit bay for AI+real composites: hooks, supercuts, select cuts, two-parter stitches, caption standards.
+- `plugin/skills/vinyl-artist-context/` — research + maintain `knowledge/artists/{artist}.md` (recent arc, product facts, guardrails).
 - `.agents/skills` → symlink to `plugin/skills` (Cursor/Codex discovery).
 - `routines/` — janitor/reflect/compound-learn prompts + armed index.
 - `operations/` — `doctor.py` (mechanical health check), `health.md`, `improvements.md`, `sync.md`.
