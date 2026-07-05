@@ -1,41 +1,582 @@
 {
   "release": "wiz-khalifa-cabin-fever-trilogy",
-  "notes": "2026-07-03 batch: 24 artifacts, ~$8 total estimated spend (see genmedia-experiments.md). Not itemized at the time — logged retroactively per-item below with cost_usd=null/unknown. Itemize cost_usd going forward so per-final totals resolve.",
+  "notes": "2026-07-03 batch: 24 artifacts, ~$8 total estimated spend (see genmedia-experiments.md). Not itemized at the time \u2014 logged retroactively per-item below with cost_usd=null/unknown. Itemize cost_usd going forward so per-final totals resolve.",
   "generations": [
-    {"id": "A1", "batch": "A", "date": "2026-07-03", "model": "seedance-2.0/fast/i2v", "operation": "i2v", "settings": {"seed": "seed_red_peak", "prompt_gist": "red disc starts spinning in hand, dolly-in, lens flare"}, "inputs": ["seed_red_peak"], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "clean, subtle, usable as-is"},
-    {"id": "A2", "batch": "A", "date": "2026-07-03", "model": "kling-v2.5-turbo/pro/i2v", "operation": "i2v", "settings": {"seed": "seed_red_peak", "prompt_gist": "push-in, disc spins, red light glow on sleeve"}, "inputs": ["seed_red_peak"], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "close to A1; kling slightly smoother hand"},
-    {"id": "A3", "batch": "A", "date": "2026-07-03", "model": "seedance-2.0/fast/i2v", "operation": "i2v", "settings": {"seed": "seed_claw", "prompt_gist": "claw marks ignite from within, embers drift, menacing zoom"}, "inputs": ["seed_claw"], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "ember glow looks REAL against real street"},
-    {"id": "A4", "batch": "A", "date": "2026-07-03", "model": "seedance-2.0/fast/i2v", "operation": "i2v", "settings": {"seed": "seed_cover", "prompt_gist": "red title text pulses like neon, smoke curls, dusk mood"}, "inputs": ["seed_cover"], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "full relight to dusk — moodiest asset of the day"},
-    {"id": "A5", "batch": "A", "date": "2026-07-03", "model": "hailuo-02/standard/i2v", "operation": "i2v", "settings": {"seed": "seed_fan1", "prompt_gist": "three sleeves levitate + fan apart mid-air like card trick"}, "inputs": ["seed_fan1"], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "sleeves drift off-model (lose artwork) — weakest"},
-    {"id": "A6", "batch": "A", "date": "2026-07-03", "model": "seedance-2.0/fast/i2v", "operation": "i2v", "settings": {"seed": "seed_closer", "prompt_gist": "red vinyl slides out, floats up, spins to fill frame"}, "inputs": ["seed_closer"], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "ends INSIDE the red disc w/ sun flare — ending asset"},
-    {"id": "A7", "batch": "A", "date": "2026-07-03", "model": "veo3.1/fast/i2v", "operation": "i2v", "settings": {"seed": "seed_red_fan", "duration_seconds": 8, "audio": true, "prompt_gist": "orbital camera around red disc + fan, bass hum + crackle"}, "inputs": ["seed_red_fan"], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "premium trailer energy, native audio decent"},
-
-    {"id": "B1", "batch": "B", "date": "2026-07-03", "model": "nano-banana-2/edit", "operation": "edit", "settings": {"prompt_gist": "1998 VHS camcorder freeze-frame, REC + timestamp"}, "inputs": [], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "flawless VHS, funny contrast w/ pristine product"},
-    {"id": "B2", "batch": "B", "date": "2026-07-03", "model": "nano-banana-2/edit", "operation": "edit", "settings": {"prompt_gist": "Y2K sticker-bomb zine collage around the 3 sleeves"}, "inputs": [], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "loud thumbnail/carousel energy; some text gibberish (SRLING)"},
-    {"id": "B3", "batch": "B", "date": "2026-07-03", "model": "nano-banana-2/edit", "operation": "edit", "settings": {"prompt_gist": "red vinyl on turntable in smoky neon bodega"}, "inputs": [], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "scene transplant is perfect, label readable"},
-    {"id": "B4", "batch": "B", "date": "2026-07-03", "model": "nano-banana-2/edit", "operation": "edit", "settings": {"prompt_gist": "cover on Times Square billboard, rain, crowds", "aspect_ratio": "16:9"}, "inputs": [], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "epic scale flex (16:9)"},
-    {"id": "B5", "batch": "B", "date": "2026-07-03", "model": "nano-banana-2/edit", "operation": "edit", "settings": {"prompt_gist": "claw marks ripping open FOR REAL, red vinyl glowing inside"}, "inputs": [], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "best single image of the day"},
-
-    {"id": "C1", "batch": "C", "date": "2026-07-03", "model": "seedance-2.0/fast/t2v", "operation": "t2v", "settings": {"prompt_gist": "macro needle-drop on red vinyl, smoke, dust, audio"}, "inputs": [], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "gorgeous cinematic b-roll, loopable"},
-    {"id": "C2", "batch": "C", "date": "2026-07-03", "model": "seedance-2.0/fast/t2v", "operation": "t2v", "settings": {"prompt_gist": "claymation: 3 sleeves with legs strut down a stoop"}, "inputs": [], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "unhinged in the right way — most gen-z thing here"},
-    {"id": "C3", "batch": "C", "date": "2026-07-03", "model": "veo3.1/fast", "operation": "t2v", "settings": {"duration_seconds": 8, "prompt_gist": "flythrough INSIDE the grooves, red canyon walls"}, "inputs": [], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "surreal epic; abstract (no product ID until end)"},
-
-    {"id": "D1", "batch": "D", "date": "2026-07-03", "model": "seedance-2.0", "operation": "reference-to-video", "settings": {"prompt_gist": "recreate the pull as 90s anime cel"}, "inputs": ["refclip_pull"], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "style IGNORED — but faithfully re-staged the real shot (interesting for reshoots, not restyle)"},
-    {"id": "D2", "batch": "D", "date": "2026-07-03", "model": "seedance-2.0", "operation": "reference-to-video", "settings": {"prompt_gist": "red disc spins in void, claw etched in embers behind"}, "inputs": ["seed_red_peak", "seed_claw"], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "moody album-trailer beat, on-brand"},
-
-    {"id": "E1", "batch": "E", "date": "2026-07-03", "model": "seedance-2.0/fast/i2v", "operation": "i2v", "settings": {"technique": "first+last frame morph via end_image_url", "prompt_gist": "box dissolves into red smoke that condenses into the disc"}, "inputs": ["seed_cover", "seed_red_peak"], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "red smoke vortex mid-morph; slightly literal but works as transition"},
-
-    {"id": "F1", "batch": "F", "date": "2026-07-03", "model": "seedance-2.0/fast/i2v", "operation": "i2v", "settings": {"technique": "two-step pipeline: nano-banana still -> seedance animates it", "prompt_gist": "turntable spins, tonearm drops, smoke drifts, dolly-in"}, "inputs": ["B3"], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "pipeline WORKS — styled still becomes living scene"},
-    {"id": "F2", "batch": "F", "date": "2026-07-03", "model": "seedance-2.0/fast/i2v", "operation": "i2v", "settings": {"technique": "two-step pipeline: nano-banana still -> seedance animates it", "prompt_gist": "rips pulse red, embers flake, disc rotates inside"}, "inputs": ["B5"], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "strongest hook of the day, period"},
-    {"id": "F3", "batch": "F", "date": "2026-07-03", "model": "seedance-2.0/fast/i2v", "operation": "i2v", "settings": {"technique": "two-step pipeline: nano-banana still -> seedance animates it", "prompt_gist": "rain, flicker, taxis, aerial push", "aspect_ratio": "16:9"}, "inputs": ["B4"], "cost_usd": null, "cost_confidence": "unknown", "status": "success", "verdict": null, "notes": "great, but came out 16:9 (billboard seed is landscape)"}
+    {
+      "id": "A1",
+      "batch": "A",
+      "date": "2026-07-03",
+      "model": "seedance-2.0/fast/i2v",
+      "operation": "i2v",
+      "settings": {
+        "seed": "seed_red_peak",
+        "prompt_gist": "red disc starts spinning in hand, dolly-in, lens flare"
+      },
+      "inputs": [
+        "seed_red_peak"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "clean, subtle, usable as-is"
+    },
+    {
+      "id": "A2",
+      "batch": "A",
+      "date": "2026-07-03",
+      "model": "kling-v2.5-turbo/pro/i2v",
+      "operation": "i2v",
+      "settings": {
+        "seed": "seed_red_peak",
+        "prompt_gist": "push-in, disc spins, red light glow on sleeve"
+      },
+      "inputs": [
+        "seed_red_peak"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "close to A1; kling slightly smoother hand"
+    },
+    {
+      "id": "A3",
+      "batch": "A",
+      "date": "2026-07-03",
+      "model": "seedance-2.0/fast/i2v",
+      "operation": "i2v",
+      "settings": {
+        "seed": "seed_claw",
+        "prompt_gist": "claw marks ignite from within, embers drift, menacing zoom"
+      },
+      "inputs": [
+        "seed_claw"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "ember glow looks REAL against real street"
+    },
+    {
+      "id": "A4",
+      "batch": "A",
+      "date": "2026-07-03",
+      "model": "seedance-2.0/fast/i2v",
+      "operation": "i2v",
+      "settings": {
+        "seed": "seed_cover",
+        "prompt_gist": "red title text pulses like neon, smoke curls, dusk mood"
+      },
+      "inputs": [
+        "seed_cover"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "full relight to dusk \u2014 moodiest asset of the day"
+    },
+    {
+      "id": "A5",
+      "batch": "A",
+      "date": "2026-07-03",
+      "model": "hailuo-02/standard/i2v",
+      "operation": "i2v",
+      "settings": {
+        "seed": "seed_fan1",
+        "prompt_gist": "three sleeves levitate + fan apart mid-air like card trick"
+      },
+      "inputs": [
+        "seed_fan1"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "sleeves drift off-model (lose artwork) \u2014 weakest"
+    },
+    {
+      "id": "A6",
+      "batch": "A",
+      "date": "2026-07-03",
+      "model": "seedance-2.0/fast/i2v",
+      "operation": "i2v",
+      "settings": {
+        "seed": "seed_closer",
+        "prompt_gist": "red vinyl slides out, floats up, spins to fill frame"
+      },
+      "inputs": [
+        "seed_closer"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "ends INSIDE the red disc w/ sun flare \u2014 ending asset"
+    },
+    {
+      "id": "A7",
+      "batch": "A",
+      "date": "2026-07-03",
+      "model": "veo3.1/fast/i2v",
+      "operation": "i2v",
+      "settings": {
+        "seed": "seed_red_fan",
+        "duration_seconds": 8,
+        "audio": true,
+        "prompt_gist": "orbital camera around red disc + fan, bass hum + crackle"
+      },
+      "inputs": [
+        "seed_red_fan"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "premium trailer energy, native audio decent"
+    },
+    {
+      "id": "B1",
+      "batch": "B",
+      "date": "2026-07-03",
+      "model": "nano-banana-2/edit",
+      "operation": "edit",
+      "settings": {
+        "prompt_gist": "1998 VHS camcorder freeze-frame, REC + timestamp"
+      },
+      "inputs": [],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "flawless VHS, funny contrast w/ pristine product"
+    },
+    {
+      "id": "B2",
+      "batch": "B",
+      "date": "2026-07-03",
+      "model": "nano-banana-2/edit",
+      "operation": "edit",
+      "settings": {
+        "prompt_gist": "Y2K sticker-bomb zine collage around the 3 sleeves"
+      },
+      "inputs": [],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "loud thumbnail/carousel energy; some text gibberish (SRLING)"
+    },
+    {
+      "id": "B3",
+      "batch": "B",
+      "date": "2026-07-03",
+      "model": "nano-banana-2/edit",
+      "operation": "edit",
+      "settings": {
+        "prompt_gist": "red vinyl on turntable in smoky neon bodega"
+      },
+      "inputs": [],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "scene transplant is perfect, label readable"
+    },
+    {
+      "id": "B4",
+      "batch": "B",
+      "date": "2026-07-03",
+      "model": "nano-banana-2/edit",
+      "operation": "edit",
+      "settings": {
+        "prompt_gist": "cover on Times Square billboard, rain, crowds",
+        "aspect_ratio": "16:9"
+      },
+      "inputs": [],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "epic scale flex (16:9)"
+    },
+    {
+      "id": "B5",
+      "batch": "B",
+      "date": "2026-07-03",
+      "model": "nano-banana-2/edit",
+      "operation": "edit",
+      "settings": {
+        "prompt_gist": "claw marks ripping open FOR REAL, red vinyl glowing inside"
+      },
+      "inputs": [],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "best single image of the day"
+    },
+    {
+      "id": "C1",
+      "batch": "C",
+      "date": "2026-07-03",
+      "model": "seedance-2.0/fast/t2v",
+      "operation": "t2v",
+      "settings": {
+        "prompt_gist": "macro needle-drop on red vinyl, smoke, dust, audio"
+      },
+      "inputs": [],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "gorgeous cinematic b-roll, loopable"
+    },
+    {
+      "id": "C2",
+      "batch": "C",
+      "date": "2026-07-03",
+      "model": "seedance-2.0/fast/t2v",
+      "operation": "t2v",
+      "settings": {
+        "prompt_gist": "claymation: 3 sleeves with legs strut down a stoop"
+      },
+      "inputs": [],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "unhinged in the right way \u2014 most gen-z thing here"
+    },
+    {
+      "id": "C3",
+      "batch": "C",
+      "date": "2026-07-03",
+      "model": "veo3.1/fast",
+      "operation": "t2v",
+      "settings": {
+        "duration_seconds": 8,
+        "prompt_gist": "flythrough INSIDE the grooves, red canyon walls"
+      },
+      "inputs": [],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "surreal epic; abstract (no product ID until end)"
+    },
+    {
+      "id": "D1",
+      "batch": "D",
+      "date": "2026-07-03",
+      "model": "seedance-2.0",
+      "operation": "reference-to-video",
+      "settings": {
+        "prompt_gist": "recreate the pull as 90s anime cel"
+      },
+      "inputs": [
+        "refclip_pull"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "style IGNORED \u2014 but faithfully re-staged the real shot (interesting for reshoots, not restyle)"
+    },
+    {
+      "id": "D2",
+      "batch": "D",
+      "date": "2026-07-03",
+      "model": "seedance-2.0",
+      "operation": "reference-to-video",
+      "settings": {
+        "prompt_gist": "red disc spins in void, claw etched in embers behind"
+      },
+      "inputs": [
+        "seed_red_peak",
+        "seed_claw"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "moody album-trailer beat, on-brand"
+    },
+    {
+      "id": "E1",
+      "batch": "E",
+      "date": "2026-07-03",
+      "model": "seedance-2.0/fast/i2v",
+      "operation": "i2v",
+      "settings": {
+        "technique": "first+last frame morph via end_image_url",
+        "prompt_gist": "box dissolves into red smoke that condenses into the disc"
+      },
+      "inputs": [
+        "seed_cover",
+        "seed_red_peak"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "red smoke vortex mid-morph; slightly literal but works as transition"
+    },
+    {
+      "id": "F1",
+      "batch": "F",
+      "date": "2026-07-03",
+      "model": "seedance-2.0/fast/i2v",
+      "operation": "i2v",
+      "settings": {
+        "technique": "two-step pipeline: nano-banana still -> seedance animates it",
+        "prompt_gist": "turntable spins, tonearm drops, smoke drifts, dolly-in"
+      },
+      "inputs": [
+        "B3"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "pipeline WORKS \u2014 styled still becomes living scene"
+    },
+    {
+      "id": "F2",
+      "batch": "F",
+      "date": "2026-07-03",
+      "model": "seedance-2.0/fast/i2v",
+      "operation": "i2v",
+      "settings": {
+        "technique": "two-step pipeline: nano-banana still -> seedance animates it",
+        "prompt_gist": "rips pulse red, embers flake, disc rotates inside"
+      },
+      "inputs": [
+        "B5"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "strongest hook of the day, period"
+    },
+    {
+      "id": "F3",
+      "batch": "F",
+      "date": "2026-07-03",
+      "model": "seedance-2.0/fast/i2v",
+      "operation": "i2v",
+      "settings": {
+        "technique": "two-step pipeline: nano-banana still -> seedance animates it",
+        "prompt_gist": "rain, flicker, taxis, aerial push",
+        "aspect_ratio": "16:9"
+      },
+      "inputs": [
+        "B4"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "notes": "great, but came out 16:9 (billboard seed is landscape)"
+    },
+    {
+      "id": "V1",
+      "batch": "V",
+      "date": "2026-07-05",
+      "model": "seedance-2.0",
+      "operation": "reference-to-video",
+      "settings": {
+        "resolution": "4k",
+        "duration_seconds": 15,
+        "aspect_ratio": "9:16",
+        "audio": true,
+        "technique": "prompt = timestamped shot-by-shot edit script",
+        "prompt_gist": "red takeover: product open, disc spins B&W world, street floods red, sleeves rain, turntable + OUT NOW end card"
+      },
+      "inputs": [
+        "seed_cover",
+        "seed_claw",
+        "seed_red_peak"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/V1.mp4",
+      "notes": "followed the ENTIRE script incl. text end card \u2014 best single generation so far"
+    },
+    {
+      "id": "V2",
+      "batch": "V",
+      "date": "2026-07-05",
+      "model": "seedance-2.0",
+      "operation": "t2v",
+      "settings": {
+        "resolution": "4k",
+        "duration_seconds": 15,
+        "aspect_ratio": "9:16",
+        "audio": true,
+        "prompt_gist": "claymation heist: sleeves steal red disc from record store, cat chase, GOT THE TRILOGY card"
+      },
+      "inputs": [],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/V2.mp4",
+      "notes": "Aardman-quality, complete story w/ end card"
+    },
+    {
+      "id": "V3",
+      "batch": "V",
+      "date": "2026-07-05",
+      "model": "seedance-2.0",
+      "operation": "reference-to-video",
+      "settings": {
+        "resolution": "4k",
+        "duration_seconds": 15,
+        "aspect_ratio": "9:16",
+        "audio": true,
+        "prompt_gist": "reality breaks: faithful re-stage of real pull -> datamosh -> zero-g -> ride INTO the groove -> snap back"
+      },
+      "inputs": [
+        "refclip_pull"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/V3.mp4",
+      "notes": "video ref anchors to our real shot then goes surreal"
+    },
+    {
+      "id": "V4",
+      "batch": "V",
+      "date": "2026-07-05",
+      "model": "seedance-2.0",
+      "operation": "t2v",
+      "settings": {
+        "resolution": "4k",
+        "duration_seconds": 15,
+        "aspect_ratio": "9:16",
+        "audio": true,
+        "prompt_gist": "90s VHS infomercial parody: BUT WAIT, watermelon slice, astronaut DJ, NOT $19.99 PRICELESS"
+      },
+      "inputs": [],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/V4.mp4",
+      "notes": "meme-dense, every beat rendered"
+    },
+    {
+      "id": "V5-fail-1",
+      "batch": "V",
+      "date": "2026-07-05",
+      "model": "seedance-2.0",
+      "operation": "reference-to-video",
+      "settings": {
+        "resolution": "4k",
+        "duration_seconds": 15,
+        "audio": true,
+        "prompt_gist": "hooded-figures ritual version"
+      },
+      "inputs": [
+        "seed_red_peak",
+        "seed_claw"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "failed",
+      "verdict": null,
+      "notes": "content_policy_violation: 'Output audio has sensitive content' AFTER full 7-min inference (still billed)"
+    },
+    {
+      "id": "V5-fail-2",
+      "batch": "V",
+      "date": "2026-07-05",
+      "model": "seedance-2.0",
+      "operation": "reference-to-video",
+      "settings": {
+        "resolution": "4k",
+        "duration_seconds": 15,
+        "audio": true,
+        "prompt_gist": "softened listening-party version, audio still on"
+      },
+      "inputs": [
+        "seed_red_peak",
+        "seed_claw"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "failed",
+      "verdict": null,
+      "notes": "same audio moderation rejection \u2014 generated audio is the tripwire, not the visuals"
+    },
+    {
+      "id": "V5",
+      "batch": "V",
+      "date": "2026-07-05",
+      "model": "seedance-2.0",
+      "operation": "reference-to-video",
+      "settings": {
+        "resolution": "4k",
+        "duration_seconds": 15,
+        "aspect_ratio": "9:16",
+        "audio": false,
+        "prompt_gist": "listening-party ritual -> party flip, graffiti end cards THE TRILOGY ON WAX / HITS DIFFERENT"
+      },
+      "inputs": [
+        "seed_red_peak",
+        "seed_claw"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/V5.mp4",
+      "notes": "silent render passed moderation"
+    },
+    {
+      "id": "V5_mmaudio",
+      "batch": "V",
+      "date": "2026-07-05",
+      "model": "mmaudio-v2",
+      "operation": "i2v",
+      "settings": {
+        "duration_seconds": 15,
+        "prompt_gist": "instrumental trap beat + vinyl crackle foley; negative: speech/vocals"
+      },
+      "inputs": [
+        "V5"
+      ],
+      "cost_usd": 0.015,
+      "cost_confidence": "estimated",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/V5_mmaudio.mp4",
+      "notes": "AI foley rescue for the audio-moderation gotcha"
+    }
   ],
   "finals": [
     {
       "id": "X1",
       "output_path": "genmedia/X1.mp4",
       "components": [
-        {"type": "generated", "generation_id": "F2", "seconds": 2.6},
-        {"type": "raw_footage", "ref": "real v3 edit", "seconds": 16.2}
+        {
+          "type": "generated",
+          "generation_id": "F2",
+          "seconds": 2.6
+        },
+        {
+          "type": "raw_footage",
+          "ref": "real v3 edit",
+          "seconds": 16.2
+        }
       ],
       "notes": "F2 torn-cover hook (\"the pressing on this goes CRAZY\") -> real v3. 18.8s total, ready to post."
     },
@@ -43,8 +584,16 @@
       "id": "X2",
       "output_path": "genmedia/X2.mp4",
       "components": [
-        {"type": "generated", "generation_id": "F1", "seconds": 3.0},
-        {"type": "raw_footage", "ref": "real v2 edit", "seconds": 21.2}
+        {
+          "type": "generated",
+          "generation_id": "F1",
+          "seconds": 3.0
+        },
+        {
+          "type": "raw_footage",
+          "ref": "real v2 edit",
+          "seconds": 21.2
+        }
       ],
       "notes": "F1 bodega hook (\"POV your bodega got the wiz trilogy on wax\") -> real v2. 24.2s total, POV-format native."
     },
@@ -52,12 +601,71 @@
       "id": "X3",
       "output_path": "genmedia/X3.mp4",
       "components": [
-        {"type": "raw_footage", "ref": "real cover (\"wait for it\")"},
-        {"type": "generated", "generation_id": "E1"},
-        {"type": "raw_footage", "ref": "real red showcase"},
-        {"type": "raw_footage", "ref": "real closer"}
+        {
+          "type": "raw_footage",
+          "ref": "real cover (\"wait for it\")"
+        },
+        {
+          "type": "generated",
+          "generation_id": "E1"
+        },
+        {
+          "type": "raw_footage",
+          "ref": "real red showcase"
+        },
+        {
+          "type": "raw_footage",
+          "ref": "real closer"
+        }
       ],
       "notes": "real cover -> E1 smoke morph -> real red showcase -> real closer. 16.2s total, AI as invisible transition."
+    },
+    {
+      "id": "X4",
+      "output_path": "genmedia/X4_genz_supercut.mp4",
+      "components": [
+        {
+          "type": "generated",
+          "generation_id": "F2",
+          "seconds": 1.2
+        },
+        {
+          "type": "generated",
+          "generation_id": "A6",
+          "seconds": 1.9
+        },
+        {
+          "type": "generated",
+          "generation_id": "A3",
+          "seconds": 1.1
+        },
+        {
+          "type": "generated",
+          "generation_id": "C1",
+          "seconds": 1.1
+        },
+        {
+          "type": "generated",
+          "generation_id": "C3",
+          "seconds": 1.2
+        },
+        {
+          "type": "generated",
+          "generation_id": "A4",
+          "seconds": 1.1
+        },
+        {
+          "type": "generated",
+          "generation_id": "E1",
+          "seconds": 1.1
+        },
+        {
+          "type": "raw_footage",
+          "ref": "raw MOV, 8 beats w/ punch-in jump cuts + captions",
+          "seconds": 9.6
+        }
+      ],
+      "notes": "17.3s gen-z supercut: 15 beats ~1.1s each alternating AI/real, caption per beat, one 0.85x slow-mo."
     }
   ]
 }
