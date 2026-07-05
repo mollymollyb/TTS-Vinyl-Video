@@ -6,6 +6,15 @@ skills. Every experiment below is fully reproducible: model + exact
 inputs + prompt live here, outputs land in the media plane at
 `work/wiz-khalifa-cabin-fever-trilogy/genmedia/` (never in git).
 
+**Spend tracking:** this file is the human-readable narrative (prompt
+gists, reactions). The machine-readable twin — model, settings, cost,
+and which generations combine into each finished composite — lives in
+`genmedia.json` next to this file. Query it with
+`.venv/bin/python -m library.genmedia_ledger summary --release
+wiz-khalifa-cabin-fever-trilogy`. This batch's per-item costs weren't
+itemized (only the ~$8 aggregate below), so `cost_usd` is `null` for
+every 2026-07-03 record — itemize cost going forward.
+
 ## Seed assets (extracted from the raw MOV, uploaded to fal CDN)
 
 | Seed | Source time | What it is |
@@ -89,6 +98,48 @@ fill in cool / meh / kill; winners become skills.
 | X1 | F2 torn-cover hook (2.6s, "the pressing on this goes CRAZY") → real v3 | 18.8s, ready to post | |
 | X2 | F1 bodega hook (3s, "POV your bodega got the wiz trilogy on wax") → real v2 | 24.2s, POV-format native | |
 | X3 | real cover ("wait for it") → E1 smoke morph → real red showcase → real closer | 16.2s, AI as invisible transition | |
+
+## Round 2 — 2026-07-05: FULL videos, not shots
+
+Sidney's note: "you're not really making full videos, just shots… be a
+gen-z editor, go crazy, use seedance 2.0 4K 15 sec." Response: two new
+formats — (1) beat-scripted 15s one-shot generations where the prompt is
+a full timestamped edit script, (2) a 15-cut ffmpeg supercut mixing AI
++ real footage with a caption on every beat.
+
+### Batch V — seedance-2.0 full 4K 15s videos (prompt = shot-by-shot script)
+
+| ID | Model | Concept | My read | Verdict |
+|---|---|---|---|---|
+| V1 | ref-to-video (cover+claw+red_peak) | "red takeover": product opens, disc spins B&W-world, street floods red, sleeves rain from sky, turntable + OUT NOW end card | followed the ENTIRE script incl. text end card — best single generation so far | |
+| V2 | text-to-video | claymation heist: sleeves steal the red disc from a record store, cat chase, milk-crate escape, GOT THE TRILOGY card | Aardman-quality, complete story w/ end card | |
+| V3 | ref-to-video (refclip_pull video ref) | reality breaks: faithful re-stage of the real pull → datamosh → zero-g → ride INTO the groove → snap back | video ref anchors it to our real shot then goes surreal | |
+| V4 | text-to-video | 90s VHS infomercial parody: BUT WAIT card, watermelon slice, astronaut DJ, NOT $19.99 PRICELESS, thumbs-up freeze | meme-dense, every beat rendered | |
+| V5 | ref-to-video, generate_audio FALSE | listening-party ritual → party flip, graffiti end cards THE TRILOGY ON WAX / HITS DIFFERENT | v1+v2 attempts REJECTED (audio moderation); silent render passed, then mmaudio-v2 added the beat → `V5_mmaudio.mp4` | |
+
+### Batch X round 2 — supercut composite
+
+| ID | Recipe | My read | Verdict |
+|---|---|---|---|
+| X4 | 15 beats × ~1.1s: alternating AI shot / real footage, caption per beat, punch-in jump cuts, one 0.85x slow-mo | 17.3s "gen-z editor" cut — rhythm carried by cuts not content; captions carry a running joke | |
+
+### Round 2 technique notes
+
+8. **The 15s prompt-script format works**: write the prompt as literal
+   timestamped beats ("0-2s: … 2-5s: …") with camera moves, sound cues,
+   and on-screen text — seedance-2.0 (non-fast) executes it nearly
+   beat-for-beat, including legible end-card text at 4K.
+9. **Audio moderation gotcha**: seedance's generated audio can trip
+   `content_policy_violation` AFTER a full 7-min inference (still
+   billed). Anything implying chant/ritual/vocals is risky. Fix:
+   `--generate_audio false` then `fal-ai/mmaudio-v2` ($0.001/s) for
+   instrumental foley — negative_prompt "speech, vocals, singing".
+10. **4K 15s seedance runs take 8–15 min** — always `--async`, always
+    batch-submit before polling.
+11. **Supercut recipe**: normalize every beat to 1080x1920@30 (zoom
+    factor per beat = punch-in jump cut), caption each beat, concat.
+    Cutting real+AI every ~1.1s hides AI imperfections and reads as
+    intentional style.
 
 ### Technique notes (for future skills)
 

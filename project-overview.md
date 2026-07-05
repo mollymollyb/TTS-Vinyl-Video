@@ -27,10 +27,18 @@ verifies this stays current.
 - `twelvelabs_client.py` — the ONLY Twelve Labs import; `is_available()` gates Tier 2.
 - `ingest.py` — raw files → `releases/{slug}/release.json`. CLI.
 - `analyze.py` — orchestrator: proxy → scenes → frames → labels → `analysis.json`. CLI.
+- `genmedia_ledger.py` — per-release AI-generation spend ledger: one record
+  per fal.ai call (model, settings, cost) + one per finished composite
+  (which generations/shots it's built from). Cost lineage rollup dedupes
+  shared ancestors. Tier 0, no fal integration — cost is entered by hand
+  off the `genmedia` CLI's own output. CLI: `python3 -m
+  library.genmedia_ledger {add-generation|add-final|summary|global-summary|validate}`.
 
 ## Workspace
 
-- `releases/{slug}/` — release.json, analysis.json, `edits/vN.edl.json`, caption.md, README. `_board.md` = pipeline snapshot.
+- `releases/{slug}/` — release.json, analysis.json, `edits/vN.edl.json`,
+  `genmedia.json` (AI-generation spend ledger, when the release uses
+  fal-generated media), caption.md, README. `_board.md` = pipeline snapshot.
 - `knowledge/editing-rules.md` — the editing law. `release-types.md` — format playbook. `decisions/` — Molly's feedback ledger.
 - `plugin/` — vinyl-os plugin; skills in `plugin/skills/` (intake, ingest, analyze, edit, review, caption, doctor, janitor, learn, reflect, skillify).
 - `.agents/skills` → symlink to `plugin/skills` (Cursor/Codex discovery).

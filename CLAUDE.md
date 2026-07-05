@@ -68,6 +68,11 @@ statuses in `release.json`: `raw → analyzed → editing → review → final`.
   `plugin/skills/`.
 - System friction (routing, checks, templates) → `vinyl-reflect` →
   `operations/improvements.md`.
+- Ran anything through fal (the `genmedia` CLI) → log it in
+  `releases/{slug}/genmedia.json` (model, settings, cost) via
+  `library.genmedia_ledger add-generation`, and when a composite ships,
+  `add-final` so its shot/cost rollup is queryable. Never let this go
+  stale — it's the only way to tell if AI generation is worth it at scale.
 
 ## Never-stale contract
 
@@ -82,6 +87,8 @@ If you add a file or module, log it in `project-overview.md`. The
 .venv/bin/python -m library.ingest --all
 .venv/bin/python -m library.analyze --release {slug} [--take N] [--no-tl]
 .venv/bin/python -m library.edl_render releases/{slug}/edits/v1.edl.json
+.venv/bin/python -m library.genmedia_ledger summary --release {slug}  # fal spend for one release
+.venv/bin/python -m library.genmedia_ledger global-summary             # fal spend across everything
 .venv/bin/python operations/doctor.py          # read-only health check
 ```
 

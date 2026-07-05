@@ -19,6 +19,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT))
 
+from library.genmedia_ledger import load_ledger, validate_ledger  # noqa: E402
 from library.media_paths import MediaConfigError, media_root  # noqa: E402
 
 MEDIA_EXTENSIONS = (".mov", ".mp4", ".m4v", ".avi")
@@ -109,6 +110,13 @@ def check_release_consistency(releases: list[dict]) -> None:
             finding("low", f"{slug}: editing without a release type — confirm with Molly")
 
 
+def check_genmedia_ledgers() -> None:
+    for ledger_path in sorted((REPO_ROOT / "releases").glob("*/genmedia.json")):
+        slug = ledger_path.parent.name
+        for problem in validate_ledger(load_ledger(slug)):
+            finding("med", f"{slug}: genmedia.json — {problem}")
+
+
 def check_boards(releases: list[dict]) -> None:
     for artifact in ("releases/_board.md", "artifacts/dashboard.html"):
         path = REPO_ROOT / artifact
@@ -157,6 +165,7 @@ def main() -> int:
     check_git_hygiene()
     releases = load_releases()
     check_release_consistency(releases)
+    check_genmedia_ledgers()
     check_boards(releases)
     check_routines()
     check_plugin()
