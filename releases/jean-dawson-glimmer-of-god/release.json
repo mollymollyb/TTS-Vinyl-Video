@@ -2,9 +2,9 @@
   "slug": "jean-dawson-glimmer-of-god",
   "artist": "Jean Dawson",
   "title": "Glimmer Of God",
-  "release_type": "unknown",
+  "release_type": "1xLP gatefold",
   "release_type_confirmed": false,
-  "status": "raw",
+  "status": "review",
   "created": "2026-07-02",
   "raw_files": [
     {
@@ -34,5 +34,6 @@
       "height": 2160,
       "size_mb": 110.0
     }
-  ]
+  ],
+  "variant_note": "footage shows marbled white/cream disc; retail standard is hot pink - variant name unconfirmed, ask Molly"
 }

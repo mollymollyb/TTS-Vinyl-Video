@@ -1,0 +1,18 @@
+{
+  "release": "jean-dawson-glimmer-of-god",
+  "source": "Jean Dawson - Glimmer of God 3.MOV",
+  "version": 3,
+  "notes": "Disc-only macro fancam ~14s from take 3: close entry + hold, then push-in through the opal-flare tilt ending. Back segment shorter than front. Camera moves throughout both segments - no digital motion, no speed.",
+  "segments": [
+    {
+      "start": 1.4,
+      "end": 8.6,
+      "why": "t3-seq-01 (trimmable) disc sweeps in close then settles - thumb-stop entry"
+    },
+    {
+      "start": 11.8,
+      "end": 18.4,
+      "why": "t3-seq-01 tail push-in + t3-seq-02 opal tilt fully contained - iridescent money ending"
+    }
+  ]
+}

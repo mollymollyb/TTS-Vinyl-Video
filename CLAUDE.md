@@ -56,6 +56,10 @@ statuses in `release.json`: `raw → analyzed → editing → review → final`.
 
 ## Filing decision tree
 
+- "Full run" / "do everything for this release" / "deliver the social
+  pack" → `vinyl-social-pack` (chains the whole pipeline + gen wing into
+  ~10 post-ready videos with per-video cost in
+  `releases/{slug}/social-pack.md`).
 - New raw footage arrived → `vinyl-ingest`, then update `releases/_board.md`.
 - Molly gave feedback ("use v2, hate the ending") → `knowledge/decisions/`
   via `vinyl-learn`, and fold durable rules into

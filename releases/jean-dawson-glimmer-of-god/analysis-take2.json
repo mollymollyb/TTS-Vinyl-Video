@@ -1,0 +1,111 @@
+{
+  "release": "jean-dawson-glimmer-of-god",
+  "take": 2,
+  "source": "Jean Dawson - Glimmer of God 2.MOV",
+  "duration_seconds": 23.156,
+  "analyzed": "2026-07-05T17:09:38",
+  "tier": "2",
+  "shots_labeled": true,
+  "shots": [
+    {
+      "shot": 0,
+      "start": 0.0,
+      "end": 5.789,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/jean-dawson-glimmer-of-god/frames-take2/shot000_t2.89.jpg",
+      "visual": "A hand holds a vinyl record cover with the title 'GLIMMER OF GOD' against a backdrop of a brick building and parked cars.",
+      "key_action": "holds vinyl cover",
+      "sequence_type": "sleeve-detail",
+      "motion_state": "static"
+    },
+    {
+      "shot": 1,
+      "start": 5.789,
+      "end": 11.578,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/jean-dawson-glimmer-of-god/frames-take2/shot001_t8.68.jpg",
+      "visual": "The back cover of the vinyl record is shown, featuring a detailed image of a person's face with a metallic sheen.",
+      "key_action": "shows back cover",
+      "sequence_type": "sleeve-detail",
+      "motion_state": "static"
+    },
+    {
+      "shot": 2,
+      "start": 11.578,
+      "end": 17.367,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/jean-dawson-glimmer-of-god/frames-take2/shot002_t14.47.jpg",
+      "visual": "The person is holding the vinyl record, showing the back cover with a tracklist and an image of a winged figure.",
+      "key_action": "shows back cover",
+      "sequence_type": "sleeve-detail",
+      "motion_state": "static"
+    },
+    {
+      "shot": 3,
+      "start": 17.367,
+      "end": 23.156,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/jean-dawson-glimmer-of-god/frames-take2/shot003_t20.26.jpg",
+      "visual": "The camera focuses on the back cover of the vinyl record, showcasing the tracklist and an image of an angel with wings.",
+      "key_action": "focuses on back cover",
+      "sequence_type": "sleeve-detail",
+      "motion_state": "static"
+    }
+  ],
+  "sequences": [
+    {
+      "id": "t2-seq-00",
+      "type": "dead-space",
+      "start": 0.0,
+      "end": 1.0,
+      "atomic": false,
+      "shots": [
+        0
+      ],
+      "note": "empty street"
+    },
+    {
+      "id": "t2-seq-01",
+      "type": "sleeve-detail",
+      "start": 1.0,
+      "end": 5.2,
+      "atomic": false,
+      "shots": [
+        0
+      ],
+      "note": "front cover hold, tilt down-left feeds the gatefold open | static cover hold - trimmable"
+    },
+    {
+      "id": "t2-seq-02",
+      "type": "gatefold-open",
+      "start": 5.2,
+      "end": 16.2,
+      "atomic": true,
+      "shots": [
+        0,
+        1,
+        2
+      ],
+      "note": "chrome spread wide open, blue glare pass; pedestrians (red dress) cross behind ~9-11s"
+    },
+    {
+      "id": "t2-seq-03",
+      "type": "pan-tracklist",
+      "start": 16.2,
+      "end": 21.8,
+      "atomic": false,
+      "shots": [
+        2,
+        3
+      ],
+      "note": "back cover calligraphy tracklist, single-hand hold | held tracklist, single hand, static - trimmable"
+    },
+    {
+      "id": "t2-seq-04",
+      "type": "dead-space",
+      "start": 21.8,
+      "end": 23.16,
+      "atomic": false,
+      "shots": [
+        3
+      ],
+      "note": "cover exits; empty street"
+    }
+  ]
+}

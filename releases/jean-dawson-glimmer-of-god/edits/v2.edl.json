@@ -1,0 +1,32 @@
+{
+  "release": "jean-dawson-glimmer-of-god",
+  "source": "Jean Dawson - Glimmer of God 1.MOV",
+  "version": 2,
+  "notes": "Variant-first ~20s (the white marble disc is the seller): reveal cold open -> cover context beat -> gatefold arc -> tracklist end. Rhythm 5.0/2.0/9.4/3.5; one motion touch on the static opener; no speed on tracklist (readable text). | R2: opener moved past the 47.5-50.5 dip.",
+  "segments": [
+    {
+      "start": 51.0,
+      "end": 56.0,
+      "why": "t1-seq-07c variant-reveal (trimmed, post-dip) - disc-in-sunlight cold open",
+      "motion": {
+        "type": "punch_in",
+        "amount": 1.06
+      }
+    },
+    {
+      "start": 1.6,
+      "end": 3.6,
+      "why": "t1-seq-01 cover hold (trimmed) - what record is this beat"
+    },
+    {
+      "start": 9.8,
+      "end": 19.2,
+      "why": "t1-seq-02 gatefold-open full arc (atomic, money)"
+    },
+    {
+      "start": 20.0,
+      "end": 23.5,
+      "why": "t1-seq-03 tracklist hold (trimmable) - end on held back cover"
+    }
+  ]
+}

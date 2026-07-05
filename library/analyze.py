@@ -119,7 +119,11 @@ def analyze_take(slug: str, take: int = 1, use_twelve_labs: bool = True) -> Path
         # hard never-cut-inside boundary.
         "sequences": [],
     }
-    out_path = REPO_ROOT / "releases" / slug / "analysis.json"
+    # Take 1 keeps the historical name so single-take releases (and every
+    # consumer that reads analysis.json) are untouched; further takes get
+    # sibling files instead of overwriting take 1's analysis.
+    name = "analysis.json" if take == 1 else f"analysis-take{take}.json"
+    out_path = REPO_ROOT / "releases" / slug / name
     out_path.write_text(json.dumps(analysis, indent=2) + "\n")
     print(f"\nwrote {out_path.relative_to(REPO_ROOT)} (tier {tier})")
     return out_path

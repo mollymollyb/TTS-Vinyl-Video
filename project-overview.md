@@ -36,16 +36,20 @@ verifies this stays current.
 
 ## Workspace
 
-- `releases/{slug}/` — release.json, analysis.json, `edits/vN.edl.json`,
-  `genmedia.json` (AI-generation spend ledger, when the release uses
-  fal-generated media), caption.md, README. `_board.md` = pipeline snapshot.
+- `releases/{slug}/` — release.json, analysis.json (+`analysis-takeN.json`
+  for multi-take releases), `edits/vN.edl.json`, `genmedia.json`
+  (AI-generation spend ledger, when the release uses fal-generated
+  media), `genmedia-experiments.md`, caption.md, `social-pack.md` (the
+  full-run deliverable: every video + per-video cost), README.
+  `_board.md` = pipeline snapshot.
 - `knowledge/editing-rules.md` — the editing law. `release-types.md` — format playbook. `decisions/` — Molly's feedback ledger.
-- `knowledge/artists/wiz-khalifa.md` — verified artist+product context for generation prompts/captions (recent arc, iconography, moderation guardrails). One file per artist; pull 1–2 details max per prompt.
+- `knowledge/artists/wiz-khalifa.md`, `knowledge/artists/jean-dawson.md` — verified artist+product context for generation prompts/captions (recent arc, iconography, moderation guardrails). One file per artist; pull 1–2 details max per prompt.
 - `plugin/` — vinyl-os plugin; skills in `plugin/skills/` (intake, ingest, analyze, edit, review, caption, doctor, janitor, learn, reflect, skillify).
 - `plugin/skills/vinyl-genmedia/` — core fal.ai genmedia mechanics: seeds, uploads, async runs, cost checks, mandatory dual-ledger logging.
 - `plugin/skills/vinyl-gen-video/` — full scripted AI videos (prompt = timestamped edit script), operation chooser, context threads, 30s continuation chaining.
 - `plugin/skills/vinyl-gen-composite/` — ffmpeg edit bay for AI+real composites: hooks, supercuts, select cuts, two-parter stitches, caption standards.
 - `plugin/skills/vinyl-artist-context/` — research + maintain `knowledge/artists/{artist}.md` (recent arc, product facts, guardrails).
+- `plugin/skills/vinyl-social-pack/` — THE FULL RUN: one release from raw footage to a costed pack of ~10 post-ready videos (chains analyze → context → gens → edits → composites → captions → manifest).
 - `.agents/skills` → symlink to `plugin/skills` (Cursor/Codex discovery).
 - `routines/` — janitor/reflect/compound-learn prompts + armed index.
 - `operations/` — `doctor.py` (mechanical health check), `health.md`, `improvements.md`, `sync.md`.

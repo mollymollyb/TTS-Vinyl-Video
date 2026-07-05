@@ -1,0 +1,100 @@
+{
+  "release": "jean-dawson-glimmer-of-god",
+  "take": 3,
+  "source": "Jean Dawson - Glimmer of God 3.MOV",
+  "duration_seconds": 20.12,
+  "analyzed": "2026-07-05T17:03:25",
+  "tier": "2",
+  "shots_labeled": true,
+  "shots": [
+    {
+      "shot": 0,
+      "start": 0.0,
+      "end": 5.03,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/jean-dawson-glimmer-of-god/frames-take3/shot000_t2.52.jpg",
+      "visual": "A street view featuring a brick building and parked cars is partially hidden by a tree.",
+      "key_action": "none",
+      "sequence_type": "dead-space",
+      "motion_state": "static"
+    },
+    {
+      "shot": 1,
+      "start": 5.03,
+      "end": 10.06,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/jean-dawson-glimmer-of-god/frames-take3/shot001_t7.54.jpg",
+      "visual": "A pair of hands holds a translucent white vinyl record with 'GIMMEL OF GOD' printed on the center label against a backdrop of a brick building and parked cars.",
+      "key_action": "holds vinyl",
+      "sequence_type": "vinyl-pull",
+      "motion_state": "static"
+    },
+    {
+      "shot": 2,
+      "start": 10.06,
+      "end": 15.09,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/jean-dawson-glimmer-of-god/frames-take3/shot002_t12.57.jpg",
+      "visual": "The hands hold the vinyl record with 'Glimmer of God' label in front of a brick building and parked cars.",
+      "key_action": "holds vinyl",
+      "sequence_type": "vinyl-pull",
+      "motion_state": "static"
+    },
+    {
+      "shot": 3,
+      "start": 15.09,
+      "end": 20.12,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/jean-dawson-glimmer-of-god/frames-take3/shot003_t17.61.jpg",
+      "visual": "The vinyl record is held up against a backdrop of a street scene with buildings and trees.",
+      "key_action": "holds vinyl",
+      "sequence_type": "vinyl-pull",
+      "motion_state": "static"
+    }
+  ],
+  "sequences": [
+    {
+      "id": "t3-seq-00",
+      "type": "dead-space",
+      "start": 0.0,
+      "end": 1.2,
+      "atomic": false,
+      "shots": [
+        0
+      ],
+      "note": "empty street before disc enters"
+    },
+    {
+      "id": "t3-seq-01",
+      "type": "variant-reveal",
+      "start": 1.2,
+      "end": 14.2,
+      "atomic": false,
+      "shots": [
+        0,
+        1,
+        2
+      ],
+      "note": "disc enters CLOSE on center label then pulls back; vertical hold, marble texture in sun | hold after entry; disc enters 1.2-3.0, static after - trimmable (safe in-point >=3.0)"
+    },
+    {
+      "id": "t3-seq-02",
+      "type": "variant-reveal",
+      "start": 14.2,
+      "end": 18.4,
+      "atomic": true,
+      "shots": [
+        2,
+        3
+      ],
+      "note": "horizontal tilt \u2014 opal/lavender iridescence flares across the disc (money shot)"
+    },
+    {
+      "id": "t3-seq-03",
+      "type": "dead-space",
+      "start": 18.4,
+      "end": 20.12,
+      "atomic": false,
+      "shots": [
+        3
+      ],
+      "note": "disc exits low; city bus passes"
+    }
+  ]
+}

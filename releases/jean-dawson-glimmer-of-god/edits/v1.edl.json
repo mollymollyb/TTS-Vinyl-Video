@@ -1,0 +1,36 @@
+{
+  "release": "jean-dawson-glimmer-of-god",
+  "source": "Jean Dawson - Glimmer of God 1.MOV",
+  "version": 1,
+  "notes": "Chronological full story ~25s: cover -> gatefold chrome reveal (money, untouched) -> pull -> variant reveal end. Tracklist reserved for v2. Two motion touches, alternating; no speed (all action/money). | R2: ending moved past the 47.5-50.5 out-of-frame dip review caught.",
+  "segments": [
+    {
+      "start": 1.4,
+      "end": 3.9,
+      "why": "t1-seq-01 cover hold (trimmed) - thumb-stop on artwork",
+      "motion": {
+        "type": "punch_in",
+        "amount": 1.08
+      }
+    },
+    {
+      "start": 9.8,
+      "end": 19.2,
+      "why": "t1-seq-02 gatefold-open full arc incl. close+flip (atomic, money)"
+    },
+    {
+      "start": 36.3,
+      "end": 45.8,
+      "why": "t1-seq-06 vinyl-pull full arc (atomic, climax)"
+    },
+    {
+      "start": 51.2,
+      "end": 55.2,
+      "why": "t1-seq-07c variant-reveal held disc (trimmed, post-dip) - real ending on held product",
+      "motion": {
+        "type": "pull_back",
+        "amount": 1.06
+      }
+    }
+  ]
+}

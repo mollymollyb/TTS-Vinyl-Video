@@ -79,3 +79,20 @@ both ledgers, prompts, and filenames.
   `knowledge/artists/{artist}.md` guardrails section.
 - Model drift on product artwork grows with distance from the seed —
   keep the product anchored to reference images (see vinyl-gen-video).
+- **Never submit to a root model alias** (`bytedance/seedance-2.0`):
+  submission + status LOOK fine (request id, COMPLETED) but the app
+  404s internally — json_output is `{"detail": "Path / not found"}`,
+  no video, and every result route (CLI `--download`, `response_url`)
+  404s. Always name the full sub-endpoint
+  (`bytedance/seedance-2.0/image-to-video`, `.../reference-to-video`).
+  Post-mortem any request via the platform API:
+  `GET api.fal.ai/v1/models/requests/by-endpoint?endpoint_id={ep}&request_id={id}&expand=payloads`.
+- Never POST to a queue result URL "to see what happens" — POST to
+  `.../requests/{id}/response` SUBMITS A NEW JOB. GET only; cancel
+  immediately via `.../cancel` if it happens.
+- `mmaudio-v2` defaults to `duration=8` and TRUNCATES longer videos —
+  always pass `--duration {video_seconds}` when adding foley.
+- `--download={path}` templates silently no-op (v0.7.0). Use bare
+  `--download` from the target directory, then rename what landed
+  (seedance saves `video.mp4`; mmaudio keeps its CDN filename — parse
+  the `"path"` field from the JSON output).

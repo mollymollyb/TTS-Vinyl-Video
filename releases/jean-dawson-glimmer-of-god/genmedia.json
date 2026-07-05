@@ -1,0 +1,274 @@
+{
+  "release": "jean-dawson-glimmer-of-god",
+  "generations": [
+    {
+      "id": "G1",
+      "batch": "G",
+      "date": "2026-07-05",
+      "model": "seedance-2.0/image-to-video",
+      "operation": "i2v",
+      "settings": {
+        "resolution": "4k",
+        "duration_seconds": 15,
+        "aspect_ratio": "9:16",
+        "request_id": "019f3439-8f00-7a92-8919-d4a724539d2f"
+      },
+      "inputs": [
+        "seed_gatefold"
+      ],
+      "output_units": {
+        "quantity": 15,
+        "unit": "video_seconds"
+      },
+      "unit_price_usd": null,
+      "cost_usd": 2.62,
+      "cost_confidence": "estimated",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/G1.mp4",
+      "notes": "chrome portal: gatefold chrome ripples, camera dives into molten silver tunnel, drains to spinning white marble disc, GLIMMER OF GOD / ON WAX end card | first submission (019f3428-10ca-7340-b4ac-108fcb109a20) via ROOT alias bytedance/seedance-2.0 failed instantly (app returned 404, $0, queue status still said COMPLETED) - resubmitted via explicit /image-to-video sub-endpoint"
+    },
+    {
+      "id": "G2",
+      "batch": "G",
+      "date": "2026-07-05",
+      "model": "seedance-2.0/image-to-video",
+      "operation": "i2v",
+      "settings": {
+        "resolution": "4k",
+        "duration_seconds": 15,
+        "aspect_ratio": "9:16",
+        "request_id": "019f3439-9205-7d40-9480-bb894428684c"
+      },
+      "inputs": [
+        "seed_disc_hold"
+      ],
+      "output_units": {
+        "quantity": 15,
+        "unit": "video_seconds"
+      },
+      "unit_price_usd": null,
+      "cost_usd": 2.62,
+      "cost_confidence": "estimated",
+      "status": "failed",
+      "verdict": "kill",
+      "output_path": null,
+      "notes": "angel drop: disc floats out of hand, dusk dark-fairytale sky, light wings unfurl (back-cover motif), dives to turntable needle drop, OUT NOW ON VINYL card | first submission (019f3428-87d0-7241-ad69-87dd33731956) via ROOT alias bytedance/seedance-2.0 failed instantly (app returned 404, $0, queue status still said COMPLETED) - resubmitted via explicit /image-to-video sub-endpoint | FAILED content_policy_violation: 'Output audio has sensitive content' (ambient synth swell read as singable?) - billed, no video. Resubmitted silent as G2B."
+    },
+    {
+      "id": "G3",
+      "batch": "G",
+      "date": "2026-07-05",
+      "model": "seedance-2.0/image-to-video",
+      "operation": "i2v",
+      "settings": {
+        "resolution": "4k",
+        "duration_seconds": 15,
+        "aspect_ratio": "9:16",
+        "request_id": "019f3439-94f8-7300-87c2-6f9d7740c8fd"
+      },
+      "inputs": [
+        "seed_cover"
+      ],
+      "output_units": {
+        "quantity": 15,
+        "unit": "video_seconds"
+      },
+      "unit_price_usd": null,
+      "cost_usd": 2.62,
+      "cost_confidence": "estimated",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/G3.mp4",
+      "notes": "stoop pour: cover floats, gatefold blows open, chrome drips into mirror puddle on steps, white disc rises from puddle, LINK IN BIO card | first submission (019f3428-8aa1-78b0-9d78-9e8e4ede07f9) via ROOT alias bytedance/seedance-2.0 failed instantly (app returned 404, $0, queue status still said COMPLETED) - resubmitted via explicit /image-to-video sub-endpoint"
+    },
+    {
+      "id": "H1",
+      "batch": "G",
+      "date": "2026-07-05",
+      "model": "seedance-2.0/image-to-video",
+      "operation": "i2v",
+      "settings": {
+        "resolution": "720p",
+        "duration_seconds": 5,
+        "aspect_ratio": "9:16",
+        "request_id": "019f3439-97be-7191-b383-6322a93f9d53"
+      },
+      "inputs": [
+        "seed_cover"
+      ],
+      "output_units": {
+        "quantity": 5,
+        "unit": "video_seconds"
+      },
+      "unit_price_usd": null,
+      "cost_usd": 0.35,
+      "cost_confidence": "estimated",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/H1.mp4",
+      "notes": "hook cinemagraph: cover breathes, red lettering glints, trees sway - opener for hook+real composite | first submission (019f3428-8d5a-7ab2-a2df-94865507a51b) via ROOT alias bytedance/seedance-2.0 failed instantly (app returned 404, $0, queue status still said COMPLETED) - resubmitted via explicit /image-to-video sub-endpoint"
+    },
+    {
+      "id": "H2",
+      "batch": "G",
+      "date": "2026-07-05",
+      "model": "seedance-2.0/image-to-video",
+      "operation": "i2v",
+      "settings": {
+        "resolution": "720p",
+        "duration_seconds": 5,
+        "aspect_ratio": "9:16",
+        "request_id": "019f3439-9b3a-7492-bda8-fae1b430cd22"
+      },
+      "inputs": [
+        "seed_disc_opal"
+      ],
+      "output_units": {
+        "quantity": 5,
+        "unit": "video_seconds"
+      },
+      "unit_price_usd": null,
+      "cost_usd": 0.35,
+      "cost_confidence": "estimated",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/H2.mp4",
+      "notes": "hook cinemagraph macro: opal iridescence sweeps across marble disc, rainbow groove sparkle | first submission (019f3428-9005-7d51-94f9-76e8d36bc25a) via ROOT alias bytedance/seedance-2.0 failed instantly (app returned 404, $0, queue status still said COMPLETED) - resubmitted via explicit /image-to-video sub-endpoint"
+    },
+    {
+      "id": "G2B",
+      "batch": "G",
+      "date": "2026-07-05",
+      "model": "seedance-2.0/image-to-video",
+      "operation": "i2v",
+      "settings": {
+        "resolution": "4k",
+        "duration_seconds": 15,
+        "aspect_ratio": "9:16",
+        "generate_audio": false,
+        "request_id": "019f3443-05af-7ca0-a471-c77e5202cd03"
+      },
+      "inputs": [
+        "seed_disc_hold"
+      ],
+      "output_units": {
+        "quantity": 15,
+        "unit": "video_seconds"
+      },
+      "unit_price_usd": null,
+      "cost_usd": 2.62,
+      "cost_confidence": "estimated",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/G2B.mp4",
+      "notes": "angel drop rerun, silent (audio moderation workaround) - foley via mmaudio if kept"
+    },
+    {
+      "id": "G2F",
+      "batch": "G",
+      "date": "2026-07-05",
+      "model": "mmaudio-v2",
+      "operation": "edit",
+      "settings": {
+        "request_id": "019f3450-6d6f-7e90-a5b3-e9b264cd021e",
+        "negative_prompt": "speech, vocals, singing, voice, choir, chanting",
+        "duration": 15
+      },
+      "inputs": [
+        "G2B"
+      ],
+      "output_units": {
+        "quantity": 15,
+        "unit": "video_seconds"
+      },
+      "unit_price_usd": 0.001,
+      "cost_usd": 0.02,
+      "cost_confidence": "exact",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/G2_final.mp4",
+      "notes": "foley for silent G2B: night wind, wing whoosh, needle drop; no voices (moderation workaround) | first run used mmaudio DEFAULT duration=8 which TRUNCATED the 15s video to 8s - rerun with --duration 15. Both runs ~$0.02 total."
+    }
+  ],
+  "finals": [
+    {
+      "id": "X1",
+      "output_path": "genmedia/X1_hook_cover_v2.mp4",
+      "components": [
+        {
+          "type": "generated",
+          "generation_id": "H1"
+        },
+        {
+          "type": "raw_footage",
+          "ref": "v2 edit (take 1)",
+          "seconds": 19.9
+        }
+      ],
+      "notes": "H1 breathing-cover hook (1.9s, captioned) -> full v2 real edit; 21.9s"
+    },
+    {
+      "id": "X2",
+      "output_path": "genmedia/X2_hook_disc_v3.mp4",
+      "components": [
+        {
+          "type": "generated",
+          "generation_id": "H2"
+        },
+        {
+          "type": "raw_footage",
+          "ref": "v3 edit (take 3)",
+          "seconds": 13.8
+        }
+      ],
+      "notes": "H2 opal-shimmer hook (2.0s, captioned) -> full v3 disc fancam; 15.9s"
+    },
+    {
+      "id": "X3",
+      "output_path": "genmedia/X3_supercut.mp4",
+      "components": [
+        {
+          "type": "generated",
+          "generation_id": "G1"
+        },
+        {
+          "type": "generated",
+          "generation_id": "G3"
+        },
+        {
+          "type": "generated",
+          "generation_id": "H2"
+        },
+        {
+          "type": "raw_footage",
+          "ref": "takes 1+3 beats",
+          "seconds": 4.9
+        }
+      ],
+      "notes": "9-beat gen x real supercut, ends on G3's generated LINK IN BIO card; 11.2s"
+    },
+    {
+      "id": "X4",
+      "output_path": "genmedia/X4_g1_tightcut.mp4",
+      "components": [
+        {
+          "type": "generated",
+          "generation_id": "G1"
+        }
+      ],
+      "notes": "G1 select cut 15s->10.3s, captions ride the dive, generated ON WAX card kept clean"
+    },
+    {
+      "id": "G2FINAL",
+      "output_path": "genmedia/G2_final.mp4",
+      "components": [
+        {
+          "type": "generated",
+          "generation_id": "G2F"
+        }
+      ],
+      "notes": "angel drop deliverable: silent G2B + mmaudio foley; ends on generated OUT NOW ON VINYL card"
+    }
+  ]
+}

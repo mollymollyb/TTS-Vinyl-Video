@@ -1,0 +1,254 @@
+{
+  "release": "jean-dawson-glimmer-of-god",
+  "take": 1,
+  "source": "Jean Dawson - Glimmer of God 1.MOV",
+  "duration_seconds": 66.333,
+  "analyzed": "2026-07-05T17:08:39",
+  "tier": "2",
+  "shots_labeled": true,
+  "shots": [
+    {
+      "shot": 0,
+      "start": 0.0,
+      "end": 6.03,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/jean-dawson-glimmer-of-god/frames-take1/shot000_t3.02.jpg",
+      "visual": "A person holds up a vinyl record cover displaying the title 'GLIMMER OF GOD' and an image of a person with white hair.",
+      "key_action": "holds vinyl cover",
+      "sequence_type": "unboxing",
+      "motion_state": "static"
+    },
+    {
+      "shot": 1,
+      "start": 6.03,
+      "end": 12.061,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/jean-dawson-glimmer-of-god/frames-take1/shot001_t9.05.jpg",
+      "visual": "The person holds the vinyl record cover open, revealing a silver foil image of a cherub with wings.",
+      "key_action": "opens gatefold",
+      "sequence_type": "gatefold-open",
+      "motion_state": "mid-motion"
+    },
+    {
+      "shot": 2,
+      "start": 12.061,
+      "end": 18.091,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/jean-dawson-glimmer-of-god/frames-take1/shot002_t15.08.jpg",
+      "visual": "The person is holding the vinyl record cover, showing the back side with a detailed tracklist and an image of an angelic figure.",
+      "key_action": "shows tracklist",
+      "sequence_type": "sleeve-detail",
+      "motion_state": "static"
+    },
+    {
+      "shot": 3,
+      "start": 18.091,
+      "end": 24.121,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/jean-dawson-glimmer-of-god/frames-take1/shot003_t21.11.jpg",
+      "visual": "The back cover of the vinyl record is shown, featuring a cherub image and detailed tracklist information.",
+      "key_action": "shows back cover",
+      "sequence_type": "sleeve-detail",
+      "motion_state": "static"
+    },
+    {
+      "shot": 4,
+      "start": 24.121,
+      "end": 30.151,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/jean-dawson-glimmer-of-god/frames-take1/shot004_t27.14.jpg",
+      "visual": "The back cover of the vinyl record is shown, featuring a cherub image and detailed tracklist information.",
+      "key_action": "shows back cover",
+      "sequence_type": "sleeve-detail",
+      "motion_state": "static"
+    },
+    {
+      "shot": 5,
+      "start": 30.151,
+      "end": 36.182,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/jean-dawson-glimmer-of-god/frames-take1/shot005_t33.17.jpg",
+      "visual": "The person is holding the vinyl record in front of the album cover, showcasing the title 'Glimmer of God'",
+      "key_action": "holds vinyl in front of cover",
+      "sequence_type": "variant-reveal",
+      "motion_state": "static"
+    },
+    {
+      "shot": 6,
+      "start": 36.182,
+      "end": 42.212,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/jean-dawson-glimmer-of-god/frames-take1/shot006_t39.20.jpg",
+      "visual": "A hand pulls a white vinyl record from the sleeve, displaying the label 'GLIMMER OF GOD'",
+      "key_action": "pulls vinyl from sleeve",
+      "sequence_type": "vinyl-pull",
+      "motion_state": "mid-motion"
+    },
+    {
+      "shot": 7,
+      "start": 42.212,
+      "end": 48.242,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/jean-dawson-glimmer-of-god/frames-take1/shot007_t45.23.jpg",
+      "visual": "The person holds the white vinyl record with 'GLIMMER OF GOD' printed on it, with the street scene in the background.",
+      "key_action": "holds vinyl",
+      "sequence_type": "vinyl-pull",
+      "motion_state": "static"
+    },
+    {
+      "shot": 8,
+      "start": 48.242,
+      "end": 54.272,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/jean-dawson-glimmer-of-god/frames-take1/shot008_t51.26.jpg",
+      "visual": "The person holds the white vinyl record in front of the album cover, showcasing the 'Glimmer of God' label.",
+      "key_action": "holds vinyl",
+      "sequence_type": "vinyl-pull",
+      "motion_state": "static"
+    },
+    {
+      "shot": 9,
+      "start": 54.272,
+      "end": 60.303,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/jean-dawson-glimmer-of-god/frames-take1/shot009_t57.29.jpg",
+      "visual": "The person holds the white vinyl record with 'GLIMMER OF GOD' printed on it, showcasing the record's surface.",
+      "key_action": "holds vinyl",
+      "sequence_type": "vinyl-pull",
+      "motion_state": "mid-motion"
+    },
+    {
+      "shot": 10,
+      "start": 60.303,
+      "end": 66.333,
+      "frame": "/Users/sidneyswift/Documents/Projects/Recoup/clients/rostrum/molly-b/TTS-Vinyl-Video/media/derived/jean-dawson-glimmer-of-god/frames-take1/shot010_t63.32.jpg",
+      "visual": "The person holds the vinyl record cover displaying the title 'GLIMMER OF GOD' and an image of a person with white hair.",
+      "key_action": "holds vinyl cover",
+      "sequence_type": "unboxing",
+      "motion_state": "static"
+    }
+  ],
+  "sequences": [
+    {
+      "id": "t1-seq-00",
+      "type": "dead-space",
+      "start": 0.0,
+      "end": 1.2,
+      "atomic": false,
+      "shots": [
+        0
+      ],
+      "note": "empty street before cover enters"
+    },
+    {
+      "id": "t1-seq-01",
+      "type": "sleeve-detail",
+      "start": 1.2,
+      "end": 9.8,
+      "atomic": false,
+      "shots": [
+        0,
+        1
+      ],
+      "note": "front cover hold + tilts (black cover, red GLIMMER OF GOD) | static cover hold w/ slow tilts - trimmable hold"
+    },
+    {
+      "id": "t1-seq-02",
+      "type": "gatefold-open",
+      "start": 9.8,
+      "end": 19.2,
+      "atomic": true,
+      "shots": [
+        1,
+        2,
+        3
+      ],
+      "note": "gatefold opens to liquid-chrome portrait spread; glare sweeps; closes+flips into back cover"
+    },
+    {
+      "id": "t1-seq-03",
+      "type": "pan-tracklist",
+      "start": 19.2,
+      "end": 30.9,
+      "atomic": false,
+      "shots": [
+        3,
+        4,
+        5
+      ],
+      "note": "back cover: angel-wing figure + handwritten calligraphy tracklist, slow tilts | held back cover w/ micro-tilts, not a traveling pan - trimmable"
+    },
+    {
+      "id": "t1-seq-04",
+      "type": "dead-space",
+      "start": 30.9,
+      "end": 34.0,
+      "atomic": false,
+      "shots": [
+        5
+      ],
+      "note": "lowers back cover, flips sleeve to front \u2014 organizing hands, 33.0 mid-flip blur"
+    },
+    {
+      "id": "t1-seq-05",
+      "type": "sleeve-detail",
+      "start": 34.0,
+      "end": 36.3,
+      "atomic": false,
+      "shots": [
+        5,
+        6
+      ],
+      "note": "front cover re-set before the pull | brief front-cover re-set hold - trimmable"
+    },
+    {
+      "id": "t1-seq-06",
+      "type": "vinyl-pull",
+      "start": 36.3,
+      "end": 45.8,
+      "atomic": true,
+      "shots": [
+        6,
+        7
+      ],
+      "note": "milky-white marble disc slides out; sleeve exits frame ~45.8"
+    },
+    {
+      "id": "t1-seq-07a",
+      "type": "variant-reveal",
+      "start": 45.8,
+      "end": 47.5,
+      "atomic": false,
+      "shots": [
+        7
+      ],
+      "note": "disc alone right after pull - brief hold before dip (trimmable)"
+    },
+    {
+      "id": "t1-seq-07b",
+      "type": "dead-space",
+      "start": 47.5,
+      "end": 50.5,
+      "atomic": false,
+      "shots": [
+        7,
+        8
+      ],
+      "note": "disc lowered OUT of frame - empty street + pedestrian (found by v1 review, 2026-07-05)"
+    },
+    {
+      "id": "t1-seq-07c",
+      "type": "variant-reveal",
+      "start": 50.5,
+      "end": 60.4,
+      "atomic": false,
+      "shots": [
+        8,
+        9
+      ],
+      "note": "disc returns, two-hand hold w/ slow tilts, label readable - trimmable (safe in >=51.0)"
+    },
+    {
+      "id": "t1-seq-08",
+      "type": "dead-space",
+      "start": 60.4,
+      "end": 66.33,
+      "atomic": false,
+      "shots": [
+        9,
+        10
+      ],
+      "note": "disc exits; empty street to end"
+    }
+  ]
+}
