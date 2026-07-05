@@ -560,6 +560,56 @@
       "verdict": null,
       "output_path": "genmedia/V5_mmaudio.mp4",
       "notes": "AI foley rescue for the audio-moderation gotcha"
+    },
+    {
+      "id": "V6",
+      "batch": "V-context",
+      "date": "2026-07-05",
+      "model": "seedance-2.0",
+      "operation": "reference-to-video",
+      "settings": {
+        "resolution": "4k",
+        "duration_seconds": 15,
+        "aspect_ratio": "9:16",
+        "audio": true,
+        "context_thread": "blog-era nostalgia (2026 'blog era boyz' w/ mgk = same Sledgren/ID Labs producers as Cabin Fever)",
+        "prompt_gist": "time machine: 2026 street -> VHS rewind -> 2011 dorm download bar -> pixels shatter into red vinyl -> back to 2026; end cards YOU USED TO DOWNLOAD THIS / NOW ITS ON WAX / FIRST TIME EVER ON VINYL"
+      },
+      "inputs": [
+        "seed_cover",
+        "seed_red_peak"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/V6.mp4",
+      "notes": "concept only exists because of the context research; end-card text rendered flawlessly (incl. apostrophe); MISS: flashback-scene sleeve art drifted off-model (invented gold cover) \u2014 scenes far from the reference images invite product drift"
+    },
+    {
+      "id": "V7",
+      "batch": "V-context",
+      "date": "2026-07-05",
+      "model": "seedance-2.0",
+      "operation": "reference-to-video",
+      "settings": {
+        "resolution": "4k",
+        "duration_seconds": 15,
+        "aspect_ratio": "9:16",
+        "audio": true,
+        "context_thread": "real product facts (34 tracks; Taylor Gang / M.I.A. / GangBang / No Worries; red-foil box treatment)",
+        "prompt_gist": "kinetic typography: track titles peel off the real back cover as red-foil 3D letters, tornado around spinning disc, slam back; end cards 34 TRACKS / ONE BOX / ALL RED WAX"
+      },
+      "inputs": [
+        "seed_backcover",
+        "seed_red_peak"
+      ],
+      "cost_usd": null,
+      "cost_confidence": "unknown",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/V7.mp4",
+      "notes": "peel-off-the-cardboard concept made literal (torn holes in the box); short end cards clean; long floating titles have typos (BIIG) \u2014 keep AI-rendered text <= 3 words, put long titles in ffmpeg overlays"
     }
   ],
   "finals": [

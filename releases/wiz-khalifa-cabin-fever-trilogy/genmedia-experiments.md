@@ -123,6 +123,36 @@ a full timestamped edit script, (2) a 15-cut ffmpeg supercut mixing AI
 |---|---|---|---|
 | X4 | 15 beats × ~1.1s: alternating AI shot / real footage, caption per beat, punch-in jump cuts, one 0.85x slow-mo | 17.3s "gen-z editor" cut — rhythm carried by cuts not content; captions carry a running joke | |
 
+## Round 3 — 2026-07-05: context-loaded generations
+
+Sidney's verdicts so far: **V1 and V3 are the favorites.** His idea:
+research the artist's RECENT arc + the actual product and keep it in a
+folder the agent can sometimes pull from. Built
+`knowledge/artists/wiz-khalifa.md` (product facts, recent arc,
+iconography, moderation guardrails) and generated two videos that each
+pull exactly one context thread:
+
+| ID | Model | Context thread used | Concept | My read | Verdict |
+|---|---|---|---|---|---|
+| V6 | seedance-2.0 ref2v, 4K 15s | blog-era nostalgia (2026 "blog era boyz" w/ mgk = same Sledgren/ID Labs producers as Cabin Fever; mixtape-download era) | time machine: street 2026 → VHS rewind → 2011 dorm, download bar hits 100% → pixels shatter into the red vinyl → back to 2026, end cards YOU USED TO DOWNLOAD THIS / NOW ITS ON WAX / FIRST TIME EVER ON VINYL | concept exists only because of research; end cards flawless; flashback sleeves drifted off-model | |
+| V7 | seedance-2.0 ref2v, 4K 15s | real tracklist + box facts (34 tracks; Taylor Gang / M.I.A. / GangBang / No Worries; red-foil treatment) | kinetic typography: track titles peel off the real back cover as red-foil 3D letters, tornado around the spinning disc, slam back down; end cards 34 TRACKS / ONE BOX / ALL RED WAX | peel/tornado spectacular; short cards clean, long floating titles typo (BIIG) | |
+
+### Round 3 technique notes
+
+12. **Context threads work at two levels**: concept (V6's whole
+    premise = the blog-era research find) and copy (real track titles,
+    "first time ever on vinyl" as end cards). Product VISUALS still
+    need reference images — V6's flashback scenes (far from any ref)
+    invented a gold sleeve. Keep the product on-screen anchored to
+    refs; let context drive the story and the text.
+13. **AI-rendered text limit**: ≤3-word end cards render clean at 4K;
+    longer floating text (track titles) gets typos. Long copy →
+    ffmpeg drawtext overlays instead.
+14. Context files live at `knowledge/artists/{artist}.md` — CLAUDE.md
+    routes any prompt/caption work through them ("1–2 details max,
+    note which in the ledger"). Same pattern scales to the Mac
+    Miller / Jeezy / Jean Dawson releases on the board.
+
 ### Round 2 technique notes
 
 8. **The 15s prompt-script format works**: write the prompt as literal

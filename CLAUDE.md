@@ -73,6 +73,11 @@ statuses in `release.json`: `raw → analyzed → editing → review → final`.
   `library.genmedia_ledger add-generation`, and when a composite ships,
   `add-final` so its shot/cost rollup is queryable. Never let this go
   stale — it's the only way to tell if AI generation is worth it at scale.
+- Writing generation prompts or captions for an artist → skim
+  `knowledge/artists/{artist}.md` first (verified product facts, recent
+  arc, iconography, moderation guardrails). Pull at most 1–2 details
+  and note which in the ledger. File missing? Research (recent, not
+  career-wiki) and create it from the template in that folder's files.
 
 ## Never-stale contract
 

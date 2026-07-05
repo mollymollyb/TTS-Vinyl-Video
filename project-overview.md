@@ -40,6 +40,7 @@ verifies this stays current.
   `genmedia.json` (AI-generation spend ledger, when the release uses
   fal-generated media), caption.md, README. `_board.md` = pipeline snapshot.
 - `knowledge/editing-rules.md` — the editing law. `release-types.md` — format playbook. `decisions/` — Molly's feedback ledger.
+- `knowledge/artists/wiz-khalifa.md` — verified artist+product context for generation prompts/captions (recent arc, iconography, moderation guardrails). One file per artist; pull 1–2 details max per prompt.
 - `plugin/` — vinyl-os plugin; skills in `plugin/skills/` (intake, ingest, analyze, edit, review, caption, doctor, janitor, learn, reflect, skillify).
 - `.agents/skills` → symlink to `plugin/skills` (Cursor/Codex discovery).
 - `routines/` — janitor/reflect/compound-learn prompts + armed index.
