@@ -43,6 +43,23 @@ Rules learned the expensive way:
 | Art-directed restyle that MOVES | two-step: `nano-banana-2/edit` restyles a real frame → seedance i2v animates the still | full art-direction control (F2 = best hook) |
 | Bridge two real shots | i2v + `end_image_url` (first+last frame morph) | reads as an invisible transition (E1/X3) |
 
+## Proven arc patterns (steal these shapes)
+
+- **Portal**: product surface comes alive → camera dives INTO it →
+  world made of the product → payoff card (G1 chrome tunnel, J1
+  record cathedral). Chains well: part 2 opens by splitting the
+  inherited end card open like doors.
+- **Brainrot escalation (comedy)**: product multiplies/escalates
+  absurdly in the REAL location → physical-comedy beat (bus splashing
+  through discs) → "OK ONE IS ENOUGH" self-aware card. Comedic pops/
+  clinks audio passes moderation where ethereal audio fails (J2).
+- **Album motif animation**: take a real packaging detail (calligraphy
+  tracklist, wing artwork) and animate IT — ink lifts off and spells
+  real track names, wing beats once (J3B). Short quoted words render
+  clean; celestial audio does NOT (submit silent, foley after).
+- **Ascension**: product leaves the human's hands into a transformed
+  sky, returns changed (G2 angel drop).
+
 ## Context threads (sometimes, not always)
 
 Default is product-first, zero context. When a concept needs a hook,

@@ -77,6 +77,12 @@ both ledgers, prompts, and filenames.
   then add foley via `fal-ai/mmaudio-v2` (negative_prompt: "speech,
   vocals, singing"). Details + artist-specific triggers:
   `knowledge/artists/{artist}.md` guardrails section.
+  **Celestial/ethereal audio descriptors are a repeat trap** ("ambient
+  synth swell", "shimmering chimes" both failed on Glimmer of God —
+  the model renders them as choir-like vocals). For any divine/dreamy
+  register: submit `--generate_audio false` BY DEFAULT and foley with
+  mmaudio; only percussive/mechanical sound prompts (booms, clinks,
+  needle crackle, bus rumble) have passed reliably.
 - Model drift on product artwork grows with distance from the seed —
   keep the product anchored to reference images (see vinyl-gen-video).
 - **Never submit to a root model alias** (`bytedance/seedance-2.0`):

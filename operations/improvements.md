@@ -2,6 +2,26 @@
 
 Dated entries: friction observed → change made → how we'll know it worked.
 
+## 2026-07-05 — round 2: the pack quality bar + meme wing
+
+- Friction: first Jean Dawson pack read "mid" — only a couple of FULL
+  videos; hooks and short composites padded the count. The pack shape
+  optimized for quantity, not attention.
+- Change: (1) new quality bar — a deliverable is a FULL video (≥13s,
+  hook → hold → payoff); hooks are ingredients. (2) New
+  `vinyl-gen-meme` skill: meme stills, ken-burns slideshows,
+  freeze-frame reactions, stutter repeats, chaos edits, rapid-fire
+  text, and the caption voice rules. (3) vinyl-gen-video gained the
+  proven arc patterns (portal, brainrot escalation, motif animation,
+  ascension). (4) Confirmed moderation pattern: celestial audio
+  descriptors fail (2/2); divine concepts generate silent + mmaudio.
+- Result: pack v2 = 17 videos, 14 full, $22.00 total, including a 30s
+  two-parter (J1X), a comedy generation (J2), and 4 meme edits from
+  $0 of new inference.
+- We'll know it worked when Molly's picks skew toward the new formats
+  and the next release's pack starts from vinyl-gen-meme instead of
+  improvising.
+
 ## 2026-07-05 — the full run, proven on Jean Dawson
 
 - Friction: "make everything for this release" had no single entry

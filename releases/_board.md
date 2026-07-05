@@ -7,7 +7,7 @@ release. Last updated: 2026-07-05.
 | Release | Type | Takes | Status | Next action |
 |---|---|---|---|---|
 | el-michels-affair-24hr | unknown (draft) | 1 | raw | analyze |
-| jean-dawson-glimmer-of-god | 1xLP gatefold (draft) | 3 | review | social pack of 10 delivered ($11.20) — Molly picks winners + confirms white-marble variant |
+| jean-dawson-glimmer-of-god | 1xLP gatefold (draft) | 3 | review | social pack v2: 17 videos / 14 full ($22.00) — Molly picks winners + confirms white-marble variant |
 | jeezy-tm-101-live | 2xLP (draft) | 1 | raw | analyze |
 | larry-lovestein-you | unknown (draft) | 1 | raw | analyze |
 | like-today-sounds-good | unknown (draft) | 2 | raw | analyze |

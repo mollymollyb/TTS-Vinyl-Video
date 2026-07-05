@@ -15,8 +15,10 @@ figure on every video.
 Generative wing (fal.ai, works for any release): `vinyl-genmedia`
 (CLI mechanics + ledger discipline) → `vinyl-gen-video` (full scripted
 generations, restyles, continuation chains) → `vinyl-gen-composite`
-(cut generations + real footage into finished posts). `vinyl-artist-context`
-feeds both with verified recent-arc facts per artist.
+(cut generations + real footage into finished posts) →
+`vinyl-gen-meme` (meme stills, slideshows, freeze/stutter/chaos
+formats, the gen-z caption voice). `vinyl-artist-context` feeds them
+all with verified recent-arc facts per artist.
 
 Maintenance organs: `vinyl-doctor` (read-only health), `vinyl-janitor`
 (reconcile + prune), `vinyl-learn` (capture Molly's feedback),

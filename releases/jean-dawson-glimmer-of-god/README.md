@@ -1,14 +1,18 @@
 # Jean Dawson — Glimmer Of God
 
-- **Status:** review — full social pack delivered (10 videos), Molly picks
+- **Status:** review — social pack v2 delivered (17 videos, 14 full),
+  Molly picks
 - **Release type:** 1xLP gatefold (draft — confirm). One vinyl-pull
   sequence in take 1 supports 1xLP.
 - **Variant flag:** footage shows a MARBLED WHITE/CREAM disc; retail
   standard is hot pink. Confirm variant name before any caption posts.
 
-First release run end-to-end by `vinyl-social-pack` (2026-07-05):
-analyze -> artist context -> gen slate -> 3 real edits -> 4 composites
--> captions -> costed manifest. Total fal spend $11.20 (estimated).
+First release run end-to-end by `vinyl-social-pack` (2026-07-05),
+then round 2 after feedback ("more and better, gen-z, memes"): batch J
+generations (record cathedral two-parter, disc-multiplication comedy,
+calligraphy lift), batch N divine meme stills, and the meme-format
+composites (chaos edit, freeze reaction, rapid-fire, slideshow) now
+codified in `vinyl-gen-meme`. Total fal spend $22.00 (estimated).
 
 ## Raw takes
 
@@ -35,11 +39,11 @@ analyze -> artist context -> gen slate -> 3 real edits -> 4 composites
 
 ## The deliverable
 
-**`social-pack.md`** — 10 post-ready videos with per-video cost:
-3 real edits (v1-v3), 3 full generations (G1 chrome portal, G2 angel
-drop w/ foley, G3 stoop pour), 4 composites (X1/X2 hook+real, X3
-supercut, X4 G1 select cut). Suggested caption lines included;
-release caption + listing in `caption.md`.
+**`social-pack.md` (v2)** — 17 videos, 14 full (≥13s w/ arc), per-video
+cost. Bangers row: J1X 30s gatefold saga, J2 multiplication comedy,
+M1 chaos edit, J3 calligraphy lift, M2 divine meme slideshow, X3B
+supercut XL. Plus G1-G3, M4/M7 meme edits, X1/X2/X4, and the clean
+v1-v3 layer. Caption lines in the manifest.
 
 ## Open for Molly
 

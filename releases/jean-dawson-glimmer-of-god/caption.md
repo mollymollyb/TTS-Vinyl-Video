@@ -31,15 +31,6 @@ Confirm before posting: variant name/edition size; price.
 
 ## Per-video caption lines (for the social pack)
 
-One-liners to pair with each deliverable; same voice, hook ≤ 8 words.
-
-- v1 (full story): "full package tour. the gatefold goes crazy"
-- v2 (variant-first): "the wax matches the album title"
-- v3 (disc fancam): "just the marble wax catching sun"
-- G1 (chrome portal): "what living inside the gatefold feels like"
-- G2 (angel drop): "this record believes in something"
-- G3 (stoop pour): "the artwork leaked onto the stoop"
-- X1 (hook+v2): "wait for the real thing"
-- X2 (hook+v3): "the shimmer is not an effect"
-- X3 (supercut): "glimmer of god in 15 seconds"
-- X4 (G1 select cut): "POV: you fell into the gatefold"
+Moved to `social-pack.md` (v2, 14 lines) so captions live next to the
+videos they pair with. Same voice rules: hook ≤ 8 words, Molly's
+collector-to-collector tone, meme voice per `vinyl-gen-meme`.

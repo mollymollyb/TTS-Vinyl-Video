@@ -50,6 +50,7 @@ verifies this stays current.
 - `plugin/skills/vinyl-gen-composite/` — ffmpeg edit bay for AI+real composites: hooks, supercuts, select cuts, two-parter stitches, caption standards.
 - `plugin/skills/vinyl-artist-context/` — research + maintain `knowledge/artists/{artist}.md` (recent arc, product facts, guardrails).
 - `plugin/skills/vinyl-social-pack/` — THE FULL RUN: one release from raw footage to a costed pack of ~10 post-ready videos (chains analyze → context → gens → edits → composites → captions → manifest).
+- `plugin/skills/vinyl-gen-meme/` — meme formats: nano-banana meme stills, ken-burns slideshows, freeze-frame reactions, stutter repeats, chaos edits, rapid-fire text; the gen-z caption voice rules.
 - `.agents/skills` → symlink to `plugin/skills` (Cursor/Codex discovery).
 - `routines/` — janitor/reflect/compound-learn prompts + armed index.
 - `operations/` — `doctor.py` (mechanical health check), `health.md`, `improvements.md`, `sync.md`.

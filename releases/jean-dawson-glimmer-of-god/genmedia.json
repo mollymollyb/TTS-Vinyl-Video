@@ -189,6 +189,292 @@
       "verdict": null,
       "output_path": "genmedia/G2_final.mp4",
       "notes": "foley for silent G2B: night wind, wing whoosh, needle drop; no voices (moderation workaround) | first run used mmaudio DEFAULT duration=8 which TRUNCATED the 15s video to 8s - rerun with --duration 15. Both runs ~$0.02 total."
+    },
+    {
+      "id": "J1",
+      "batch": "J",
+      "date": "2026-07-05",
+      "model": "seedance-2.0/image-to-video",
+      "operation": "i2v",
+      "settings": {
+        "resolution": "4k",
+        "duration_seconds": 15,
+        "aspect_ratio": "9:16",
+        "request_id": "019f3486-0088-7ee0-b3d2-f4ecd63c64ba"
+      },
+      "inputs": [
+        "seed_g1_lastframe",
+        "G1"
+      ],
+      "output_units": {
+        "quantity": 15,
+        "unit": "video_seconds"
+      },
+      "unit_price_usd": null,
+      "cost_usd": 2.62,
+      "cost_confidence": "estimated",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/J1.mp4",
+      "notes": "PT.2 chain from G1 last frame: card burns, disc splits open like doors -> chrome record cathedral flythrough -> stage-size turntable needle drop -> COP THE VINYL card"
+    },
+    {
+      "id": "J2",
+      "batch": "J",
+      "date": "2026-07-05",
+      "model": "seedance-2.0/image-to-video",
+      "operation": "i2v",
+      "settings": {
+        "resolution": "4k",
+        "duration_seconds": 15,
+        "aspect_ratio": "9:16",
+        "request_id": "019f3486-034e-7662-9a69-63cf18c8ec34"
+      },
+      "inputs": [
+        "seed_disc_macro"
+      ],
+      "output_units": {
+        "quantity": 15,
+        "unit": "video_seconds"
+      },
+      "unit_price_usd": null,
+      "cost_usd": 2.62,
+      "cost_confidence": "estimated",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/J2.mp4",
+      "notes": "brainrot multiplication: disc pops into dozens raining down stoop, bus splashes through, tower stack -> OK ONE IS ENOUGH card. Comedy energy"
+    },
+    {
+      "id": "J3",
+      "batch": "J",
+      "date": "2026-07-05",
+      "model": "seedance-2.0/image-to-video",
+      "operation": "i2v",
+      "settings": {
+        "resolution": "4k",
+        "duration_seconds": 15,
+        "aspect_ratio": "9:16",
+        "request_id": "019f3486-063d-7391-b8e3-3f60c375d2cc"
+      },
+      "inputs": [
+        "seed_tracklist"
+      ],
+      "output_units": {
+        "quantity": 15,
+        "unit": "video_seconds"
+      },
+      "unit_price_usd": null,
+      "cost_usd": 2.62,
+      "cost_confidence": "estimated",
+      "status": "failed",
+      "verdict": "kill",
+      "output_path": null,
+      "notes": "calligraphy lifts off sleeve, spells DARLIN/BLACK SUGAR/HOUSTON in 3D, wing beat blasts to sparks, tracklist rewrites -> 15 TRACKS NO SKIPS card | FAILED audio moderation ('shimmering chimes' -> singable?). Billed. 2nd audio fail today - celestial audio descriptors are a moderation trap. Resubmitted silent as J3B."
+    },
+    {
+      "id": "N1",
+      "batch": "N",
+      "date": "2026-07-05",
+      "model": "nano-banana-2/edit",
+      "operation": "edit",
+      "settings": {
+        "aspect_ratio": "9:16",
+        "request_id": "019f3486-6447-72e1-a7cc-e717ea6cf0fa"
+      },
+      "inputs": [
+        "seed_disc_hold"
+      ],
+      "output_units": {
+        "quantity": 1,
+        "unit": "images"
+      },
+      "unit_price_usd": null,
+      "cost_usd": 0.05,
+      "cost_confidence": "estimated",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/memes/N1.jpg",
+      "notes": "meme still: renaissance angel statue holds the disc, halo god-rays"
+    },
+    {
+      "id": "N2",
+      "batch": "N",
+      "date": "2026-07-05",
+      "model": "nano-banana-2/edit",
+      "operation": "edit",
+      "settings": {
+        "aspect_ratio": "9:16",
+        "request_id": "019f3486-6734-7683-845d-89b82e6f94f2"
+      },
+      "inputs": [
+        "seed_disc_hold"
+      ],
+      "output_units": {
+        "quantity": 1,
+        "unit": "images"
+      },
+      "unit_price_usd": null,
+      "cost_usd": 0.05,
+      "cost_confidence": "estimated",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/memes/N2.jpg",
+      "notes": "meme still: disc as full moon over the brownstone street"
+    },
+    {
+      "id": "N3",
+      "batch": "N",
+      "date": "2026-07-05",
+      "model": "nano-banana-2/edit",
+      "operation": "edit",
+      "settings": {
+        "aspect_ratio": "9:16",
+        "request_id": "019f3486-69ea-78f0-8f99-76f803635a03"
+      },
+      "inputs": [
+        "seed_cover"
+      ],
+      "output_units": {
+        "quantity": 1,
+        "unit": "images"
+      },
+      "unit_price_usd": null,
+      "cost_usd": 0.05,
+      "cost_confidence": "estimated",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/memes/N3.jpg",
+      "notes": "meme still: cover on a Times Square billboard at night"
+    },
+    {
+      "id": "N4",
+      "batch": "N",
+      "date": "2026-07-05",
+      "model": "nano-banana-2/edit",
+      "operation": "edit",
+      "settings": {
+        "aspect_ratio": "9:16",
+        "request_id": "019f3486-6ccf-7ee1-ac6a-81833f81783e"
+      },
+      "inputs": [
+        "seed_gatefold"
+      ],
+      "output_units": {
+        "quantity": 1,
+        "unit": "images"
+      },
+      "unit_price_usd": null,
+      "cost_usd": 0.05,
+      "cost_confidence": "estimated",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/memes/N4.jpg",
+      "notes": "meme still: cherub statue sitting on the chrome gatefold, museum"
+    },
+    {
+      "id": "N5",
+      "batch": "N",
+      "date": "2026-07-05",
+      "model": "nano-banana-2/edit",
+      "operation": "edit",
+      "settings": {
+        "aspect_ratio": "9:16",
+        "request_id": "019f3486-6f89-7103-a139-f0a9be9ee10e"
+      },
+      "inputs": [
+        "seed_disc_opal"
+      ],
+      "output_units": {
+        "quantity": 1,
+        "unit": "images"
+      },
+      "unit_price_usd": null,
+      "cost_usd": 0.05,
+      "cost_confidence": "estimated",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/memes/N5.jpg",
+      "notes": "meme still: disc in renaissance fresco cloudscape, doves"
+    },
+    {
+      "id": "N6",
+      "batch": "N",
+      "date": "2026-07-05",
+      "model": "nano-banana-2/edit",
+      "operation": "edit",
+      "settings": {
+        "aspect_ratio": "9:16",
+        "request_id": "019f3486-7238-7a41-8ed5-5ab09274f5e9"
+      },
+      "inputs": [
+        "seed_cover"
+      ],
+      "output_units": {
+        "quantity": 1,
+        "unit": "images"
+      },
+      "unit_price_usd": null,
+      "cost_usd": 0.05,
+      "cost_confidence": "estimated",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/memes/N6.jpg",
+      "notes": "meme still: cover as stained glass cathedral window"
+    },
+    {
+      "id": "J3B",
+      "batch": "J",
+      "date": "2026-07-05",
+      "model": "seedance-2.0/image-to-video",
+      "operation": "i2v",
+      "settings": {
+        "resolution": "4k",
+        "duration_seconds": 15,
+        "aspect_ratio": "9:16",
+        "generate_audio": false,
+        "request_id": "019f348c-744b-7073-b224-c1f887b33404"
+      },
+      "inputs": [
+        "seed_tracklist"
+      ],
+      "output_units": {
+        "quantity": 15,
+        "unit": "video_seconds"
+      },
+      "unit_price_usd": null,
+      "cost_usd": 2.62,
+      "cost_confidence": "estimated",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/J3B.mp4",
+      "notes": "calligraphy-lift rerun, silent - mmaudio foley after (duration 15!)"
+    },
+    {
+      "id": "J3F",
+      "batch": "J",
+      "date": "2026-07-05",
+      "model": "mmaudio-v2",
+      "operation": "edit",
+      "settings": {
+        "duration": 15,
+        "request_id": "019f3499-817e-7d63-ad5f-4af0e0efa9aa",
+        "negative_prompt": "speech, vocals, singing, voice, choir, chanting, humming"
+      },
+      "inputs": [
+        "J3B"
+      ],
+      "output_units": {
+        "quantity": 15,
+        "unit": "video_seconds"
+      },
+      "unit_price_usd": 0.001,
+      "cost_usd": 0.02,
+      "cost_confidence": "exact",
+      "status": "success",
+      "verdict": null,
+      "output_path": "genmedia/J3_final.mp4",
+      "notes": "foley for silent J3B: bell tinkles, whoosh, spark rain, pen scratch, bass hit - no voices"
     }
   ],
   "finals": [
@@ -269,6 +555,132 @@
         }
       ],
       "notes": "angel drop deliverable: silent G2B + mmaudio foley; ends on generated OUT NOW ON VINYL card"
+    },
+    {
+      "id": "J1X",
+      "output_path": "genmedia/J1X_gatefold_saga.mp4",
+      "components": [
+        {
+          "type": "generated",
+          "generation_id": "G1"
+        },
+        {
+          "type": "generated",
+          "generation_id": "J1"
+        }
+      ],
+      "notes": "30.2s two-parter: G1 chrome portal -> J1 record cathedral; captions bridge the seam, both gen end cards kept clean"
+    },
+    {
+      "id": "X3B",
+      "output_path": "genmedia/X3B_supercut_xl.mp4",
+      "components": [
+        {
+          "type": "generated",
+          "generation_id": "J2"
+        },
+        {
+          "type": "generated",
+          "generation_id": "G1"
+        },
+        {
+          "type": "generated",
+          "generation_id": "G2F"
+        },
+        {
+          "type": "generated",
+          "generation_id": "J1"
+        },
+        {
+          "type": "raw_footage",
+          "ref": "takes 1+3 beats",
+          "seconds": 5.2
+        }
+      ],
+      "notes": "16.4s XL supercut: 12 beats, GLIMMER/OF/GOD three-beat finish, ends on J1 COP THE VINYL card"
+    },
+    {
+      "id": "M1",
+      "output_path": "genmedia/M1_chaos_edit.mp4",
+      "components": [
+        {
+          "type": "raw_footage",
+          "ref": "takes 1-3",
+          "seconds": 19.0
+        }
+      ],
+      "notes": "19s chaos edit: freeze WAIT. open, 1.6x ramp, HELLO??? stutter x3, THE MARBLE. freeze, card. All-caption gen-z grammar"
+    },
+    {
+      "id": "M2",
+      "output_path": "genmedia/M2_meme_slideshow.mp4",
+      "components": [
+        {
+          "type": "generated",
+          "generation_id": "N1"
+        },
+        {
+          "type": "generated",
+          "generation_id": "N2"
+        },
+        {
+          "type": "generated",
+          "generation_id": "N3"
+        },
+        {
+          "type": "generated",
+          "generation_id": "N4"
+        },
+        {
+          "type": "generated",
+          "generation_id": "N5"
+        },
+        {
+          "type": "generated",
+          "generation_id": "N6"
+        },
+        {
+          "type": "raw_footage",
+          "ref": "take1 intro + take3 outro",
+          "seconds": 4.1
+        }
+      ],
+      "notes": "13.1s meme slideshow: real intro premise -> 6 ken-burns divine-meme cards -> real outro. 'biblically accurate pressing'"
+    },
+    {
+      "id": "M4",
+      "output_path": "genmedia/M4_freeze_reaction.mp4",
+      "components": [
+        {
+          "type": "raw_footage",
+          "ref": "take 1",
+          "seconds": 19.5
+        }
+      ],
+      "notes": "19.5s freeze-frame reaction: disc cold open -> HOLD ON. freeze -> full gatefold arc -> tracklist close"
+    },
+    {
+      "id": "M7",
+      "output_path": "genmedia/M7_tracklist_rapidfire.mp4",
+      "components": [
+        {
+          "type": "raw_footage",
+          "ref": "takes 1-3",
+          "seconds": 12.7
+        }
+      ],
+      "notes": "14.6s rapid-fire: all 15 track titles in pairs over 8 showcase beats -> 15 TRACKS NO SKIPS card"
+    },
+    {
+      "id": "J3FINAL",
+      "output_path": "genmedia/J3_final.mp4",
+      "components": [
+        {
+          "type": "generated",
+          "generation_id": "J3F"
+        }
+      ],
+      "notes": "calligraphy-lift deliverable: silent J3B + mmaudio foley; DARLIN/BLACK SUGAR/HOUSTON spelled in 3D, 15 TRACKS NO SKIPS card"
     }
   ]
 }

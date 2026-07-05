@@ -5,6 +5,10 @@ description: Cut AI generations and real footage into finished platform-ready po
 
 # Vinyl gen-composite
 
+> Meme-format recipes (freeze-frame reaction, stutter repeat, chaos
+> edit, ken-burns meme slideshow, rapid-fire text) live in
+> `vinyl-gen-meme` — same normalization contract as here.
+
 Generations are SELECTS, not finals. This skill is the edit bay:
 everything here is plain ffmpeg on the media plane, logged as a
 `finals` record via `library.genmedia_ledger add-final`.

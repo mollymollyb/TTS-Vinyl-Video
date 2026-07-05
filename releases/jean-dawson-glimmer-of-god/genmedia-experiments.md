@@ -29,6 +29,28 @@ Slate estimate: ~$8.56 (under the ~$10 gate); actuals landed $11.20
 because G2's moderation failure billed a full 4K run. Composites X1-X4
 built from these — see `social-pack.md` for the full deliverable table.
 
+## Batch J — "MORE and BETTER" round (2026-07-05, after Sidney's mid verdict)
+
+Feedback driving this round: pack was "mid", only 2 full videos, rest
+too quick — edit like a gen-z: grab attention, hold attention, memes.
+
+| ID | Model | Settings | Seed | Concept | Est. cost | My read | Verdict |
+|---|---|---|---|---|---|---|---|
+| J1 | seedance-2.0/i2v | 4k 15s | seed_g1_lastframe | PT.2 chain: G1's card burns, disc splits open like doors -> chrome record-cathedral flythrough -> stage-size turntable needle drop -> COP THE VINYL | ~$2.62 | Cathedral is jaw-dropping — pillars are stacks of records, altar turntable lands. Chain seam reads as a beat. Best generation on this release | |
+| J2 | seedance-2.0/i2v | 4k 15s | seed_disc_macro | brainrot: disc pops into dozens raining down the stoop, bus splashes through, tower stack -> OK ONE IS ENOUGH | ~$2.62 | Genuinely funny. Multiplication reads clean, bus beat lands, tower wobble sells it. Comedy audio (pops/clinks) PASSED moderation | |
+| J3 | seedance-2.0/i2v | 4k 15s | seed_tracklist | calligraphy lifts off sleeve, spells DARLIN/BLACK SUGAR/HOUSTON in 3D, wing-beat spark blast, tracklist rewrites -> 15 TRACKS NO SKIPS | ~$2.62 | FAILED audio moderation ("shimmering chimes"). 2nd celestial-audio fail — pattern confirmed | kill |
+| J3B | seedance-2.0/i2v | 4k 15s silent | seed_tracklist | same, --generate_audio false | ~$2.62 | Letters lift and spell the real track names legibly; wing beat + spark rain deliver; card clean | |
+| J3F | mmaudio-v2 | 15s foley | J3B | bells/whoosh/spark rain/pen scratch | $0.02 | Passed. J3_final.mp4 is the deliverable | |
+
+## Batch N — divine meme stills (nano-banana-2/edit, ~$0.05 ea)
+
+All six landed on-model and genuinely funny-beautiful: N1 renaissance
+angel statue holding the disc (halo god-rays), N2 disc as full moon
+over the same street, N3 cover on a Times Square billboard w/ crowd,
+N4 cherub sitting on the chrome gatefold in a museum, N5 disc in a
+fresco cloudscape w/ doves, N6 cover as stained glass casting light.
+Divine register = the album's own theme; memes stay brand-true.
+
 ## Technique notes (this release)
 
 - **Root alias trap (cost us ~25 min, $0):** first slate went to
@@ -41,3 +63,11 @@ built from these — see `social-pack.md` for the full deliverable table.
   `/image-to-video` sub-endpoint. Rule now lives in vinyl-genmedia.
 - Do not POST to queue result URLs — it enqueues a NEW (empty) job.
   One stray POST auto-completed as a validation reject ($0).
+- **Celestial audio descriptors fail moderation reliably** ("ambient
+  synth swell" G2, "shimmering chimes" J3 — both billed). Divine/
+  dreamy concepts: generate silent by default, mmaudio after
+  (`--duration {len}` — default 8 truncates). Comedic/mechanical
+  audio (pops, clinks, bus rumble, booms) passes.
+- Meme grammar that worked in composites: 1 freeze + 1 stutter max
+  per video, every beat captioned, back half faster, generated end
+  cards never captioned over. Formats promoted to `vinyl-gen-meme`.

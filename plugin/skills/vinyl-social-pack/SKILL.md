@@ -12,10 +12,14 @@ skills and owns the deliverable contract; it invents no new mechanics.
 ## 0. Scope + budget gate (before anything renders)
 
 - Confirm the release has raw footage ingested (`release.json`).
-- Default pack: **10 videos** — 3 real edits, 3 scripted generations,
-  2 AI-hook composites, 1 supercut, 1 select cut. Rebalance to the
-  footage (thin footage → more gen; rich footage → more real) and say
-  so in the manifest.
+- Default pack: **10+ videos and every one FULL** — a deliverable is
+  ≥13s with hook → hold → payoff (learned 2026-07-05: a pack padded
+  with 2s hooks and short cuts reads "mid"). Hooks are ingredients,
+  not deliverables. Default mix: 3 real edits, 3-4 scripted
+  generations (≥1 two-parter chain, ≥1 comedy), 2-3 meme formats
+  (vinyl-gen-meme: chaos edit / slideshow / freeze reaction /
+  rapid-fire), 1-2 supercuts. Rebalance to the footage and say so in
+  the manifest.
 - Estimate fal spend for the gen slate BEFORE submitting (via
   `genmedia pricing`); over ~$10, pause and confirm with the user.
   Real edits and composites are $0 marginal (ffmpeg).
