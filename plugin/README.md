@@ -8,9 +8,10 @@ Pipeline skills: `vinyl-intake` (orchestrator) → `vinyl-ingest` →
 `vinyl-analyze` → `vinyl-edit` → `vinyl-review` → `vinyl-caption`.
 
 The full run: `vinyl-social-pack` — one release from raw footage to a
-costed pack of ~10 post-ready videos. Chains the pipeline AND the
-generative wing, ships `releases/{slug}/social-pack.md` with a dollar
-figure on every video.
+costed pack of post-ready videos (every one full, every one costed).
+Chains the pipeline, the generative wing, and the feed-mechanics
+skills; ships `releases/{slug}/social-pack.md` with a dollar figure on
+every video.
 
 Generative wing (fal.ai, works for any release): `vinyl-genmedia`
 (CLI mechanics + ledger discipline) → `vinyl-gen-video` (full scripted

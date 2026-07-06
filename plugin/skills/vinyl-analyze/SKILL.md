@@ -12,6 +12,11 @@ It builds a 720p proxy, scene-maps it, extracts one midpoint frame per
 shot, and — if `TWELVE_LABS_API_KEY` is set (Tier 2) — labels every shot
 (visual, key_action, sequence_type, motion_state).
 
+**Multi-take releases: analyze EVERY take.** Take 1 writes
+`analysis.json`; take N writes `analysis-take{N}.json`. Sequences from
+any take are fair game for edits and gen seeds — the best pull is often
+not in take 1.
+
 **Tier 1 fallback (no key):** shots come back unlabeled. Read each
 frame image listed in `shots[].frame` yourself and fill in the same four
 fields directly in `analysis.json`. Use the `sequence_type` vocabulary

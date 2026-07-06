@@ -2,6 +2,25 @@
 
 Dated entries: friction observed → change made → how we'll know it worked.
 
+## 2026-07-06 — orchestrator deslop: one rule, one home
+
+- Friction: vinyl-social-pack (100 lines) restated mechanics its
+  sub-skills already own — the ~$10 budget gate (vinyl-genmedia), the
+  3-round discard rule (vinyl-review), dense-probing (vinyl-analyze),
+  end-card captioning (vinyl-gen-composite), the loop trick
+  (vinyl-scrollstop) — five rules with two homes each, plus a numeric
+  pack mix ("3 real edits, 3-4 gens, 2-3 memes...") that had already
+  drifted from reality (pack v3's best-value layer wasn't in it).
+- Change: rewrote the orchestrator to ~60 lines — contract (full
+  videos, multi-mechanic coverage, ledger-costed, disk-verified),
+  sequence with the async-first insight, per-stage pointers with zero
+  embedded mechanics, manifest + ship contracts. Multi-take rule
+  moved to its rightful owner (vinyl-analyze, which owns --take N).
+  Numeric mix replaced with the principle (cover distinct mechanics,
+  rebalance to the footage, say so in the manifest).
+- We'll know it worked when a sub-skill rule changes and no stale
+  copy in the orchestrator contradicts it.
+
 ## 2026-07-06 — round 3: feed mechanics (the viral pass)
 
 - Friction: rounds 1-2 made better VIDEOS; virality lives in feed
