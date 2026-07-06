@@ -16,9 +16,14 @@ Generative wing (fal.ai, works for any release): `vinyl-genmedia`
 (CLI mechanics + ledger discipline) → `vinyl-gen-video` (full scripted
 generations, restyles, continuation chains) → `vinyl-gen-composite`
 (cut generations + real footage into finished posts) →
-`vinyl-gen-meme` (meme stills, slideshows, freeze/stutter/chaos
-formats, the gen-z caption voice). `vinyl-artist-context` feeds them
-all with verified recent-arc facts per artist.
+`vinyl-gen-meme` (meme stills, slideshows, freeze/stutter/chaos and
+UI-parody formats, the gen-z caption voice). `vinyl-artist-context`
+feeds them all with verified recent-arc facts per artist.
+
+Feed mechanics: `vinyl-scrollstop` (first-frame law, pattern
+interrupts, genre theft, loop engineering, comment engineering,
+Molly's human-hook layer) and `vinyl-sound-design` (ASMR cuts with
+generated foley, beat-grid cutting, per-pack sound maps).
 
 Maintenance organs: `vinyl-doctor` (read-only health), `vinyl-janitor`
 (reconcile + prune), `vinyl-learn` (capture Molly's feedback),

@@ -58,6 +58,22 @@ cut the composite layer — hook+real openers, the supercut, select cuts
 of the strongest generations. Captions per the composite skill's
 standards; never caption over generated end cards.
 
+## 5b. Viral pass (vinyl-scrollstop + vinyl-sound-design)
+
+After the core pack exists, run the feed-mechanics layer — it is
+nearly all $0:
+- 2-3 scrollstop formats (UI parody / genre theft / black-slam /
+  4th-wall — pick interrupts the pack doesn't already use).
+- 1 perfect loop (palindrome $0, or gen loop via
+  image_url == end_image_url at 1080p/10s).
+- 1 ASMR cut (real macro beats + mmaudio foley).
+- 1 comment magnet (a real open question — variant mystery, hot
+  take, "wrong answers only").
+- An A/B pair: one existing asset re-hooked with a different first
+  second.
+- Ship `sound-map.md` (music alignment per video) and
+  `molly-hooks.md` (5-6 selfie cold-open scripts) with the pack.
+
 ## 6. Captions + the manifest (the deliverable)
 
 - `vinyl-caption` writes the release's caption.md (post copy is per

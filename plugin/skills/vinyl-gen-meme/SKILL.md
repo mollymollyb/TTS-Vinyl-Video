@@ -62,6 +62,19 @@ Sequence integrity still applies: show whole actions or don't show
 them (cut AROUND, never INSIDE - the analysis sequence map is law
 even in memes).
 
+## Format 7 — UI parody (PIL + ffmpeg, $0)
+
+Feeds train thumbs to respond to interfaces — a fake UI is the
+strongest $0 scroll-stop we have. Build chrome with PIL (pixel-exact
+cards saved as PNG), animate states with ffmpeg stills + real-footage
+beats. Proven: **captcha** ("select all squares with a divine object"
+— all 9 tiles are the product; 3 states: empty / checked / "9/9
+correct"), **dating profile** (product as the profile; bio lines =
+the specs; LIKE stamp; match screen), **fake pinned comment** (an
+invented-username hater comment the video rebuts — never use a real
+username). End on a real product beat + card so the joke converts.
+Screenshot-ability is the point: shares > likes.
+
 ## Format 6 — Rapid-fire text (~14s, $0)
 
 One claim proven N times: every track title flashed in pairs over

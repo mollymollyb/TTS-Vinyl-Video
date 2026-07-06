@@ -475,6 +475,61 @@
       "verdict": null,
       "output_path": "genmedia/J3_final.mp4",
       "notes": "foley for silent J3B: bell tinkles, whoosh, spark rain, pen scratch, bass hit - no voices"
+    },
+    {
+      "id": "L1",
+      "batch": "L",
+      "date": "2026-07-06",
+      "model": "seedance-2.0/image-to-video",
+      "operation": "i2v",
+      "settings": {
+        "resolution": "1080p",
+        "duration_seconds": 10,
+        "aspect_ratio": "9:16",
+        "generate_audio": false,
+        "end_image_url": "seed_disc_hold (same as image_url)",
+        "request_id": "019f3609-e423-7492-ab97-eada93a96672"
+      },
+      "inputs": [
+        "seed_disc_hold"
+      ],
+      "output_units": {
+        "quantity": 10,
+        "unit": "video_seconds"
+      },
+      "unit_price_usd": null,
+      "cost_usd": 0.44,
+      "cost_confidence": "estimated",
+      "status": "success",
+      "verdict": "keep",
+      "output_path": "genmedia/L1.mp4",
+      "notes": "PERFECT LOOP experiment: image_url == end_image_url forces first frame = last frame; 360 orbit + day-night-day cycle between them. Rewatch-engineering play (vinyl-scrollstop) | cost re-derived from unit pricing: 4K15s=$2.62 -> x0.25 px x0.667 dur = $0.44"
+    },
+    {
+      "id": "ASMR1F",
+      "batch": "S",
+      "date": "2026-07-06",
+      "model": "fal-ai/mmaudio-v2",
+      "operation": "video-to-audio",
+      "settings": {
+        "duration_seconds": 14,
+        "negative_prompt": "speech, vocals, singing, voice, music, melody",
+        "request_id": "019f360f-654a-7eb3-9f34-0312826b2f12"
+      },
+      "inputs": [
+        "ASMR1_silent.mp4 (real-footage macro cut, 0.85x)"
+      ],
+      "output_units": {
+        "quantity": 14,
+        "unit": "audio_seconds"
+      },
+      "unit_price_usd": 0.001,
+      "cost_usd": 0.014,
+      "cost_confidence": "estimated",
+      "status": "success",
+      "verdict": "keep",
+      "output_path": "genmedia/ASMR1_final.mp4",
+      "notes": "ASMR foley on REAL footage (first time): cardboard slides, crackle, thuds. --duration 14 passed explicitly (8s-default trap avoided)"
     }
   ],
   "finals": [
@@ -681,6 +736,128 @@
         }
       ],
       "notes": "calligraphy-lift deliverable: silent J3B + mmaudio foley; DARLIN/BLACK SUGAR/HOUSTON spelled in 3D, 15 TRACKS NO SKIPS card"
+    },
+    {
+      "id": "S1_captcha",
+      "output_path": "genmedia/S1_captcha.mp4",
+      "components": [
+        {
+          "type": "raw_footage",
+          "ref": "UI stills from real footage (captcha grid) + take1 beat",
+          "seconds": 10.2
+        }
+      ],
+      "notes": "UI-parody captcha: 9/9 divine-object grid (PIL chrome over real stills) -> verified -> real beat -> card. 10.2s, $0. vinyl-scrollstop format"
+    },
+    {
+      "id": "S2_dating_profile",
+      "output_path": "genmedia/S2_dating_profile.mp4",
+      "components": [
+        {
+          "type": "raw_footage",
+          "ref": "PIL dating-app cards from real stills + take3 beat",
+          "seconds": 12.0
+        }
+      ],
+      "notes": "Dating profile for the record ('Glimmer, 1'), bio, LIKE stamp, match screen -> real payoff. 12.0s, $0. Screenshot-able meme"
+    },
+    {
+      "id": "S3_comment_rebuttal",
+      "output_path": "genmedia/S3_comment_rebuttal.mp4",
+      "components": [
+        {
+          "type": "raw_footage",
+          "ref": "take1 beats + PIL comment bubble",
+          "seconds": 6.9
+        },
+        {
+          "type": "generated",
+          "generation_id": "G1"
+        },
+        {
+          "type": "generated",
+          "generation_id": "J1"
+        }
+      ],
+      "notes": "Fake pinned hater comment (invented username) -> rapid rebuttal: RAW gatefold, G1 melt, J1 cathedral -> 'anyway.' 10.8s, $0"
+    },
+    {
+      "id": "S4_nature_doc",
+      "output_path": "genmedia/S4_nature_doc.mp4",
+      "components": [
+        {
+          "type": "raw_footage",
+          "ref": "take1 + take3 beats, serif italic doc subtitles",
+          "seconds": 17.4
+        }
+      ],
+      "notes": "Genre theft: nature-documentary register over real footage. 17.4s, $0"
+    },
+    {
+      "id": "S5_blackslam_g1",
+      "output_path": "genmedia/S5_blackslam_g1.mp4",
+      "components": [
+        {
+          "type": "generated",
+          "generation_id": "G1"
+        },
+        {
+          "type": "generated",
+          "generation_id": "J1"
+        }
+      ],
+      "notes": "A/B second hook on G1: black-slam claim card ('what $30 of divinity looks like') -> G1 body -> J1 end card. 13.2s, $0 marginal"
+    },
+    {
+      "id": "S6_variant_mystery",
+      "output_path": "genmedia/S6_variant_mystery.mp4",
+      "components": [
+        {
+          "type": "raw_footage",
+          "ref": "take1 + take3 beats + seed stills",
+          "seconds": 12.8
+        }
+      ],
+      "notes": "Comment engineering: evidence walk on the unconfirmed marble variant, ends asking audience to ID the pressing. 12.8s, $0"
+    },
+    {
+      "id": "P1_macro_loop",
+      "output_path": "genmedia/P1_macro_loop.mp4",
+      "components": [
+        {
+          "type": "raw_footage",
+          "ref": "take3 opal tilt, 2x crop, palindrome",
+          "seconds": 8.0
+        }
+      ],
+      "notes": "Palindrome perfect loop (fwd+reverse), macro open resolves to disc. 8.0s seamless, $0"
+    },
+    {
+      "id": "L1LOOP",
+      "output_path": "genmedia/L1.mp4",
+      "components": [
+        {
+          "type": "generated",
+          "generation_id": "L1"
+        }
+      ],
+      "notes": "Generated perfect loop: 360 orbit, day-night-day, first frame == last frame via end_image_url==image_url. Post as-is. 10s, $0.44"
+    },
+    {
+      "id": "ASMR1",
+      "output_path": "genmedia/ASMR1_final.mp4",
+      "components": [
+        {
+          "type": "raw_footage",
+          "ref": "take1 pull + take1 gatefold + take3 opal, 0.85x macro cut",
+          "seconds": 14.3
+        },
+        {
+          "type": "generated",
+          "generation_id": "ASMR1F"
+        }
+      ],
+      "notes": "SOUND ON ASMR cut: real macro beats slowed, mmaudio foley bed. 14.0s. vinyl-sound-design format 1"
     }
   ]
 }

@@ -51,6 +51,20 @@ N4 cherub sitting on the chrome gatefold in a museum, N5 disc in a
 fresco cloudscape w/ doves, N6 cover as stained glass casting light.
 Divine register = the album's own theme; memes stay brand-true.
 
+## Batch L + S — the viral pass (2026-07-06)
+
+Feedback: "think deeper. more different. stop the scroll." Round 3 is
+feed mechanics, not better videos — 9 formats, $0.45 total.
+
+| ID | Model | Settings | Seed | Concept | Est. cost | My read | Verdict |
+|---|---|---|---|---|---|---|---|
+| L1 | seedance-2.0/i2v | 1080p 10s silent | seed_disc_hold x2 | PERFECT LOOP: `image_url == end_image_url` forces first frame = last frame; 360 orbit + sunset->night->sunrise between them | $0.44 | The trick WORKS — day-night cycle lands, streetlights glow at night (t7.5 is beautiful), t0.05 and t9.9 frames match. Loop verified on the sheet | keep |
+| ASMR1F | mmaudio-v2 | 14s foley | ASMR1_silent (REAL footage) | cardboard slides, fingertip brushes, crackle, thuds; negative vocals/music | $0.01 | First mmaudio-on-real-footage: tracks the motion well. ASMR cut shippable | keep |
+
+S1-S6 + P1 are $0 ffmpeg/PIL builds (captcha, dating profile, comment
+rebuttal, nature doc, black-slam A/B, variant mystery, palindrome
+loop) — see finals in `genmedia.json`.
+
 ## Technique notes (this release)
 
 - **Root alias trap (cost us ~25 min, $0):** first slate went to
@@ -71,3 +85,14 @@ Divine register = the album's own theme; memes stay brand-true.
 - Meme grammar that worked in composites: 1 freeze + 1 stutter max
   per video, every beat captioned, back half faster, generated end
   cards never captioned over. Formats promoted to `vinyl-gen-meme`.
+- **Perfect-loop trick proven:** seedance i2v accepts the SAME image
+  as `--image_url` and `--end_image_url` — guaranteed seamless loop,
+  script the journey between (orbit + day-night cycle). 1080p/10s is
+  the right spec for loops ($0.44 vs $2.62; rewatch beats resolution).
+  Promoted to `vinyl-scrollstop`.
+- **PIL for UI chrome** (captcha, dating cards, comment bubbles) —
+  pixel-exact interfaces beat ffmpeg drawbox approximations; ffmpeg
+  then animates the PNGs. Promoted to `vinyl-gen-meme`.
+- **mmaudio on REAL footage works** — foley tracks handling motion,
+  not just generated video. The ASMR format is $0.01 per pack.
+  Promoted to `vinyl-sound-design`.

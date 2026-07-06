@@ -2,6 +2,27 @@
 
 Dated entries: friction observed → change made → how we'll know it worked.
 
+## 2026-07-06 — round 3: feed mechanics (the viral pass)
+
+- Friction: rounds 1-2 made better VIDEOS; virality lives in feed
+  mechanics (stopped thumbs, rewatch, replies) which nothing owned.
+- Change: (1) new `vinyl-scrollstop` skill — first-frame law, pattern
+  interrupts (black-slam, unresolvable macro, genre theft, UI parody,
+  4th-wall, fake beef), loop engineering, comment engineering, A/B
+  hook discipline, molly-hooks.md contract. (2) New
+  `vinyl-sound-design` skill — ASMR via mmaudio foley on REAL footage
+  (proven, $0.01), beat-grid cutting, per-pack sound-map.md. (3)
+  `vinyl-gen-meme` gained PIL UI-parody formats (captcha, dating
+  profile, fake comment — pixel-exact chrome, ffmpeg animates). (4)
+  `vinyl-social-pack` gained stage 5b (viral pass). (5) Proved the
+  perfect-loop trick: seedance `image_url == end_image_url`
+  guarantees first frame = last frame ($0.44 at 1080p/10s).
+- Result: pack v3 = 26 videos; the 9-video viral pass cost $0.45
+  total. Docs shipped: sound-map.md, molly-hooks.md.
+- We'll know it worked when the A/B pair (G1 vs S5 black-slam) gets
+  posted and hold-rate data picks a winner, and when comments arrive
+  on S6 (variant mystery asks the audience a real question).
+
 ## 2026-07-05 — round 2: the pack quality bar + meme wing
 
 - Friction: first Jean Dawson pack read "mid" — only a couple of FULL
