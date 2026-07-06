@@ -41,6 +41,12 @@ Rules:
   half-out-of-frame moments INSIDE a shot labeled "showcase". For every
   sequence you intend to be usable in an edit, extract frames at ~1s
   spacing across its full span with `extract_frame_at` and Read them.
+  **Read them as contact sheets, not one-by-one**: tile ~6 frames per
+  image with ffmpeg `xstack`, drawtext-stamping each tile with its
+  timestamp (probe sheets in `derived/{slug}/probe-sheets/`). One
+  Read per sheet ≈ 6 probes — this is how a 66s take gets fully
+  probed in 8 image reads. Same pattern reviews renders and verifies
+  generations (see vinyl-genmedia §3).
   Mark any arranging/tilting/exit stretch as its own `dead-space`
   sequence — organizing hands are dead space even mid-showcase.
   (Learned 2026-07-02: the Cabin Fever "fan-out" hid a 2.2s organizing

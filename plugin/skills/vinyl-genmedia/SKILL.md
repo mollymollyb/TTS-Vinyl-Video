@@ -48,11 +48,13 @@ and read the **`cdn_url`** key (not `url`); append every URL to
 
 ## 3. Verify before claiming done
 
-Download, then extract 3-4 preview stills per output
-(`ffmpeg -ss {t} -i out.mp4 -frames:v 1 preview/{id}_t{t}.jpg`) and
-actually Read them. Judge: product on-model? text legible? beats
-followed? Log the honest read — "sleeves drifted off-model" is more
-useful than "done".
+Download, then extract 5-7 preview stills per output
+(`ffmpeg -ss {t} -i out.mp4 -frames:v 1 preview/{id}_t{t}.jpg`),
+tile them into ONE labeled contact sheet (ffmpeg `xstack` + drawtext
+timestamp per tile) and Read the sheet. Judge: product on-model? text
+legible? beats followed? Log the honest read — "sleeves drifted
+off-model" is more useful than "done". One sheet per batch beats ten
+single-frame Reads.
 
 ## 4. Ledger (non-negotiable, same turn as the run)
 
