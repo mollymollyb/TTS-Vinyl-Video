@@ -38,6 +38,9 @@ cp media.config.example.json media.config.json
 #    Google Drive "Raw Vinyl Footage" parent, or a local folder.
 #    On macOS, synced Drive folders live under
 #    ~/Library/CloudStorage/GoogleDrive-you@email.com/My Drive/
+#    Folder was SHARED with you? It won't appear on disk until you
+#    add it: Drive web → right-click folder → Organize → Add shortcut
+#    → My Drive.
 #    Create raw/ derived/ work/ finals/ inside it and put the .MOV
 #    files in raw/.
 

@@ -56,10 +56,15 @@ idempotent, so re-running is always safe:
 **If there is no media folder** — `media.config.json` missing, or
 `mediaRoot` pointing at a path that doesn't exist on this machine —
 STOP and tell the user to add the Google Drive media folder: install
-Google Drive for desktop, sync the shared media folder, then point
-`media.config.json` at it. Never invent a local media folder as a
-substitute, and don't run ingest/edit/render work until the Drive
-folder is connected.
+Google Drive for desktop and sign in. If the media folder was SHARED
+with this user (they don't own it), it lives in "Shared with me" and
+will NOT appear on disk until they add it to My Drive: in Drive on the
+web, right-click the media folder → Organize → Add shortcut → My Drive.
+After that it shows up under
+`~/Library/CloudStorage/GoogleDrive-{email}/My Drive/media`. Then point
+`media.config.json` at it and create the repo symlink (steps 3-4).
+Never invent a local media folder as a substitute, and don't run
+ingest/edit/render work until the Drive folder is connected.
 
 ## Capability tiers (keys are optional, never required)
 
