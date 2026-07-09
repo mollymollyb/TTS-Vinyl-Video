@@ -4,7 +4,9 @@
 # All video bytes live in the media root (see media.config.json),
 # which may sit inside this folder locally or on Google Drive.
 # ============================================================
-media/
+# No trailing slash: "media" may be a real folder OR a symlink to
+# Google Drive (a symlink is not a directory, so "media/" wouldn't match it).
+media
 raw-footage/
 *.mov
 *.MOV
