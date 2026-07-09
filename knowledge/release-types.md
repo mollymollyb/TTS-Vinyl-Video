@@ -48,7 +48,7 @@ guesses from filenames; `release_type_confirmed: false` until she does).
 | ~2.5 min | 2xLP / gatefold | ~20s |
 | ~3 min | 3xLP / box set | 25-45s |
 
-## Identification checklist (vinyl-ingest / vinyl-analyze)
+## Identification checklist (fatbeats-content-ingest / fatbeats-content-analyze)
 
 1. Filename hints (e.g. "Trilogy" → 3xLP) — weak signal, mark draft.
 2. Count distinct vinyl-pull sequences in the analysis — strong signal.

@@ -119,9 +119,9 @@ def write_release(record: dict) -> Path:
         f"## Raw takes\n\n{takes}\n\n"
         "## Files\n\n"
         "- `release.json` — machine record\n"
-        "- `analysis.json` — shots + sequences (after vinyl-analyze)\n"
-        "- `edits/vN.edl.json` — edit recipes (after vinyl-edit)\n"
-        "- `caption.md` — caption + product description (after vinyl-caption)\n"
+        "- `analysis.json` — shots + sequences (after fatbeats-content-analyze)\n"
+        "- `edits/vN.edl.json` — edit recipes (after fatbeats-content-edit)\n"
+        "- `caption.md` — caption + product description (after fatbeats-content-caption)\n"
     )
     return release_path
 

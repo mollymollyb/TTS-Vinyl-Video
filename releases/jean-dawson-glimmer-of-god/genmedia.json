@@ -503,7 +503,7 @@
       "status": "success",
       "verdict": "keep",
       "output_path": "genmedia/L1.mp4",
-      "notes": "PERFECT LOOP experiment: image_url == end_image_url forces first frame = last frame; 360 orbit + day-night-day cycle between them. Rewatch-engineering play (vinyl-scrollstop) | cost re-derived from unit pricing: 4K15s=$2.62 -> x0.25 px x0.667 dur = $0.44"
+      "notes": "PERFECT LOOP experiment: image_url == end_image_url forces first frame = last frame; 360 orbit + day-night-day cycle between them. Rewatch-engineering play (fatbeats-content-scrollstop) | cost re-derived from unit pricing: 4K15s=$2.62 -> x0.25 px x0.667 dur = $0.44"
     },
     {
       "id": "ASMR1F",
@@ -747,7 +747,7 @@
           "seconds": 10.2
         }
       ],
-      "notes": "UI-parody captcha: 9/9 divine-object grid (PIL chrome over real stills) -> verified -> real beat -> card. 10.2s, $0. vinyl-scrollstop format"
+      "notes": "UI-parody captcha: 9/9 divine-object grid (PIL chrome over real stills) -> verified -> real beat -> card. 10.2s, $0. fatbeats-content-scrollstop format"
     },
     {
       "id": "S2_dating_profile",
@@ -857,7 +857,7 @@
           "generation_id": "ASMR1F"
         }
       ],
-      "notes": "SOUND ON ASMR cut: real macro beats slowed, mmaudio foley bed. 14.0s. vinyl-sound-design format 1"
+      "notes": "SOUND ON ASMR cut: real macro beats slowed, mmaudio foley bed. 14.0s. fatbeats-content-sound-design format 1"
     }
   ]
 }

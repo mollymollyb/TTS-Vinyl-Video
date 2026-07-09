@@ -2,7 +2,7 @@
 
 Produces small JPEGs under derived/{slug}/frames/ that either Twelve
 Labs supplements (Tier 2) or the agent Reads and labels itself (Tier 1
-— the keyless fallback). Also used by vinyl-review to inspect the
+— the keyless fallback). Also used by fatbeats-content-review to inspect the
 frames around each cut in a rendered draft.
 
 Usage:
@@ -66,7 +66,7 @@ def sample_cut_context(
     frames_dir: Path,
     offset: float = 0.3,
 ) -> list[dict]:
-    """Frames just before/after each internal cut — vinyl-review's evidence
+    """Frames just before/after each internal cut — fatbeats-content-review's evidence
     for 'did this cut land mid-motion?'."""
     samples: list[dict] = []
     for index, cut in enumerate(cut_timestamps):

@@ -42,8 +42,8 @@ verdict slots: `genmedia-experiments.md`; spend records:
 `genmedia.json`; outputs in media
 `work/wiz-khalifa-cabin-fever-trilogy/genmedia/`. Sidney so far:
 **V1 and V3 are the favorites** → both now have finished cuts.
-The whole playbook is promoted to reusable skills: `vinyl-genmedia`,
-`vinyl-gen-video`, `vinyl-gen-composite`, `vinyl-artist-context`.
+The whole playbook is promoted to reusable skills: `fatbeats-content-genmedia`,
+`fatbeats-content-gen-video`, `fatbeats-content-gen-composite`, `fatbeats-content-artist-context`.
 
 ## Review log
 
@@ -59,4 +59,4 @@ The whole playbook is promoted to reusable skills: `vinyl-genmedia`,
 
 ## Decisions
 
-(awaiting Molly's pick — capture via vinyl-learn)
+(awaiting Molly's pick — capture via fatbeats-content-learn)

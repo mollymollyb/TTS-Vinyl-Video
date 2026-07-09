@@ -11,6 +11,6 @@
 ## Files
 
 - `release.json` — machine record
-- `analysis.json` — shots + sequences (after vinyl-analyze)
-- `edits/vN.edl.json` — edit recipes (after vinyl-edit)
-- `caption.md` — caption + product description (after vinyl-caption)
+- `analysis.json` — shots + sequences (after fatbeats-content-analyze)
+- `edits/vN.edl.json` — edit recipes (after fatbeats-content-edit)
+- `caption.md` — caption + product description (after fatbeats-content-caption)

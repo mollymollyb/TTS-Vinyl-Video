@@ -46,14 +46,14 @@ verifies this stays current.
 - `knowledge/editing-rules.md` — the editing law. `release-types.md` — format playbook. `decisions/` — Molly's feedback ledger.
 - `knowledge/artists/wiz-khalifa.md`, `knowledge/artists/jean-dawson.md` — verified artist+product context for generation prompts/captions (recent arc, iconography, moderation guardrails). One file per artist; pull 1–2 details max per prompt.
 - `plugin/` — vinyl-os plugin; skills in `plugin/skills/` (intake, ingest, analyze, edit, review, caption, doctor, janitor, learn, reflect, skillify).
-- `plugin/skills/vinyl-genmedia/` — core fal.ai genmedia mechanics: seeds, uploads, async runs, cost checks, mandatory dual-ledger logging.
-- `plugin/skills/vinyl-gen-video/` — full scripted AI videos (prompt = timestamped edit script), operation chooser, context threads, 30s continuation chaining.
-- `plugin/skills/vinyl-gen-composite/` — ffmpeg edit bay for AI+real composites: hooks, supercuts, select cuts, two-parter stitches, caption standards.
-- `plugin/skills/vinyl-artist-context/` — research + maintain `knowledge/artists/{artist}.md` (recent arc, product facts, guardrails).
-- `plugin/skills/vinyl-social-pack/` — THE FULL RUN: one release from raw footage to a costed pack of post-ready videos, every one full and costed (chains analyze → context → gens → edits → composites → viral pass → captions → manifest).
-- `plugin/skills/vinyl-gen-meme/` — meme formats: nano-banana meme stills, ken-burns slideshows, freeze-frame reactions, stutter repeats, chaos edits, rapid-fire text, PIL UI-parody (captcha/dating/fake-comment); the gen-z caption voice rules.
-- `plugin/skills/vinyl-scrollstop/` — feed mechanics: first-frame law, pattern interrupts (black-slam, genre theft, UI parody, 4th-wall, fake beef), loop engineering (palindrome + end_image_url trick), comment engineering, A/B hooks, molly-hooks.md.
-- `plugin/skills/vinyl-sound-design/` — sound-first cuts: ASMR with mmaudio foley on real footage, beat-grid cutting, per-pack sound-map.md for Molly's music layer.
+- `plugin/skills/fatbeats-content-genmedia/` — core fal.ai genmedia mechanics: seeds, uploads, async runs, cost checks, mandatory dual-ledger logging.
+- `plugin/skills/fatbeats-content-gen-video/` — full scripted AI videos (prompt = timestamped edit script), operation chooser, context threads, 30s continuation chaining.
+- `plugin/skills/fatbeats-content-gen-composite/` — ffmpeg edit bay for AI+real composites: hooks, supercuts, select cuts, two-parter stitches, caption standards.
+- `plugin/skills/fatbeats-content-artist-context/` — research + maintain `knowledge/artists/{artist}.md` (recent arc, product facts, guardrails).
+- `plugin/skills/fatbeats-content-social-pack/` — THE FULL RUN: one release from raw footage to a costed pack of post-ready videos, every one full and costed (chains analyze → context → gens → edits → composites → viral pass → captions → manifest).
+- `plugin/skills/fatbeats-content-gen-meme/` — meme formats: nano-banana meme stills, ken-burns slideshows, freeze-frame reactions, stutter repeats, chaos edits, rapid-fire text, PIL UI-parody (captcha/dating/fake-comment); the gen-z caption voice rules.
+- `plugin/skills/fatbeats-content-scrollstop/` — feed mechanics: first-frame law, pattern interrupts (black-slam, genre theft, UI parody, 4th-wall, fake beef), loop engineering (palindrome + end_image_url trick), comment engineering, A/B hooks, molly-hooks.md.
+- `plugin/skills/fatbeats-content-sound-design/` — sound-first cuts: ASMR with mmaudio foley on real footage, beat-grid cutting, per-pack sound-map.md for Molly's music layer.
 - `.agents/skills` → symlink to `plugin/skills` (Cursor/Codex discovery).
 - `routines/` — janitor/reflect/compound-learn prompts + armed index.
 - `operations/` — `doctor.py` (mechanical health check), `health.md`, `improvements.md`, `sync.md`.

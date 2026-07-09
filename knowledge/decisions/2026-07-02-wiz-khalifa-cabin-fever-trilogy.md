@@ -28,5 +28,5 @@ Yes — two durable changes made the same day:
 
 - `knowledge/editing-rules.md` hard rule 3 extended: organizing hands =
   dead space even mid-showcase.
-- `vinyl-analyze` skill now requires a dense (~1s) frame probe across
+- `fatbeats-content-analyze` skill now requires a dense (~1s) frame probe across
   every sequence intended for use in an edit before the map is saved.

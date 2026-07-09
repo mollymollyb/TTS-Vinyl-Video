@@ -25,7 +25,7 @@ divergence: auto-edit forced output duration to within +/-20% of the
 source (a re-arrangement experiment); vinyl edits COMPRESS 2-3 min of
 raw into 15-45s, so here the bound is simply output <= source.
 
-check_sequence_integrity() is the heart of vinyl-review: no cut may
+check_sequence_integrity() is the heart of fatbeats-content-review: no cut may
 land strictly inside a labeled sequence — the exact failure Molly kept
 seeing ("it cuts in the middle of the vinyl pull").
 """

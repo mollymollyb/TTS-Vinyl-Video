@@ -21,12 +21,41 @@ Media lifecycle rules: `raw/` = never modify or delete. `derived/` =
 regenerable, safe to delete. `work/` = ephemeral drafts, janitor prunes
 after 14 days. `finals/` = approved keepers.
 
+## Getting started (pull, install, connect the media folder)
+
+Do this at the start of a session on any machine — every step is
+idempotent, so re-running is always safe:
+
+1. **Pull the latest brain:** `git pull`. The repo is text-only, so
+   this is instant — Molly and Sidney both push here.
+2. **Install dependencies (first run on a machine):**
+   `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`.
+   ffmpeg/ffprobe are system deps: `brew install ffmpeg`. Optional keys:
+   `cp .env.example .env` (see capability tiers — never required).
+3. **Connect the media folder to Google Drive:** `mediaRoot` in
+   `media.config.json` (per-machine, gitignored) must point at the
+   synced Google Drive media folder — raw footage arrives there and
+   finals are delivered back there. No config yet?
+   `cp media.config.example.json media.config.json`, then set
+   `mediaRoot` to the Drive folder's absolute path (it should contain
+   `raw/ derived/ work/ finals/`).
+4. **Verify:** `.venv/bin/python operations/doctor.py` (read-only)
+   confirms the venv, the media config, and git hygiene in one shot.
+
+**If there is no media folder** — `media.config.json` missing, or
+`mediaRoot` pointing at a path that doesn't exist on this machine —
+STOP and tell the user to add the Google Drive media folder: install
+Google Drive for desktop, sync the shared media folder, then point
+`media.config.json` at it. Never invent a local media folder as a
+substitute, and don't run ingest/edit/render work until the Drive
+folder is connected.
+
 ## Capability tiers (keys are optional, never required)
 
 - **Tier 0 — no keys:** ffmpeg everything (ingest, proxies, scene maps,
   frames, EDL validation, rendering).
 - **Tier 1 — no keys:** agent labels the sampled frames itself by Reading
-  them (`vinyl-analyze` fallback). Full pipeline still works.
+  them (`fatbeats-content-analyze` fallback). Full pipeline still works.
 - **Tier 2 — `TWELVE_LABS_API_KEY`:** programmatic shot labels; enables
   unattended runs.
 - **Tier 3 — `SWIFT_LABS_TRIBE_API_KEY` (optional):** engagement score used
@@ -41,40 +70,40 @@ Missing key = run the fallback silently. Never error out over a key.
 Each vinyl product is a **release** at `releases/{slug}/`, moving through
 statuses in `release.json`: `raw → analyzed → editing → review → final`.
 
-1. `vinyl-ingest` — register raw files, probe metadata, guess release type
+1. `fatbeats-content-ingest` — register raw files, probe metadata, guess release type
    (draft — Molly confirms).
-2. `vinyl-analyze` — proxy, scene map, frames, labels; then the agent
+2. `fatbeats-content-analyze` — proxy, scene map, frames, labels; then the agent
    groups shots into **sequences** (one event, e.g. "pulls vinyl 2 out"),
    each with a hard never-cut-inside boundary. Writes `analysis.json`.
-3. `vinyl-edit` — 2-3 EDL variants honoring `knowledge/editing-rules.md`;
+3. `fatbeats-content-edit` — 2-3 EDL variants honoring `knowledge/editing-rules.md`;
    render drafts to `work/`.
-4. `vinyl-review` — verify no cut lands inside a sequence, check the
+4. `fatbeats-content-review` — verify no cut lands inside a sequence, check the
    ending, inspect cut-boundary frames. Re-edit until clean.
-5. `vinyl-caption` — caption + product description into `caption.md`.
+5. `fatbeats-content-caption` — caption + product description into `caption.md`.
 6. Molly approves → copy render to `finals/`, status `final`,
-   `vinyl-learn` captures why the winning variant won.
+   `fatbeats-content-learn` captures why the winning variant won.
 
 ## Filing decision tree
 
 - "Full run" / "do everything for this release" / "deliver the social
-  pack" → `vinyl-social-pack` (chains the whole pipeline + gen wing into
+  pack" → `fatbeats-content-social-pack` (chains the whole pipeline + gen wing into
   ~10 post-ready videos with per-video cost in
   `releases/{slug}/social-pack.md`).
-- New raw footage arrived → `vinyl-ingest`, then update `releases/_board.md`.
+- New raw footage arrived → `fatbeats-content-ingest`, then update `releases/_board.md`.
 - Molly gave feedback ("use v2, hate the ending") → `knowledge/decisions/`
-  via `vinyl-learn`, and fold durable rules into
+  via `fatbeats-content-learn`, and fold durable rules into
   `knowledge/editing-rules.md`.
 - A new editing insight or vinyl-format quirk → `knowledge/editing-rules.md`
   or `knowledge/release-types.md`.
 - One-off task (not a release, not recurring) → `work/YYYY-MM-DD-{name}/`
   in git (text only).
-- Same manual process done twice → promote via `vinyl-skillify` into
+- Same manual process done twice → promote via `fatbeats-content-skillify` into
   `plugin/skills/`.
-- System friction (routing, checks, templates) → `vinyl-reflect` →
+- System friction (routing, checks, templates) → `fatbeats-content-reflect` →
   `operations/improvements.md`.
-- Generative AI work on a release → the gen wing: `vinyl-genmedia`
-  (mechanics, always first) → `vinyl-gen-video` (make the generations) →
-  `vinyl-gen-composite` (cut them into finished posts).
+- Generative AI work on a release → the gen wing: `fatbeats-content-genmedia`
+  (mechanics, always first) → `fatbeats-content-gen-video` (make the generations) →
+  `fatbeats-content-gen-composite` (cut them into finished posts).
 - Ran anything through fal (the `genmedia` CLI) → log it in
   `releases/{slug}/genmedia.json` (model, settings, cost) via
   `library.genmedia_ledger add-generation`, and when a composite ships,
@@ -84,14 +113,14 @@ statuses in `release.json`: `raw → analyzed → editing → review → final`.
   `knowledge/artists/{artist}.md` first (verified product facts, recent
   arc, iconography, moderation guardrails). Pull at most 1–2 details
   and note which in the ledger. File missing? Create it via
-  `vinyl-artist-context` (recent, not career-wiki).
+  `fatbeats-content-artist-context` (recent, not career-wiki).
 
 ## Never-stale contract
 
 If you touch a release, update ITS `README.md` + `release.json` status,
 `releases/_board.md`, and `artifacts/dashboard.html` in the same turn.
 If you add a file or module, log it in `project-overview.md`. The
-`vinyl-janitor` skill (weekly routine) is the safety net, not the excuse.
+`fatbeats-content-janitor` skill (weekly routine) is the safety net, not the excuse.
 
 ## Commands (run from repo root; use .venv)
 
@@ -104,9 +133,8 @@ If you add a file or module, log it in `project-overview.md`. The
 .venv/bin/python operations/doctor.py          # read-only health check
 ```
 
-Setup on a new machine: `python3 -m venv .venv && .venv/bin/pip install -r
-requirements.txt`, copy `media.config.example.json` → `media.config.json`
-(set your path), optionally copy `.env.example` → `.env` (add keys).
+Setup on a new machine: see "Getting started" above (venv + pip install,
+ffmpeg, media.config.json pointed at the Google Drive media folder).
 
 ## Hard rules
 

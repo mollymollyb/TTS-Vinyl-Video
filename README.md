@@ -16,9 +16,9 @@ the pipeline, and the filing tree live there.
   renders, finals. It lives OUTSIDE git at the path in your
   `media.config.json`. Renders are regenerable from raw + recipe, so
   drafts are disposable.
-- **The pipeline**: `vinyl-ingest` → `vinyl-analyze` (shot + sequence
-  map) → `vinyl-edit` (2-3 variants) → `vinyl-review` (the system checks
-  its own cuts) → `vinyl-caption`. The orchestrator `vinyl-intake` runs
+- **The pipeline**: `fatbeats-content-ingest` → `fatbeats-content-analyze` (shot + sequence
+  map) → `fatbeats-content-edit` (2-3 variants) → `fatbeats-content-review` (the system checks
+  its own cuts) → `fatbeats-content-caption`. The orchestrator `fatbeats-content-intake` runs
   the whole chain. The one unbreakable editing law: **never cut inside a
   sequence** — a vinyl pull, a gatefold open, a tracklist pan always
   completes on screen.

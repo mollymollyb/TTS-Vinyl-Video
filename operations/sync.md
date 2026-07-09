@@ -11,7 +11,7 @@
 
 Molly shoots → uploads to the Drive folder → each machine gets the files
 into its own `{mediaRoot}/raw/` (Drive desktop sync or manual download)
-→ `vinyl-ingest` registers them. Filenames are the join key between
+→ `fatbeats-content-ingest` registers them. Filenames are the join key between
 Drive, `raw/`, and `release.json` — don't rename raw files after ingest.
 
 ## Open item

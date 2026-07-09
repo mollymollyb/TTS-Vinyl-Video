@@ -1,4 +1,4 @@
-# Molly hook shots — 10 minutes of filming, 6 cold opens
+v# Molly hook shots — 10 minutes of filming, 6 cold opens
 
 Faceless product video caps out; a 2-second human open converts brand
 content into person content. Film each on the phone, selfie or

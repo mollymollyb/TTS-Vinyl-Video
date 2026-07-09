@@ -7,9 +7,9 @@ then flip its `armed` flag here.
 
 | Routine | Drives | Cadence | Armed |
 |---|---|---|---|
-| `janitor.md` | vinyl-janitor | weekly | armed: no |
-| `reflect.md` | vinyl-reflect | monthly | armed: no |
-| `compound-learn.md` | vinyl-learn | after each work session | armed: no |
+| `janitor.md` | fatbeats-content-janitor | weekly | armed: no |
+| `reflect.md` | fatbeats-content-reflect | monthly | armed: no |
+| `compound-learn.md` | fatbeats-content-learn | after each work session | armed: no |
 
 Until a schedule is armed, run them on demand — the doctor keeps a
 standing low finding as a reminder that unattended self-maintenance

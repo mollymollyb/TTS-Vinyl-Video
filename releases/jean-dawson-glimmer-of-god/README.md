@@ -7,12 +7,12 @@
 - **Variant flag:** footage shows a MARBLED WHITE/CREAM disc; retail
   standard is hot pink. Confirm variant name before any caption posts.
 
-First release run end-to-end by `vinyl-social-pack` (2026-07-05),
+First release run end-to-end by `fatbeats-content-social-pack` (2026-07-05),
 then round 2 after feedback ("more and better, gen-z, memes"): batch J
 generations (record cathedral two-parter, disc-multiplication comedy,
 calligraphy lift), batch N divine meme stills, and the meme-format
 composites (chaos edit, freeze reaction, rapid-fire, slideshow) now
-codified in `vinyl-gen-meme`. Total fal spend $22.00 (estimated).
+codified in `fatbeats-content-gen-meme`. Total fal spend $22.00 (estimated).
 
 ## Raw takes
 

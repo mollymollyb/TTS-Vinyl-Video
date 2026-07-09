@@ -74,7 +74,7 @@ loop) — see finals in `genmedia.json`.
   result route 404'd. Platform API
   (`/v1/models/requests/by-endpoint?...&expand=payloads`) confirmed
   the no-op. Resubmitted everything to the explicit
-  `/image-to-video` sub-endpoint. Rule now lives in vinyl-genmedia.
+  `/image-to-video` sub-endpoint. Rule now lives in fatbeats-content-genmedia.
 - Do not POST to queue result URLs — it enqueues a NEW (empty) job.
   One stray POST auto-completed as a validation reject ($0).
 - **Celestial audio descriptors fail moderation reliably** ("ambient
@@ -84,15 +84,15 @@ loop) — see finals in `genmedia.json`.
   audio (pops, clinks, bus rumble, booms) passes.
 - Meme grammar that worked in composites: 1 freeze + 1 stutter max
   per video, every beat captioned, back half faster, generated end
-  cards never captioned over. Formats promoted to `vinyl-gen-meme`.
+  cards never captioned over. Formats promoted to `fatbeats-content-gen-meme`.
 - **Perfect-loop trick proven:** seedance i2v accepts the SAME image
   as `--image_url` and `--end_image_url` — guaranteed seamless loop,
   script the journey between (orbit + day-night cycle). 1080p/10s is
   the right spec for loops ($0.44 vs $2.62; rewatch beats resolution).
-  Promoted to `vinyl-scrollstop`.
+  Promoted to `fatbeats-content-scrollstop`.
 - **PIL for UI chrome** (captcha, dating cards, comment bubbles) —
   pixel-exact interfaces beat ffmpeg drawbox approximations; ffmpeg
-  then animates the PNGs. Promoted to `vinyl-gen-meme`.
+  then animates the PNGs. Promoted to `fatbeats-content-gen-meme`.
 - **mmaudio on REAL footage works** — foley tracks handling motion,
   not just generated video. The ASMR format is $0.01 per pack.
-  Promoted to `vinyl-sound-design`.
+  Promoted to `fatbeats-content-sound-design`.

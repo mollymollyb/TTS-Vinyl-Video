@@ -1,6 +1,6 @@
 """doctor.py — deterministic, READ-ONLY workspace health check.
 
-The mechanical fast path behind the vinyl-doctor skill: checks that need
+The mechanical fast path behind the fatbeats-content-doctor skill: checks that need
 no judgment live here so they ship with the build and never get
 reinvented. Writes operations/health.md and prints the same report.
 Exit code 0 = healthy (score >= 80), 1 = needs attention.

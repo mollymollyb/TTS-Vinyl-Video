@@ -6,12 +6,12 @@ Pipeline (timestamps from the proxy transfer 1:1 to the raw file):
     3. frames      (Tier 0)  one midpoint JPEG per shot for labeling
     4. labels      (Tier 2)  Twelve Labs Pegasus per shot, IF key present
                    (Tier 1)  otherwise shots stay unlabeled and the
-                             vinyl-analyze skill has the agent Read the
+                             fatbeats-content-analyze skill has the agent Read the
                              frames and fill in labels itself
 
 Output: releases/{slug}/analysis.json with shots[] labeled or not, and
 an EMPTY sequences[] — grouping shots into never-cut sequences is the
-semantic pass the agent always does (see plugin/skills/vinyl-analyze).
+semantic pass the agent always does (see plugin/skills/fatbeats-content-analyze).
 
 Usage (from repo root):
     python3 -m library.analyze --release wiz-khalifa-cabin-fever-trilogy [--take 1] [--no-tl]
@@ -114,7 +114,7 @@ def analyze_take(slug: str, take: int = 1, use_twelve_labs: bool = True) -> Path
         "tier": tier,
         "shots_labeled": labeled,
         "shots": shots,
-        # The agent's semantic pass fills this (vinyl-analyze skill):
+        # The agent's semantic pass fills this (fatbeats-content-analyze skill):
         # contiguous shots forming one event share a sequence with a
         # hard never-cut-inside boundary.
         "sequences": [],

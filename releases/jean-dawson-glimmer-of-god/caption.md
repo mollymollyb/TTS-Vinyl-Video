@@ -33,4 +33,4 @@ Confirm before posting: variant name/edition size; price.
 
 Moved to `social-pack.md` (v2, 14 lines) so captions live next to the
 videos they pair with. Same voice rules: hook ≤ 8 words, Molly's
-collector-to-collector tone, meme voice per `vinyl-gen-meme`.
+collector-to-collector tone, meme voice per `fatbeats-content-gen-meme`.

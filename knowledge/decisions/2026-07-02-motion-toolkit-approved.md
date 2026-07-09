@@ -10,7 +10,7 @@ The toolkit graduates from demo to default grammar: motion/speed fields
 are folded into the canonical v1/v2/v3 EDLs and the standalone
 `v2-motion.edl.json` demo file is retired. Every future edit designs
 energy per the "Motion & pacing grammar" in `knowledge/editing-rules.md`
-and gets the vinyl-review energy pass.
+and gets the fatbeats-content-review energy pass.
 
 ## Why
 

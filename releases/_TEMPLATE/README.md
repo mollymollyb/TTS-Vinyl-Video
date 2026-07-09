@@ -9,10 +9,10 @@
 
 ## Files
 
-- `release.json` — machine record (written by vinyl-ingest)
-- `analysis.json` — shots + sequences (written by vinyl-analyze)
-- `edits/vN.edl.json` — edit recipes (written by vinyl-edit)
-- `caption.md` — caption + product description (written by vinyl-caption)
+- `release.json` — machine record (written by fatbeats-content-ingest)
+- `analysis.json` — shots + sequences (written by fatbeats-content-analyze)
+- `edits/vN.edl.json` — edit recipes (written by fatbeats-content-edit)
+- `caption.md` — caption + product description (written by fatbeats-content-caption)
 
 ## Review log
 

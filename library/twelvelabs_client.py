@@ -37,7 +37,7 @@ INDEX_MODELS = [
     {"model_name": PEGASUS_MODEL, "model_options": ["visual", "audio"]},
 ]
 
-# The vocabulary vinyl-analyze and knowledge/editing-rules.md share.
+# The vocabulary fatbeats-content-analyze and knowledge/editing-rules.md share.
 SEQUENCE_TYPES = [
     "unboxing", "gatefold-open", "vinyl-pull", "vinyl-spin",
     "pan-tracklist", "variant-reveal", "sleeve-detail", "insert-showcase",

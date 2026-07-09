@@ -82,7 +82,7 @@ validation so taste violations fail loudly.
 ## Working agreements
 
 - Every EDL segment carries a `why` (which sequence it shows, why it's in).
-- Every generated variant gets `vinyl-review` before Molly ever sees it.
+- Every generated variant gets `fatbeats-content-review` before Molly ever sees it.
   She reviews edits, not mistakes.
 - When Molly picks a winner or rejects a cut, capture the WHY via
-  `vinyl-learn` — that feedback is this file's future content.
+  `fatbeats-content-learn` — that feedback is this file's future content.
