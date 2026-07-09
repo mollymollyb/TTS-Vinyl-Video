@@ -12,8 +12,8 @@ this repo; all heavy video bytes stay OUT of git.
 | **Git** (this repo) | GitHub `mollymollyb/TTS-Vinyl-Video` | skills, library code, `releases/{slug}/` records (release.json, analysis.json, EDLs, captions), knowledge, dashboards |
 | **Media** (never git) | path in `media.config.json` (local folder or Google Drive) | `raw/` originals, `derived/{slug}/` proxies+frames, `work/{slug}/{date}/` draft renders, `finals/{slug}/` approved videos |
 
-**MEDIA NEVER ENTERS GIT.** The `.gitignore` blocks `media/` and all video
-extensions. A render is regenerable from `raw file + EDL`, so drafts are
+**MEDIA NEVER ENTERS GIT.** The `.gitignore` blocks `media` (whether a
+real folder or a symlink) and all video extensions. A render is regenerable from `raw file + EDL`, so drafts are
 disposable. If you are about to write ANY media file, resolve its
 destination through `library/media_paths.py` — never invent a path.
 
@@ -38,8 +38,19 @@ idempotent, so re-running is always safe:
    finals are delivered back there. No config yet?
    `cp media.config.example.json media.config.json`, then set
    `mediaRoot` to the Drive folder's absolute path (it should contain
-   `raw/ derived/ work/ finals/`).
-4. **Verify:** `.venv/bin/python operations/doctor.py` (read-only)
+   `raw/ derived/ work/ finals/`). On macOS the synced Drive folder
+   lives at `~/Library/CloudStorage/GoogleDrive-{email}/My Drive/...` —
+   find the user's actual path with `ls ~/Library/CloudStorage/`.
+4. **Symlink `media/` in the repo root to that same Drive folder** so
+   the footage is browsable in the editor (per-machine, gitignored,
+   same path as `mediaRoot`):
+   `ln -s "/path/to/GoogleDrive/My Drive/media" media`.
+   If `media` already exists here but shows as an unreadable text/binary
+   file, it's a Finder alias (made via Finder's "Make Alias") — tools
+   can't follow those. Delete it and create the symlink instead
+   (`rm media` removes only the alias/link, never the Drive contents).
+   A correct symlink lists `raw/ derived/ work/ finals/` via `ls media/`.
+5. **Verify:** `.venv/bin/python operations/doctor.py` (read-only)
    confirms the venv, the media config, and git hygiene in one shot.
 
 **If there is no media folder** — `media.config.json` missing, or
@@ -134,7 +145,8 @@ If you add a file or module, log it in `project-overview.md`. The
 ```
 
 Setup on a new machine: see "Getting started" above (venv + pip install,
-ffmpeg, media.config.json pointed at the Google Drive media folder).
+ffmpeg, media.config.json pointed at the Google Drive media folder, and
+a `media` symlink in the repo root pointing at that same folder).
 
 ## Hard rules
 

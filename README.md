@@ -36,10 +36,18 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 cp media.config.example.json media.config.json
 #    then edit mediaRoot to your absolute path — e.g. your synced
 #    Google Drive "Raw Vinyl Footage" parent, or a local folder.
+#    On macOS, synced Drive folders live under
+#    ~/Library/CloudStorage/GoogleDrive-you@email.com/My Drive/
 #    Create raw/ derived/ work/ finals/ inside it and put the .MOV
 #    files in raw/.
 
-# 3. Optional keys (skip freely — everything still works)
+# 3. Symlink media/ into the repo so it's browsable in the editor
+#    (one time; use the SAME path as mediaRoot — it's gitignored).
+#    Use ln -s in the terminal, NOT Finder's "Make Alias" (editors
+#    and tools can't follow Finder aliases).
+ln -s "/absolute/path/to/your/Google Drive/media" media
+
+# 4. Optional keys (skip freely — everything still works)
 cp .env.example .env   # add TWELVE_LABS_API_KEY if/when you have one
 ```
 
